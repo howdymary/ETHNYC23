@@ -1876,10 +1876,10 @@
         }
       }
     },
-    "script/Counter.s.sol": {
-      "lastModificationDate": 1695503604203,
-      "contentHash": "d79da76b92c5b28fcfe4189404325647",
-      "sourceName": "script/Counter.s.sol",
+    "script/ERC721OwnershipHook.s.sol": {
+      "lastModificationDate": 1695549121842,
+      "contentHash": "0bd0e9e8b0b4b31b834cd867186511c7",
+      "sourceName": "script/ERC721OwnershipHook.s.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -1923,12 +1923,40 @@
         "lib/forge-std/src/console.sol",
         "lib/forge-std/src/console2.sol",
         "lib/forge-std/src/interfaces/IMulticall3.sol",
-        "lib/forge-std/src/safeconsole.sol"
+        "lib/forge-std/src/safeconsole.sol",
+        "lib/v4-core/contracts/interfaces/IFees.sol",
+        "lib/v4-core/contracts/interfaces/IHooks.sol",
+        "lib/v4-core/contracts/interfaces/IPoolManager.sol",
+        "lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol",
+        "lib/v4-core/contracts/libraries/BitMath.sol",
+        "lib/v4-core/contracts/libraries/FeeLibrary.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint128.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint96.sol",
+        "lib/v4-core/contracts/libraries/FullMath.sol",
+        "lib/v4-core/contracts/libraries/Hooks.sol",
+        "lib/v4-core/contracts/libraries/Pool.sol",
+        "lib/v4-core/contracts/libraries/Position.sol",
+        "lib/v4-core/contracts/libraries/SafeCast.sol",
+        "lib/v4-core/contracts/libraries/SqrtPriceMath.sol",
+        "lib/v4-core/contracts/libraries/SwapMath.sol",
+        "lib/v4-core/contracts/libraries/TickBitmap.sol",
+        "lib/v4-core/contracts/libraries/TickMath.sol",
+        "lib/v4-core/contracts/libraries/UnsafeMath.sol",
+        "lib/v4-core/contracts/types/BalanceDelta.sol",
+        "lib/v4-core/contracts/types/Currency.sol",
+        "lib/v4-core/contracts/types/PoolId.sol",
+        "lib/v4-core/contracts/types/PoolKey.sol",
+        "lib/v4-periphery/contracts/BaseHook.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "src/ERC721OwnershipHook.sol",
+        "test/utils/HookMiner.sol"
       ],
-      "versionRequirement": "^0.8.15",
+      "versionRequirement": "^0.8.19",
       "artifacts": {
-        "CounterScript": {
-          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Counter.s.sol/CounterScript.json"
+        "ERC721OwnershipHookScript": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "ERC721OwnershipHook.s.sol/ERC721OwnershipHookScript.json"
         }
       }
     },
@@ -2066,6 +2094,47 @@
       "artifacts": {
         "ERC721OwnershipHookImpl": {
           "0.8.20+commit.a1b79de6.Darwin.appleclang": "ERC721OwnershipHookImpl.sol/ERC721OwnershipHookImpl.json"
+        }
+      }
+    },
+    "test/utils/HookMiner.sol": {
+      "lastModificationDate": 1695539873709,
+      "contentHash": "ebef293e304199e6de6916433ec3e962",
+      "sourceName": "test/utils/HookMiner.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "HookMiner": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "HookMiner.sol/HookMiner.json"
         }
       }
     }
