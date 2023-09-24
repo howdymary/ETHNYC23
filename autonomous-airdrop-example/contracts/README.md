@@ -1,4 +1,4 @@
-# Contracts for Modification of AxiomV2 Autonomous Airdrop
+# Contracts for AxiomV2 Autonomous Airdrop to MEV Victims
 
 ## Setup
 
