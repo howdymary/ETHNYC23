@@ -1,0 +1,615 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220f413a3228eec4d145e8f0e6289f38800378823e7266ade908334e4ae504dadc564736f6c63430008140033",
+    "sourceMap": "187:166:34:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;187:166:34;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220f413a3228eec4d145e8f0e6289f38800378823e7266ade908334e4ae504dadc564736f6c63430008140033",
+    "sourceMap": "187:166:34:-:0;;;;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"Library for computing the ID of a pool\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/v4-core/contracts/types/PoolId.sol\":\"PoolIdLibrary\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@ensdomains/=lib/v4-core/node_modules/@ensdomains/\",\":@openzeppelin/contracts/=lib/v4-periphery/lib/openzeppelin-contracts/contracts/\",\":@uniswap/v4-core/=lib/v4-core/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-gas-snapshot/=lib/v4-core/lib/forge-gas-snapshot/src/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=lib/v4-core/node_modules/hardhat/\",\":openzeppelin-contracts/=lib/v4-periphery/lib/openzeppelin-contracts/\",\":solmate/=lib/v4-periphery/lib/solmate/src/\",\":v4-core/contracts/=lib/v4-core/contracts/\",\":v4-periphery/=lib/v4-periphery/\",\":v4-periphery/=lib/v4-periphery/contracts/\"]},\"sources\":{\"lib/v4-core/contracts/interfaces/IFees.sol\":{\"keccak256\":\"0x2fb66160acff9b1a6031e3ada15e4271b25399d6b921dc17679cde1e50f566e2\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://7bb4c14e2f3bc0c92729b3fc24f57aaaaf9bd1930411aa937afd49e2c3811bfb\",\"dweb:/ipfs/QmP8kj9hvpDhWBrjuZUmxX7UAsbbkU6bceRKHdwg66MpPK\"]},\"lib/v4-core/contracts/interfaces/IHooks.sol\":{\"keccak256\":\"0x7263c9c8fef8b2346bebfd67956b287666a8c9e1f74131789650af4945ba4523\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://ef70e4a9ec5d8721fa844216d752d4135d88ad4562a00d125ae158ce40748569\",\"dweb:/ipfs/QmSSRNcCmcvTSmm87hgAMsK3zqfcPkgemqm4JzaQf92PgM\"]},\"lib/v4-core/contracts/interfaces/IPoolManager.sol\":{\"keccak256\":\"0x3fbfd91bbfc633e40250fff6d7d16584ba0b1a0ad71c10b54dea65e2abea844a\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://3d57ea71fc2027b8f29163903ed521d67a093ce8efaadbce65ba637510924a88\",\"dweb:/ipfs/QmWYALymWy5p6aGqTmS7cCBkNQXspgNYhyzZU5oerJfcwG\"]},\"lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol\":{\"keccak256\":\"0x8dc5ee72426906aeb12f4ae6a2426df059491739bd5cbdb8ea4a3e26970436c6\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://f7e30dbbc972cb78d169c8845d6210d27490c8534e68a20d4f296b11ec727b92\",\"dweb:/ipfs/QmXBvaWaAnPW25YGVm2sMbf5mwrzLapUcqPnrNiiGGXxmA\"]},\"lib/v4-core/contracts/libraries/BitMath.sol\":{\"keccak256\":\"0x652cd36970d953b3067c766b3b0c0063d4c403eba7352df09ec10dcc868910d9\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://e357b092171edb755c8514b4b4ae758a8b43458c7a23409ebf5afd325fefa2be\",\"dweb:/ipfs/QmWKRWT2z15cVbVVDkjqdVnpf8Ck1jytcXbA7zCUevp7b6\"]},\"lib/v4-core/contracts/libraries/FixedPoint128.sol\":{\"keccak256\":\"0x1f015a7a107f4c471985a958f1bfbc1710948f9bcd3786a02310bc0ad5080c69\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://a1cacac08675284f319d151f6bc5d1c66cf1d54c5dad1c620a2e1e1336cbb93a\",\"dweb:/ipfs/QmPf8vQ3mBqniKHwvS1DDEFrV5dJfZSL6mMi9JVy6omQaz\"]},\"lib/v4-core/contracts/libraries/FixedPoint96.sol\":{\"keccak256\":\"0x7731aeeba692b0ca5dac8f27803ec9e5ce98795a554c09ae05c220861bd0314e\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://963a8155e442d31c4541c387d333db0c02941ae3517e9173ad30ebcb4f6a14e9\",\"dweb:/ipfs/QmevAr8oG4WSoi5gBqQ53VzBuFbDKoZHfJwjuTmVhzm8Tc\"]},\"lib/v4-core/contracts/libraries/FullMath.sol\":{\"keccak256\":\"0x6d8760794ed38264579c5da7b2afe8ff5543de999180850bc08687b77dce36ea\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0e72da6f868ba5f5c829f78f649286c6b5922a8cda0317dfbb156b8a4d27fb24\",\"dweb:/ipfs/QmUQDZciNFhy4AFGXfYvoy22ihPc7ehvypeRVQwvVcD3vJ\"]},\"lib/v4-core/contracts/libraries/Pool.sol\":{\"keccak256\":\"0xe68c53367349bf7d5ec53f10abbe32effabe41c288eea6b42de67941104e4bc7\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://e69c6333c17577871f4995af3d3cdb278ad72b721a5c42d66a0b412e8b3559ed\",\"dweb:/ipfs/QmUtxoY88otDhFprbvST7LbcxacWrQrn4mZ8QfemBQDAxY\"]},\"lib/v4-core/contracts/libraries/Position.sol\":{\"keccak256\":\"0x1319e4c172e31427c3b3521dd3c9c9c3949da22e25c9919ae57c47a8c9328e43\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://1e0885e8e035681836fe02213e165d1ab48cf2488cf6ba8f01964b4b026d2b46\",\"dweb:/ipfs/QmR4W3DZYYvctASLFnm7Sf4wk2L77gwNRrTS2mBqtiUaud\"]},\"lib/v4-core/contracts/libraries/SafeCast.sol\":{\"keccak256\":\"0xb459cbf9f2cda4c38c11916e888cc2afbe4297c5ae6f50a0976eb83ed0dc9b25\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://5608698d33b18d3f49e3fa1fbdf6e7c6383378f7d53c914dcf14a0411cf7a79b\",\"dweb:/ipfs/QmbF4VWDcTPzH17aczU6eCUcqTp9Be7xiuBGB5TMWmtJAi\"]},\"lib/v4-core/contracts/libraries/SqrtPriceMath.sol\":{\"keccak256\":\"0x62cb03c7ce6ce037c82fa74e5aabb2431d6b4ddbca1458efdabf5d6af9ca6f90\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://206e025889f55aa8e5d9db2f846460394b54d6dc6d80a5e4ca1d4b70edd98188\",\"dweb:/ipfs/QmNSzKqtUDXHzgXXDjdNv3ZnHZE3LU4KhwNmkrcWtTRGqk\"]},\"lib/v4-core/contracts/libraries/SwapMath.sol\":{\"keccak256\":\"0xac5b75b36ff928e88cbec828bdc9db03e681cc3b337d5d7f6be9fd617b3fef7f\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://6aaea2ecabdb3fec93c7c6be19ea3a034cf396a59ab96f61c57b5214c04b5a6e\",\"dweb:/ipfs/QmYyd4ExT6xbvEHZTQBv9nZuvU6xjB6EN4uY8TmK8Tceqv\"]},\"lib/v4-core/contracts/libraries/TickBitmap.sol\":{\"keccak256\":\"0x7cccb8dff4c76da872a827f1549dc44cdff384d123e77a5361a02a31902bf15c\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://88f850cd5bd2bbada4d9514f2516804392c7b23dc2cb541b74e9c88d0a351dcd\",\"dweb:/ipfs/QmZh9LvKUG23oFUZXAAa5gn77MguAbZ41VGjkES5U8N9Em\"]},\"lib/v4-core/contracts/libraries/TickMath.sol\":{\"keccak256\":\"0xadffea78a3eed37613b57766d87c0bdb9454d2df39de90d7a450e4a8b3207e56\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://c5043430807061e5ccc82986c59b2e074457ff608111a8bd51b413ceaf661c78\",\"dweb:/ipfs/QmXjqKzCrngzidTRmuLUFvwNPqMKtd8xVFLVCycRfEQcWo\"]},\"lib/v4-core/contracts/libraries/UnsafeMath.sol\":{\"keccak256\":\"0x2a8cb75af05f8557b698b089a0ab19e24279fffb7e87cddf5794404c7eaf1c69\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://85f68e6d614205f3f0f55f6ac41805e3a7d523d95bda1c443f2e75444443ffe3\",\"dweb:/ipfs/QmdCheMqxWNx4CbxG5MH9BUQeSMeeXF6DHkf7Aax4duRUe\"]},\"lib/v4-core/contracts/types/BalanceDelta.sol\":{\"keccak256\":\"0xb88fc16f2ae715bd796e5cdb77c2297117f18ce2183288ae4680d7f20cce5f85\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://829baa2d4becbf8f0298fcaafb2305cf57bab5bcccdf8ac10d171bbb68c37e6f\",\"dweb:/ipfs/QmPs18e2YgwJECriyft46Rp7p9iECPEpkNXV1gom5NosfF\"]},\"lib/v4-core/contracts/types/Currency.sol\":{\"keccak256\":\"0x008a7aeff6cdb7709a8e5893c9e9895a8a7ad594a0605586174e576b9888ff80\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://c773b120bacb261695d4e00973ff25359dbf3aee071d19268833cc76e71f1aa2\",\"dweb:/ipfs/QmawinVYJJSWcQH4Lo5Hh7ond58RHAjeCL13FE47a5Egcw\"]},\"lib/v4-core/contracts/types/PoolId.sol\":{\"keccak256\":\"0xd28e4ac2a0874b5372ab3873a263701ce625a840fc563c63d5ad8f7b3272f325\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://0575161cdbe0c3ef8fa023a5f606563ec793bad863446822bdf310bce8dbcccd\",\"dweb:/ipfs/QmUM26Umcr3LEfM2sZ6eGtgBa2KmQde6Ea6898n8tt38mv\"]},\"lib/v4-core/contracts/types/PoolKey.sol\":{\"keccak256\":\"0x4928c59e15db5af3bff68f4d9243ebe11a1dc4a4cbfa57c564db376086a902ce\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://235245bf768c3b708be7837f6aa3bb6bcab7b25036df99e2cc257363350f6ea7\",\"dweb:/ipfs/QmWPurWV2vYoaVNxZyj4DkCqS8Aode5U9JE8WHmbyVR8jH\"]},\"lib/v4-periphery/lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol\":{\"keccak256\":\"0x3d2d39f4752d473bac1769f12ff0f51a747312f72a37b29251e1b839fda9b72c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://240042567f343175d52fc2fcae92bc8d0aa4c637fc6b73361728c16a26b65ead\",\"dweb:/ipfs/QmUwNd4gTK3Au7Euo95AQqQYs7GFnj3Fmzt8obUc83cngh\"]},\"lib/v4-periphery/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0xf66b7397bb70080f6f4ec77eecfda1814d04e47f70d55b0f22179619045f6835\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b70065eda5adfda82cdec1258c13a660dfe9a403bba7df7abc320ca04770ebc7\",\"dweb:/ipfs/QmbW11jKKvA5HUrAR5P4YoDdWJLEGGM9MZu64YqwgFwgNn\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@ensdomains/=lib/v4-core/node_modules/@ensdomains/",
+        "@openzeppelin/contracts/=lib/v4-periphery/lib/openzeppelin-contracts/contracts/",
+        "@uniswap/v4-core/=lib/v4-core/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-gas-snapshot/=lib/v4-core/lib/forge-gas-snapshot/src/",
+        "forge-std/=lib/forge-std/src/",
+        "hardhat/=lib/v4-core/node_modules/hardhat/",
+        "openzeppelin-contracts/=lib/v4-periphery/lib/openzeppelin-contracts/",
+        "solmate/=lib/v4-periphery/lib/solmate/src/",
+        "v4-core/contracts/=lib/v4-core/contracts/",
+        "v4-periphery/=lib/v4-periphery/",
+        "v4-periphery/=lib/v4-periphery/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/v4-core/contracts/types/PoolId.sol": "PoolIdLibrary"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/v4-core/contracts/interfaces/IFees.sol": {
+        "keccak256": "0x2fb66160acff9b1a6031e3ada15e4271b25399d6b921dc17679cde1e50f566e2",
+        "urls": [
+          "bzz-raw://7bb4c14e2f3bc0c92729b3fc24f57aaaaf9bd1930411aa937afd49e2c3811bfb",
+          "dweb:/ipfs/QmP8kj9hvpDhWBrjuZUmxX7UAsbbkU6bceRKHdwg66MpPK"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-core/contracts/interfaces/IHooks.sol": {
+        "keccak256": "0x7263c9c8fef8b2346bebfd67956b287666a8c9e1f74131789650af4945ba4523",
+        "urls": [
+          "bzz-raw://ef70e4a9ec5d8721fa844216d752d4135d88ad4562a00d125ae158ce40748569",
+          "dweb:/ipfs/QmSSRNcCmcvTSmm87hgAMsK3zqfcPkgemqm4JzaQf92PgM"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-core/contracts/interfaces/IPoolManager.sol": {
+        "keccak256": "0x3fbfd91bbfc633e40250fff6d7d16584ba0b1a0ad71c10b54dea65e2abea844a",
+        "urls": [
+          "bzz-raw://3d57ea71fc2027b8f29163903ed521d67a093ce8efaadbce65ba637510924a88",
+          "dweb:/ipfs/QmWYALymWy5p6aGqTmS7cCBkNQXspgNYhyzZU5oerJfcwG"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol": {
+        "keccak256": "0x8dc5ee72426906aeb12f4ae6a2426df059491739bd5cbdb8ea4a3e26970436c6",
+        "urls": [
+          "bzz-raw://f7e30dbbc972cb78d169c8845d6210d27490c8534e68a20d4f296b11ec727b92",
+          "dweb:/ipfs/QmXBvaWaAnPW25YGVm2sMbf5mwrzLapUcqPnrNiiGGXxmA"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-core/contracts/libraries/BitMath.sol": {
+        "keccak256": "0x652cd36970d953b3067c766b3b0c0063d4c403eba7352df09ec10dcc868910d9",
+        "urls": [
+          "bzz-raw://e357b092171edb755c8514b4b4ae758a8b43458c7a23409ebf5afd325fefa2be",
+          "dweb:/ipfs/QmWKRWT2z15cVbVVDkjqdVnpf8Ck1jytcXbA7zCUevp7b6"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-core/contracts/libraries/FixedPoint128.sol": {
+        "keccak256": "0x1f015a7a107f4c471985a958f1bfbc1710948f9bcd3786a02310bc0ad5080c69",
+        "urls": [
+          "bzz-raw://a1cacac08675284f319d151f6bc5d1c66cf1d54c5dad1c620a2e1e1336cbb93a",
+          "dweb:/ipfs/QmPf8vQ3mBqniKHwvS1DDEFrV5dJfZSL6mMi9JVy6omQaz"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-core/contracts/libraries/FixedPoint96.sol": {
+        "keccak256": "0x7731aeeba692b0ca5dac8f27803ec9e5ce98795a554c09ae05c220861bd0314e",
+        "urls": [
+          "bzz-raw://963a8155e442d31c4541c387d333db0c02941ae3517e9173ad30ebcb4f6a14e9",
+          "dweb:/ipfs/QmevAr8oG4WSoi5gBqQ53VzBuFbDKoZHfJwjuTmVhzm8Tc"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-core/contracts/libraries/FullMath.sol": {
+        "keccak256": "0x6d8760794ed38264579c5da7b2afe8ff5543de999180850bc08687b77dce36ea",
+        "urls": [
+          "bzz-raw://0e72da6f868ba5f5c829f78f649286c6b5922a8cda0317dfbb156b8a4d27fb24",
+          "dweb:/ipfs/QmUQDZciNFhy4AFGXfYvoy22ihPc7ehvypeRVQwvVcD3vJ"
+        ],
+        "license": "MIT"
+      },
+      "lib/v4-core/contracts/libraries/Pool.sol": {
+        "keccak256": "0xe68c53367349bf7d5ec53f10abbe32effabe41c288eea6b42de67941104e4bc7",
+        "urls": [
+          "bzz-raw://e69c6333c17577871f4995af3d3cdb278ad72b721a5c42d66a0b412e8b3559ed",
+          "dweb:/ipfs/QmUtxoY88otDhFprbvST7LbcxacWrQrn4mZ8QfemBQDAxY"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "lib/v4-core/contracts/libraries/Position.sol": {
+        "keccak256": "0x1319e4c172e31427c3b3521dd3c9c9c3949da22e25c9919ae57c47a8c9328e43",
+        "urls": [
+          "bzz-raw://1e0885e8e035681836fe02213e165d1ab48cf2488cf6ba8f01964b4b026d2b46",
+          "dweb:/ipfs/QmR4W3DZYYvctASLFnm7Sf4wk2L77gwNRrTS2mBqtiUaud"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "lib/v4-core/contracts/libraries/SafeCast.sol": {
+        "keccak256": "0xb459cbf9f2cda4c38c11916e888cc2afbe4297c5ae6f50a0976eb83ed0dc9b25",
+        "urls": [
+          "bzz-raw://5608698d33b18d3f49e3fa1fbdf6e7c6383378f7d53c914dcf14a0411cf7a79b",
+          "dweb:/ipfs/QmbF4VWDcTPzH17aczU6eCUcqTp9Be7xiuBGB5TMWmtJAi"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-core/contracts/libraries/SqrtPriceMath.sol": {
+        "keccak256": "0x62cb03c7ce6ce037c82fa74e5aabb2431d6b4ddbca1458efdabf5d6af9ca6f90",
+        "urls": [
+          "bzz-raw://206e025889f55aa8e5d9db2f846460394b54d6dc6d80a5e4ca1d4b70edd98188",
+          "dweb:/ipfs/QmNSzKqtUDXHzgXXDjdNv3ZnHZE3LU4KhwNmkrcWtTRGqk"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-core/contracts/libraries/SwapMath.sol": {
+        "keccak256": "0xac5b75b36ff928e88cbec828bdc9db03e681cc3b337d5d7f6be9fd617b3fef7f",
+        "urls": [
+          "bzz-raw://6aaea2ecabdb3fec93c7c6be19ea3a034cf396a59ab96f61c57b5214c04b5a6e",
+          "dweb:/ipfs/QmYyd4ExT6xbvEHZTQBv9nZuvU6xjB6EN4uY8TmK8Tceqv"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-core/contracts/libraries/TickBitmap.sol": {
+        "keccak256": "0x7cccb8dff4c76da872a827f1549dc44cdff384d123e77a5361a02a31902bf15c",
+        "urls": [
+          "bzz-raw://88f850cd5bd2bbada4d9514f2516804392c7b23dc2cb541b74e9c88d0a351dcd",
+          "dweb:/ipfs/QmZh9LvKUG23oFUZXAAa5gn77MguAbZ41VGjkES5U8N9Em"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-core/contracts/libraries/TickMath.sol": {
+        "keccak256": "0xadffea78a3eed37613b57766d87c0bdb9454d2df39de90d7a450e4a8b3207e56",
+        "urls": [
+          "bzz-raw://c5043430807061e5ccc82986c59b2e074457ff608111a8bd51b413ceaf661c78",
+          "dweb:/ipfs/QmXjqKzCrngzidTRmuLUFvwNPqMKtd8xVFLVCycRfEQcWo"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-core/contracts/libraries/UnsafeMath.sol": {
+        "keccak256": "0x2a8cb75af05f8557b698b089a0ab19e24279fffb7e87cddf5794404c7eaf1c69",
+        "urls": [
+          "bzz-raw://85f68e6d614205f3f0f55f6ac41805e3a7d523d95bda1c443f2e75444443ffe3",
+          "dweb:/ipfs/QmdCheMqxWNx4CbxG5MH9BUQeSMeeXF6DHkf7Aax4duRUe"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-core/contracts/types/BalanceDelta.sol": {
+        "keccak256": "0xb88fc16f2ae715bd796e5cdb77c2297117f18ce2183288ae4680d7f20cce5f85",
+        "urls": [
+          "bzz-raw://829baa2d4becbf8f0298fcaafb2305cf57bab5bcccdf8ac10d171bbb68c37e6f",
+          "dweb:/ipfs/QmPs18e2YgwJECriyft46Rp7p9iECPEpkNXV1gom5NosfF"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-core/contracts/types/Currency.sol": {
+        "keccak256": "0x008a7aeff6cdb7709a8e5893c9e9895a8a7ad594a0605586174e576b9888ff80",
+        "urls": [
+          "bzz-raw://c773b120bacb261695d4e00973ff25359dbf3aee071d19268833cc76e71f1aa2",
+          "dweb:/ipfs/QmawinVYJJSWcQH4Lo5Hh7ond58RHAjeCL13FE47a5Egcw"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-core/contracts/types/PoolId.sol": {
+        "keccak256": "0xd28e4ac2a0874b5372ab3873a263701ce625a840fc563c63d5ad8f7b3272f325",
+        "urls": [
+          "bzz-raw://0575161cdbe0c3ef8fa023a5f606563ec793bad863446822bdf310bce8dbcccd",
+          "dweb:/ipfs/QmUM26Umcr3LEfM2sZ6eGtgBa2KmQde6Ea6898n8tt38mv"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-core/contracts/types/PoolKey.sol": {
+        "keccak256": "0x4928c59e15db5af3bff68f4d9243ebe11a1dc4a4cbfa57c564db376086a902ce",
+        "urls": [
+          "bzz-raw://235245bf768c3b708be7837f6aa3bb6bcab7b25036df99e2cc257363350f6ea7",
+          "dweb:/ipfs/QmWPurWV2vYoaVNxZyj4DkCqS8Aode5U9JE8WHmbyVR8jH"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-periphery/lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol": {
+        "keccak256": "0x3d2d39f4752d473bac1769f12ff0f51a747312f72a37b29251e1b839fda9b72c",
+        "urls": [
+          "bzz-raw://240042567f343175d52fc2fcae92bc8d0aa4c637fc6b73361728c16a26b65ead",
+          "dweb:/ipfs/QmUwNd4gTK3Au7Euo95AQqQYs7GFnj3Fmzt8obUc83cngh"
+        ],
+        "license": "MIT"
+      },
+      "lib/v4-periphery/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol": {
+        "keccak256": "0xf66b7397bb70080f6f4ec77eecfda1814d04e47f70d55b0f22179619045f6835",
+        "urls": [
+          "bzz-raw://b70065eda5adfda82cdec1258c13a660dfe9a403bba7df7abc320ca04770ebc7",
+          "dweb:/ipfs/QmbW11jKKvA5HUrAR5P4YoDdWJLEGGM9MZu64YqwgFwgNn"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/v4-core/contracts/types/PoolId.sol",
+    "id": 44408,
+    "exportedSymbols": {
+      "PoolId": [
+        44385
+      ],
+      "PoolIdLibrary": [
+        44407
+      ],
+      "PoolKey": [
+        44433
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "45:309:34",
+    "nodes": [
+      {
+        "id": 44381,
+        "nodeType": "PragmaDirective",
+        "src": "45:24:34",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".20"
+        ]
+      },
+      {
+        "id": 44383,
+        "nodeType": "ImportDirective",
+        "src": "71:38:34",
+        "nodes": [],
+        "absolutePath": "lib/v4-core/contracts/types/PoolKey.sol",
+        "file": "./PoolKey.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 44408,
+        "sourceUnit": 44434,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 44382,
+              "name": "PoolKey",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 44433,
+              "src": "79:7:34",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 44385,
+        "nodeType": "UserDefinedValueTypeDefinition",
+        "src": "111:23:34",
+        "nodes": [],
+        "canonicalName": "PoolId",
+        "name": "PoolId",
+        "nameLocation": "116:6:34",
+        "underlyingType": {
+          "id": 44384,
+          "name": "bytes32",
+          "nodeType": "ElementaryTypeName",
+          "src": "126:7:34",
+          "typeDescriptions": {
+            "typeIdentifier": "t_bytes32",
+            "typeString": "bytes32"
+          }
+        }
+      },
+      {
+        "id": 44407,
+        "nodeType": "ContractDefinition",
+        "src": "187:166:34",
+        "nodes": [
+          {
+            "id": 44406,
+            "nodeType": "FunctionDefinition",
+            "src": "215:136:34",
+            "nodes": [],
+            "body": {
+              "id": 44405,
+              "nodeType": "Block",
+              "src": "284:67:34",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "arguments": [
+                              {
+                                "id": 44400,
+                                "name": "poolKey",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 44389,
+                                "src": "334:7:34",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_struct$_PoolKey_$44433_memory_ptr",
+                                  "typeString": "struct PoolKey memory"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_struct$_PoolKey_$44433_memory_ptr",
+                                  "typeString": "struct PoolKey memory"
+                                }
+                              ],
+                              "expression": {
+                                "id": 44398,
+                                "name": "abi",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": -1,
+                                "src": "323:3:34",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_magic_abi",
+                                  "typeString": "abi"
+                                }
+                              },
+                              "id": 44399,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "memberLocation": "327:6:34",
+                              "memberName": "encode",
+                              "nodeType": "MemberAccess",
+                              "src": "323:10:34",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_abiencode_pure$__$returns$_t_bytes_memory_ptr_$",
+                                "typeString": "function () pure returns (bytes memory)"
+                              }
+                            },
+                            "id": 44401,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "nameLocations": [],
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "323:19:34",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes_memory_ptr",
+                              "typeString": "bytes memory"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_bytes_memory_ptr",
+                              "typeString": "bytes memory"
+                            }
+                          ],
+                          "id": 44397,
+                          "name": "keccak256",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -8,
+                          "src": "313:9:34",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                            "typeString": "function (bytes memory) pure returns (bytes32)"
+                          }
+                        },
+                        "id": 44402,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "313:30:34",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "expression": {
+                        "id": 44395,
+                        "name": "PoolId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 44385,
+                        "src": "301:6:34",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_userDefinedValueType$_PoolId_$44385_$",
+                          "typeString": "type(PoolId)"
+                        }
+                      },
+                      "id": 44396,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberLocation": "308:4:34",
+                      "memberName": "wrap",
+                      "nodeType": "MemberAccess",
+                      "src": "301:11:34",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_wrap_pure$_t_bytes32_$returns$_t_userDefinedValueType$_PoolId_$44385_$",
+                        "typeString": "function (bytes32) pure returns (PoolId)"
+                      }
+                    },
+                    "id": 44403,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "301:43:34",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_userDefinedValueType$_PoolId_$44385",
+                      "typeString": "PoolId"
+                    }
+                  },
+                  "functionReturnParameters": 44394,
+                  "id": 44404,
+                  "nodeType": "Return",
+                  "src": "294:50:34"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "toId",
+            "nameLocation": "224:4:34",
+            "parameters": {
+              "id": 44390,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44389,
+                  "mutability": "mutable",
+                  "name": "poolKey",
+                  "nameLocation": "244:7:34",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44406,
+                  "src": "229:22:34",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_PoolKey_$44433_memory_ptr",
+                    "typeString": "struct PoolKey"
+                  },
+                  "typeName": {
+                    "id": 44388,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 44387,
+                      "name": "PoolKey",
+                      "nameLocations": [
+                        "229:7:34"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 44433,
+                      "src": "229:7:34"
+                    },
+                    "referencedDeclaration": 44433,
+                    "src": "229:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_PoolKey_$44433_storage_ptr",
+                      "typeString": "struct PoolKey"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "228:24:34"
+            },
+            "returnParameters": {
+              "id": 44394,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44393,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44406,
+                  "src": "276:6:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_userDefinedValueType$_PoolId_$44385",
+                    "typeString": "PoolId"
+                  },
+                  "typeName": {
+                    "id": 44392,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 44391,
+                      "name": "PoolId",
+                      "nameLocations": [
+                        "276:6:34"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 44385,
+                      "src": "276:6:34"
+                    },
+                    "referencedDeclaration": 44385,
+                    "src": "276:6:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_userDefinedValueType$_PoolId_$44385",
+                      "typeString": "PoolId"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "275:8:34"
+            },
+            "scope": 44407,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "PoolIdLibrary",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": {
+          "id": 44386,
+          "nodeType": "StructuredDocumentation",
+          "src": "136:51:34",
+          "text": "@notice Library for computing the ID of a pool"
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          44407
+        ],
+        "name": "PoolIdLibrary",
+        "nameLocation": "195:13:34",
+        "scope": 44408,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "GPL-2.0-or-later"
+  },
+  "id": 34
+}

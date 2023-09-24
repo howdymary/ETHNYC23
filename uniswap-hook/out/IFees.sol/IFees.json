@@ -1,0 +1,722 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "FeeTooLarge",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ProtocolFeeCannotBeFetched",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "protocolFeeController",
+          "type": "address"
+        }
+      ],
+      "name": "ProtocolFeeControllerUpdated",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "MIN_PROTOCOL_FEE_DENOMINATOR",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "Currency",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "hookFeesAccrued",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "Currency",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "protocolFeesAccrued",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "MIN_PROTOCOL_FEE_DENOMINATOR()": "84e41c5e",
+    "hookFeesAccrued(address,address)": "b4c41939",
+    "protocolFeesAccrued(address)": "97e8cd4e"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"FeeTooLarge\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"ProtocolFeeCannotBeFetched\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"protocolFeeController\",\"type\":\"address\"}],\"name\":\"ProtocolFeeControllerUpdated\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"MIN_PROTOCOL_FEE_DENOMINATOR\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"Currency\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"hookFeesAccrued\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"Currency\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"protocolFeesAccrued\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"errors\":{\"FeeTooLarge()\":[{\"notice\":\"Thrown when the protocol fee denominator is less than 4. Also thrown when the static or dynamic fee on a pool is exceeds 100%.\"}],\"ProtocolFeeCannotBeFetched()\":[{\"notice\":\"Thrown when not enough gas is provided to look up the protocol fee\"}]},\"kind\":\"user\",\"methods\":{\"MIN_PROTOCOL_FEE_DENOMINATOR()\":{\"notice\":\"Returns the minimum denominator for the protocol fee, which restricts it to a maximum of 25%\"},\"hookFeesAccrued(address,address)\":{\"notice\":\"Given a hook and a currency address, returns the fees accrued\"},\"protocolFeesAccrued(address)\":{\"notice\":\"Given a currency address, returns the protocol fees accrued in that currency\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/v4-core/contracts/interfaces/IFees.sol\":\"IFees\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@ensdomains/=lib/v4-core/node_modules/@ensdomains/\",\":@openzeppelin/contracts/=lib/v4-periphery/lib/openzeppelin-contracts/contracts/\",\":@uniswap/v4-core/=lib/v4-core/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-gas-snapshot/=lib/v4-core/lib/forge-gas-snapshot/src/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=lib/v4-core/node_modules/hardhat/\",\":openzeppelin-contracts/=lib/v4-periphery/lib/openzeppelin-contracts/\",\":solmate/=lib/v4-periphery/lib/solmate/src/\",\":v4-core/contracts/=lib/v4-core/contracts/\",\":v4-periphery/=lib/v4-periphery/\",\":v4-periphery/=lib/v4-periphery/contracts/\"]},\"sources\":{\"lib/v4-core/contracts/interfaces/IFees.sol\":{\"keccak256\":\"0x2fb66160acff9b1a6031e3ada15e4271b25399d6b921dc17679cde1e50f566e2\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://7bb4c14e2f3bc0c92729b3fc24f57aaaaf9bd1930411aa937afd49e2c3811bfb\",\"dweb:/ipfs/QmP8kj9hvpDhWBrjuZUmxX7UAsbbkU6bceRKHdwg66MpPK\"]},\"lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol\":{\"keccak256\":\"0x8dc5ee72426906aeb12f4ae6a2426df059491739bd5cbdb8ea4a3e26970436c6\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://f7e30dbbc972cb78d169c8845d6210d27490c8534e68a20d4f296b11ec727b92\",\"dweb:/ipfs/QmXBvaWaAnPW25YGVm2sMbf5mwrzLapUcqPnrNiiGGXxmA\"]},\"lib/v4-core/contracts/types/Currency.sol\":{\"keccak256\":\"0x008a7aeff6cdb7709a8e5893c9e9895a8a7ad594a0605586174e576b9888ff80\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://c773b120bacb261695d4e00973ff25359dbf3aee071d19268833cc76e71f1aa2\",\"dweb:/ipfs/QmawinVYJJSWcQH4Lo5Hh7ond58RHAjeCL13FE47a5Egcw\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "FeeTooLarge"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "ProtocolFeeCannotBeFetched"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "protocolFeeController",
+              "type": "address",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "ProtocolFeeControllerUpdated",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "MIN_PROTOCOL_FEE_DENOMINATOR",
+          "outputs": [
+            {
+              "internalType": "uint8",
+              "name": "",
+              "type": "uint8"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            },
+            {
+              "internalType": "Currency",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "hookFeesAccrued",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "Currency",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "protocolFeesAccrued",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "MIN_PROTOCOL_FEE_DENOMINATOR()": {
+            "notice": "Returns the minimum denominator for the protocol fee, which restricts it to a maximum of 25%"
+          },
+          "hookFeesAccrued(address,address)": {
+            "notice": "Given a hook and a currency address, returns the fees accrued"
+          },
+          "protocolFeesAccrued(address)": {
+            "notice": "Given a currency address, returns the protocol fees accrued in that currency"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@ensdomains/=lib/v4-core/node_modules/@ensdomains/",
+        "@openzeppelin/contracts/=lib/v4-periphery/lib/openzeppelin-contracts/contracts/",
+        "@uniswap/v4-core/=lib/v4-core/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-gas-snapshot/=lib/v4-core/lib/forge-gas-snapshot/src/",
+        "forge-std/=lib/forge-std/src/",
+        "hardhat/=lib/v4-core/node_modules/hardhat/",
+        "openzeppelin-contracts/=lib/v4-periphery/lib/openzeppelin-contracts/",
+        "solmate/=lib/v4-periphery/lib/solmate/src/",
+        "v4-core/contracts/=lib/v4-core/contracts/",
+        "v4-periphery/=lib/v4-periphery/",
+        "v4-periphery/=lib/v4-periphery/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/v4-core/contracts/interfaces/IFees.sol": "IFees"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/v4-core/contracts/interfaces/IFees.sol": {
+        "keccak256": "0x2fb66160acff9b1a6031e3ada15e4271b25399d6b921dc17679cde1e50f566e2",
+        "urls": [
+          "bzz-raw://7bb4c14e2f3bc0c92729b3fc24f57aaaaf9bd1930411aa937afd49e2c3811bfb",
+          "dweb:/ipfs/QmP8kj9hvpDhWBrjuZUmxX7UAsbbkU6bceRKHdwg66MpPK"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol": {
+        "keccak256": "0x8dc5ee72426906aeb12f4ae6a2426df059491739bd5cbdb8ea4a3e26970436c6",
+        "urls": [
+          "bzz-raw://f7e30dbbc972cb78d169c8845d6210d27490c8534e68a20d4f296b11ec727b92",
+          "dweb:/ipfs/QmXBvaWaAnPW25YGVm2sMbf5mwrzLapUcqPnrNiiGGXxmA"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-core/contracts/types/Currency.sol": {
+        "keccak256": "0x008a7aeff6cdb7709a8e5893c9e9895a8a7ad594a0605586174e576b9888ff80",
+        "urls": [
+          "bzz-raw://c773b120bacb261695d4e00973ff25359dbf3aee071d19268833cc76e71f1aa2",
+          "dweb:/ipfs/QmawinVYJJSWcQH4Lo5Hh7ond58RHAjeCL13FE47a5Egcw"
+        ],
+        "license": "GPL-2.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/v4-core/contracts/interfaces/IFees.sol",
+    "id": 38588,
+    "exportedSymbols": {
+      "Currency": [
+        44131
+      ],
+      "IFees": [
+        38587
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "45:973:14",
+    "nodes": [
+      {
+        "id": 38548,
+        "nodeType": "PragmaDirective",
+        "src": "45:24:14",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 38550,
+        "nodeType": "ImportDirective",
+        "src": "71:47:14",
+        "nodes": [],
+        "absolutePath": "lib/v4-core/contracts/types/Currency.sol",
+        "file": "../types/Currency.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 38588,
+        "sourceUnit": 44380,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 38549,
+              "name": "Currency",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 44131,
+              "src": "79:8:14",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 38587,
+        "nodeType": "ContractDefinition",
+        "src": "120:897:14",
+        "nodes": [
+          {
+            "id": 38553,
+            "nodeType": "ErrorDefinition",
+            "src": "285:20:14",
+            "nodes": [],
+            "documentation": {
+              "id": 38551,
+              "nodeType": "StructuredDocumentation",
+              "src": "142:138:14",
+              "text": "@notice Thrown when the protocol fee denominator is less than 4. Also thrown when the static or dynamic fee on a pool is exceeds 100%."
+            },
+            "errorSelector": "fc5bee12",
+            "name": "FeeTooLarge",
+            "nameLocation": "291:11:14",
+            "parameters": {
+              "id": 38552,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "302:2:14"
+            }
+          },
+          {
+            "id": 38556,
+            "nodeType": "ErrorDefinition",
+            "src": "393:35:14",
+            "nodes": [],
+            "documentation": {
+              "id": 38554,
+              "nodeType": "StructuredDocumentation",
+              "src": "310:78:14",
+              "text": "@notice Thrown when not enough gas is provided to look up the protocol fee"
+            },
+            "errorSelector": "1ee49702",
+            "name": "ProtocolFeeCannotBeFetched",
+            "nameLocation": "399:26:14",
+            "parameters": {
+              "id": 38555,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "425:2:14"
+            }
+          },
+          {
+            "id": 38560,
+            "nodeType": "EventDefinition",
+            "src": "434:66:14",
+            "nodes": [],
+            "anonymous": false,
+            "eventSelector": "b4bd8ef53df690b9943d3318996006dbb82a25f54719d8c8035b516a2a5b8acc",
+            "name": "ProtocolFeeControllerUpdated",
+            "nameLocation": "440:28:14",
+            "parameters": {
+              "id": 38559,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 38558,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "protocolFeeController",
+                  "nameLocation": "477:21:14",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 38560,
+                  "src": "469:29:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 38557,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "469:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "468:31:14"
+            }
+          },
+          {
+            "id": 38566,
+            "nodeType": "FunctionDefinition",
+            "src": "615:70:14",
+            "nodes": [],
+            "documentation": {
+              "id": 38561,
+              "nodeType": "StructuredDocumentation",
+              "src": "506:104:14",
+              "text": "@notice Returns the minimum denominator for the protocol fee, which restricts it to a maximum of 25%"
+            },
+            "functionSelector": "84e41c5e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "MIN_PROTOCOL_FEE_DENOMINATOR",
+            "nameLocation": "624:28:14",
+            "parameters": {
+              "id": 38562,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "652:2:14"
+            },
+            "returnParameters": {
+              "id": 38565,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 38564,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 38566,
+                  "src": "678:5:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 38563,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "678:5:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "677:7:14"
+            },
+            "scope": 38587,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 38575,
+            "nodeType": "FunctionDefinition",
+            "src": "784:71:14",
+            "nodes": [],
+            "documentation": {
+              "id": 38567,
+              "nodeType": "StructuredDocumentation",
+              "src": "691:88:14",
+              "text": "@notice Given a currency address, returns the protocol fees accrued in that currency"
+            },
+            "functionSelector": "97e8cd4e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "protocolFeesAccrued",
+            "nameLocation": "793:19:14",
+            "parameters": {
+              "id": 38571,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 38570,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 38575,
+                  "src": "813:8:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                    "typeString": "Currency"
+                  },
+                  "typeName": {
+                    "id": 38569,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 38568,
+                      "name": "Currency",
+                      "nameLocations": [
+                        "813:8:14"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 44131,
+                      "src": "813:8:14"
+                    },
+                    "referencedDeclaration": 44131,
+                    "src": "813:8:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                      "typeString": "Currency"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "812:10:14"
+            },
+            "returnParameters": {
+              "id": 38574,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 38573,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 38575,
+                  "src": "846:7:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 38572,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "846:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "845:9:14"
+            },
+            "scope": 38587,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 38586,
+            "nodeType": "FunctionDefinition",
+            "src": "939:76:14",
+            "nodes": [],
+            "documentation": {
+              "id": 38576,
+              "nodeType": "StructuredDocumentation",
+              "src": "861:73:14",
+              "text": "@notice Given a hook and a currency address, returns the fees accrued"
+            },
+            "functionSelector": "b4c41939",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "hookFeesAccrued",
+            "nameLocation": "948:15:14",
+            "parameters": {
+              "id": 38582,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 38578,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 38586,
+                  "src": "964:7:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 38577,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "964:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 38581,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 38586,
+                  "src": "973:8:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                    "typeString": "Currency"
+                  },
+                  "typeName": {
+                    "id": 38580,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 38579,
+                      "name": "Currency",
+                      "nameLocations": [
+                        "973:8:14"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 44131,
+                      "src": "973:8:14"
+                    },
+                    "referencedDeclaration": 44131,
+                    "src": "973:8:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                      "typeString": "Currency"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "963:19:14"
+            },
+            "returnParameters": {
+              "id": 38585,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 38584,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 38586,
+                  "src": "1006:7:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 38583,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1006:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1005:9:14"
+            },
+            "scope": 38587,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IFees",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          38587
+        ],
+        "name": "IFees",
+        "nameLocation": "130:5:14",
+        "scope": 38588,
+        "usedErrors": [
+          38553,
+          38556
+        ],
+        "usedEvents": [
+          38560
+        ]
+      }
+    ],
+    "license": "GPL-2.0-or-later"
+  },
+  "id": 14
+}

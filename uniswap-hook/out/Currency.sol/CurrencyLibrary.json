@@ -1,0 +1,3858 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "ERC20TransferFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NativeTransferFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NATIVE",
+      "outputs": [
+        {
+          "internalType": "Currency",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x6091610038600b82828239805160001a607314602b57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c8063a0cf0aea146038575b600080fd5b603f600081565b6040516001600160a01b03909116815260200160405180910390f3fea2646970667358221220a61cce5d7bcbef6117c867e233041b0c61f67fde54fbc38527ae8aff6b23bf9f64736f6c63430008140033",
+    "sourceMap": "788:3239:33:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;788:3239:33;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x730000000000000000000000000000000000000000301460806040526004361060335760003560e01c8063a0cf0aea146038575b600080fd5b603f600081565b6040516001600160a01b03909116815260200160405180910390f3fea2646970667358221220a61cce5d7bcbef6117c867e233041b0c61f67fde54fbc38527ae8aff6b23bf9f64736f6c63430008140033",
+    "sourceMap": "788:3239:33:-:0;;;;;;;;;;;;;;;;;;;;;;;;1032:59;;1088:1;1032:59;;;;;-1:-1:-1;;;;;216:32:43;;;198:51;;186:2;171:18;1032:59:33;;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "NATIVE()": "a0cf0aea"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"ERC20TransferFailed\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"NativeTransferFailed\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"NATIVE\",\"outputs\":[{\"internalType\":\"Currency\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"This library allows for transferring and holding native tokens and ERC20 tokens\",\"kind\":\"dev\",\"methods\":{},\"title\":\"CurrencyLibrary\",\"version\":1},\"userdoc\":{\"errors\":{\"ERC20TransferFailed()\":[{\"notice\":\"Thrown when an ERC20 transfer fails\"}],\"NativeTransferFailed()\":[{\"notice\":\"Thrown when a native transfer fails\"}]},\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/v4-core/contracts/types/Currency.sol\":\"CurrencyLibrary\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@ensdomains/=lib/v4-core/node_modules/@ensdomains/\",\":@openzeppelin/contracts/=lib/v4-periphery/lib/openzeppelin-contracts/contracts/\",\":@uniswap/v4-core/=lib/v4-core/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-gas-snapshot/=lib/v4-core/lib/forge-gas-snapshot/src/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=lib/v4-core/node_modules/hardhat/\",\":openzeppelin-contracts/=lib/v4-periphery/lib/openzeppelin-contracts/\",\":solmate/=lib/v4-periphery/lib/solmate/src/\",\":v4-core/contracts/=lib/v4-core/contracts/\",\":v4-periphery/=lib/v4-periphery/\",\":v4-periphery/=lib/v4-periphery/contracts/\"]},\"sources\":{\"lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol\":{\"keccak256\":\"0x8dc5ee72426906aeb12f4ae6a2426df059491739bd5cbdb8ea4a3e26970436c6\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://f7e30dbbc972cb78d169c8845d6210d27490c8534e68a20d4f296b11ec727b92\",\"dweb:/ipfs/QmXBvaWaAnPW25YGVm2sMbf5mwrzLapUcqPnrNiiGGXxmA\"]},\"lib/v4-core/contracts/types/Currency.sol\":{\"keccak256\":\"0x008a7aeff6cdb7709a8e5893c9e9895a8a7ad594a0605586174e576b9888ff80\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://c773b120bacb261695d4e00973ff25359dbf3aee071d19268833cc76e71f1aa2\",\"dweb:/ipfs/QmawinVYJJSWcQH4Lo5Hh7ond58RHAjeCL13FE47a5Egcw\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "ERC20TransferFailed"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "NativeTransferFailed"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "NATIVE",
+          "outputs": [
+            {
+              "internalType": "Currency",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@ensdomains/=lib/v4-core/node_modules/@ensdomains/",
+        "@openzeppelin/contracts/=lib/v4-periphery/lib/openzeppelin-contracts/contracts/",
+        "@uniswap/v4-core/=lib/v4-core/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-gas-snapshot/=lib/v4-core/lib/forge-gas-snapshot/src/",
+        "forge-std/=lib/forge-std/src/",
+        "hardhat/=lib/v4-core/node_modules/hardhat/",
+        "openzeppelin-contracts/=lib/v4-periphery/lib/openzeppelin-contracts/",
+        "solmate/=lib/v4-periphery/lib/solmate/src/",
+        "v4-core/contracts/=lib/v4-core/contracts/",
+        "v4-periphery/=lib/v4-periphery/",
+        "v4-periphery/=lib/v4-periphery/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/v4-core/contracts/types/Currency.sol": "CurrencyLibrary"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol": {
+        "keccak256": "0x8dc5ee72426906aeb12f4ae6a2426df059491739bd5cbdb8ea4a3e26970436c6",
+        "urls": [
+          "bzz-raw://f7e30dbbc972cb78d169c8845d6210d27490c8534e68a20d4f296b11ec727b92",
+          "dweb:/ipfs/QmXBvaWaAnPW25YGVm2sMbf5mwrzLapUcqPnrNiiGGXxmA"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "lib/v4-core/contracts/types/Currency.sol": {
+        "keccak256": "0x008a7aeff6cdb7709a8e5893c9e9895a8a7ad594a0605586174e576b9888ff80",
+        "urls": [
+          "bzz-raw://c773b120bacb261695d4e00973ff25359dbf3aee071d19268833cc76e71f1aa2",
+          "dweb:/ipfs/QmawinVYJJSWcQH4Lo5Hh7ond58RHAjeCL13FE47a5Egcw"
+        ],
+        "license": "GPL-2.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/v4-core/contracts/types/Currency.sol",
+    "id": 44380,
+    "exportedSymbols": {
+      "Currency": [
+        44131
+      ],
+      "CurrencyLibrary": [
+        44379
+      ],
+      "IERC20Minimal": [
+        39175
+      ],
+      "equals": [
+        44159
+      ],
+      "greaterThan": [
+        44181
+      ],
+      "lessThan": [
+        44203
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "45:3983:33",
+    "nodes": [
+      {
+        "id": 44127,
+        "nodeType": "PragmaDirective",
+        "src": "45:24:33",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".20"
+        ]
+      },
+      {
+        "id": 44129,
+        "nodeType": "ImportDirective",
+        "src": "71:71:33",
+        "nodes": [],
+        "absolutePath": "lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol",
+        "file": "../interfaces/external/IERC20Minimal.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 44380,
+        "sourceUnit": 39176,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 44128,
+              "name": "IERC20Minimal",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 39175,
+              "src": "79:13:33",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 44131,
+        "nodeType": "UserDefinedValueTypeDefinition",
+        "src": "144:25:33",
+        "nodes": [],
+        "canonicalName": "Currency",
+        "name": "Currency",
+        "nameLocation": "149:8:33",
+        "underlyingType": {
+          "id": 44130,
+          "name": "address",
+          "nodeType": "ElementaryTypeName",
+          "src": "161:7:33",
+          "stateMutability": "nonpayable",
+          "typeDescriptions": {
+            "typeIdentifier": "t_address",
+            "typeString": "address"
+          }
+        }
+      },
+      {
+        "id": 44137,
+        "nodeType": "UsingForDirective",
+        "src": "171:74:33",
+        "nodes": [],
+        "functionList": [
+          {
+            "definition": {
+              "id": 44132,
+              "name": "greaterThan",
+              "nameLocations": [
+                "178:11:33"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 44181,
+              "src": "178:11:33"
+            },
+            "operator": ">"
+          },
+          {
+            "definition": {
+              "id": 44133,
+              "name": "lessThan",
+              "nameLocations": [
+                "196:8:33"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 44203,
+              "src": "196:8:33"
+            },
+            "operator": "<"
+          },
+          {
+            "definition": {
+              "id": 44134,
+              "name": "equals",
+              "nameLocations": [
+                "211:6:33"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 44159,
+              "src": "211:6:33"
+            },
+            "operator": "=="
+          }
+        ],
+        "global": true,
+        "typeName": {
+          "id": 44136,
+          "nodeType": "UserDefinedTypeName",
+          "pathNode": {
+            "id": 44135,
+            "name": "Currency",
+            "nameLocations": [
+              "229:8:33"
+            ],
+            "nodeType": "IdentifierPath",
+            "referencedDeclaration": 44131,
+            "src": "229:8:33"
+          },
+          "referencedDeclaration": 44131,
+          "src": "229:8:33",
+          "typeDescriptions": {
+            "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+            "typeString": "Currency"
+          }
+        }
+      },
+      {
+        "id": 44159,
+        "nodeType": "FunctionDefinition",
+        "src": "247:138:33",
+        "nodes": [],
+        "body": {
+          "id": 44158,
+          "nodeType": "Block",
+          "src": "318:67:33",
+          "nodes": [],
+          "statements": [
+            {
+              "expression": {
+                "commonType": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "id": 44156,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "lValueRequested": false,
+                "leftExpression": {
+                  "arguments": [
+                    {
+                      "id": 44150,
+                      "name": "currency",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44140,
+                      "src": "347:8:33",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                        "typeString": "Currency"
+                      }
+                    }
+                  ],
+                  "expression": {
+                    "argumentTypes": [
+                      {
+                        "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                        "typeString": "Currency"
+                      }
+                    ],
+                    "expression": {
+                      "id": 44148,
+                      "name": "Currency",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44131,
+                      "src": "331:8:33",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_userDefinedValueType$_Currency_$44131_$",
+                        "typeString": "type(Currency)"
+                      }
+                    },
+                    "id": 44149,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "memberLocation": "340:6:33",
+                    "memberName": "unwrap",
+                    "nodeType": "MemberAccess",
+                    "src": "331:15:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_function_unwrap_pure$_t_userDefinedValueType$_Currency_$44131_$returns$_t_address_$",
+                      "typeString": "function (Currency) pure returns (address)"
+                    }
+                  },
+                  "id": 44151,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "nameLocations": [],
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "331:25:33",
+                  "tryCall": false,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "nodeType": "BinaryOperation",
+                "operator": "==",
+                "rightExpression": {
+                  "arguments": [
+                    {
+                      "id": 44154,
+                      "name": "other",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44143,
+                      "src": "376:5:33",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                        "typeString": "Currency"
+                      }
+                    }
+                  ],
+                  "expression": {
+                    "argumentTypes": [
+                      {
+                        "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                        "typeString": "Currency"
+                      }
+                    ],
+                    "expression": {
+                      "id": 44152,
+                      "name": "Currency",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44131,
+                      "src": "360:8:33",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_userDefinedValueType$_Currency_$44131_$",
+                        "typeString": "type(Currency)"
+                      }
+                    },
+                    "id": 44153,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "memberLocation": "369:6:33",
+                    "memberName": "unwrap",
+                    "nodeType": "MemberAccess",
+                    "src": "360:15:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_function_unwrap_pure$_t_userDefinedValueType$_Currency_$44131_$returns$_t_address_$",
+                      "typeString": "function (Currency) pure returns (address)"
+                    }
+                  },
+                  "id": 44155,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "nameLocations": [],
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "360:22:33",
+                  "tryCall": false,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "src": "331:51:33",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              },
+              "functionReturnParameters": 44147,
+              "id": 44157,
+              "nodeType": "Return",
+              "src": "324:58:33"
+            }
+          ]
+        },
+        "implemented": true,
+        "kind": "freeFunction",
+        "modifiers": [],
+        "name": "equals",
+        "nameLocation": "256:6:33",
+        "parameters": {
+          "id": 44144,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 44140,
+              "mutability": "mutable",
+              "name": "currency",
+              "nameLocation": "272:8:33",
+              "nodeType": "VariableDeclaration",
+              "scope": 44159,
+              "src": "263:17:33",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                "typeString": "Currency"
+              },
+              "typeName": {
+                "id": 44139,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 44138,
+                  "name": "Currency",
+                  "nameLocations": [
+                    "263:8:33"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 44131,
+                  "src": "263:8:33"
+                },
+                "referencedDeclaration": 44131,
+                "src": "263:8:33",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                  "typeString": "Currency"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 44143,
+              "mutability": "mutable",
+              "name": "other",
+              "nameLocation": "291:5:33",
+              "nodeType": "VariableDeclaration",
+              "scope": 44159,
+              "src": "282:14:33",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                "typeString": "Currency"
+              },
+              "typeName": {
+                "id": 44142,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 44141,
+                  "name": "Currency",
+                  "nameLocations": [
+                    "282:8:33"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 44131,
+                  "src": "282:8:33"
+                },
+                "referencedDeclaration": 44131,
+                "src": "282:8:33",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                  "typeString": "Currency"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "262:35:33"
+        },
+        "returnParameters": {
+          "id": 44147,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 44146,
+              "mutability": "mutable",
+              "name": "",
+              "nameLocation": "-1:-1:-1",
+              "nodeType": "VariableDeclaration",
+              "scope": 44159,
+              "src": "312:4:33",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "typeName": {
+                "id": 44145,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "312:4:33",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "311:6:33"
+        },
+        "scope": 44380,
+        "stateMutability": "pure",
+        "virtual": false,
+        "visibility": "internal"
+      },
+      {
+        "id": 44181,
+        "nodeType": "FunctionDefinition",
+        "src": "387:142:33",
+        "nodes": [],
+        "body": {
+          "id": 44180,
+          "nodeType": "Block",
+          "src": "463:66:33",
+          "nodes": [],
+          "statements": [
+            {
+              "expression": {
+                "commonType": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "id": 44178,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "lValueRequested": false,
+                "leftExpression": {
+                  "arguments": [
+                    {
+                      "id": 44172,
+                      "name": "currency",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44162,
+                      "src": "492:8:33",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                        "typeString": "Currency"
+                      }
+                    }
+                  ],
+                  "expression": {
+                    "argumentTypes": [
+                      {
+                        "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                        "typeString": "Currency"
+                      }
+                    ],
+                    "expression": {
+                      "id": 44170,
+                      "name": "Currency",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44131,
+                      "src": "476:8:33",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_userDefinedValueType$_Currency_$44131_$",
+                        "typeString": "type(Currency)"
+                      }
+                    },
+                    "id": 44171,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "memberLocation": "485:6:33",
+                    "memberName": "unwrap",
+                    "nodeType": "MemberAccess",
+                    "src": "476:15:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_function_unwrap_pure$_t_userDefinedValueType$_Currency_$44131_$returns$_t_address_$",
+                      "typeString": "function (Currency) pure returns (address)"
+                    }
+                  },
+                  "id": 44173,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "nameLocations": [],
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "476:25:33",
+                  "tryCall": false,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "nodeType": "BinaryOperation",
+                "operator": ">",
+                "rightExpression": {
+                  "arguments": [
+                    {
+                      "id": 44176,
+                      "name": "other",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44165,
+                      "src": "520:5:33",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                        "typeString": "Currency"
+                      }
+                    }
+                  ],
+                  "expression": {
+                    "argumentTypes": [
+                      {
+                        "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                        "typeString": "Currency"
+                      }
+                    ],
+                    "expression": {
+                      "id": 44174,
+                      "name": "Currency",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44131,
+                      "src": "504:8:33",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_userDefinedValueType$_Currency_$44131_$",
+                        "typeString": "type(Currency)"
+                      }
+                    },
+                    "id": 44175,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "memberLocation": "513:6:33",
+                    "memberName": "unwrap",
+                    "nodeType": "MemberAccess",
+                    "src": "504:15:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_function_unwrap_pure$_t_userDefinedValueType$_Currency_$44131_$returns$_t_address_$",
+                      "typeString": "function (Currency) pure returns (address)"
+                    }
+                  },
+                  "id": 44177,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "nameLocations": [],
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "504:22:33",
+                  "tryCall": false,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "src": "476:50:33",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              },
+              "functionReturnParameters": 44169,
+              "id": 44179,
+              "nodeType": "Return",
+              "src": "469:57:33"
+            }
+          ]
+        },
+        "implemented": true,
+        "kind": "freeFunction",
+        "modifiers": [],
+        "name": "greaterThan",
+        "nameLocation": "396:11:33",
+        "parameters": {
+          "id": 44166,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 44162,
+              "mutability": "mutable",
+              "name": "currency",
+              "nameLocation": "417:8:33",
+              "nodeType": "VariableDeclaration",
+              "scope": 44181,
+              "src": "408:17:33",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                "typeString": "Currency"
+              },
+              "typeName": {
+                "id": 44161,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 44160,
+                  "name": "Currency",
+                  "nameLocations": [
+                    "408:8:33"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 44131,
+                  "src": "408:8:33"
+                },
+                "referencedDeclaration": 44131,
+                "src": "408:8:33",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                  "typeString": "Currency"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 44165,
+              "mutability": "mutable",
+              "name": "other",
+              "nameLocation": "436:5:33",
+              "nodeType": "VariableDeclaration",
+              "scope": 44181,
+              "src": "427:14:33",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                "typeString": "Currency"
+              },
+              "typeName": {
+                "id": 44164,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 44163,
+                  "name": "Currency",
+                  "nameLocations": [
+                    "427:8:33"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 44131,
+                  "src": "427:8:33"
+                },
+                "referencedDeclaration": 44131,
+                "src": "427:8:33",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                  "typeString": "Currency"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "407:35:33"
+        },
+        "returnParameters": {
+          "id": 44169,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 44168,
+              "mutability": "mutable",
+              "name": "",
+              "nameLocation": "-1:-1:-1",
+              "nodeType": "VariableDeclaration",
+              "scope": 44181,
+              "src": "457:4:33",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "typeName": {
+                "id": 44167,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "457:4:33",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "456:6:33"
+        },
+        "scope": 44380,
+        "stateMutability": "pure",
+        "virtual": false,
+        "visibility": "internal"
+      },
+      {
+        "id": 44203,
+        "nodeType": "FunctionDefinition",
+        "src": "531:139:33",
+        "nodes": [],
+        "body": {
+          "id": 44202,
+          "nodeType": "Block",
+          "src": "604:66:33",
+          "nodes": [],
+          "statements": [
+            {
+              "expression": {
+                "commonType": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "id": 44200,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "lValueRequested": false,
+                "leftExpression": {
+                  "arguments": [
+                    {
+                      "id": 44194,
+                      "name": "currency",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44184,
+                      "src": "633:8:33",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                        "typeString": "Currency"
+                      }
+                    }
+                  ],
+                  "expression": {
+                    "argumentTypes": [
+                      {
+                        "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                        "typeString": "Currency"
+                      }
+                    ],
+                    "expression": {
+                      "id": 44192,
+                      "name": "Currency",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44131,
+                      "src": "617:8:33",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_userDefinedValueType$_Currency_$44131_$",
+                        "typeString": "type(Currency)"
+                      }
+                    },
+                    "id": 44193,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "memberLocation": "626:6:33",
+                    "memberName": "unwrap",
+                    "nodeType": "MemberAccess",
+                    "src": "617:15:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_function_unwrap_pure$_t_userDefinedValueType$_Currency_$44131_$returns$_t_address_$",
+                      "typeString": "function (Currency) pure returns (address)"
+                    }
+                  },
+                  "id": 44195,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "nameLocations": [],
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "617:25:33",
+                  "tryCall": false,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "nodeType": "BinaryOperation",
+                "operator": "<",
+                "rightExpression": {
+                  "arguments": [
+                    {
+                      "id": 44198,
+                      "name": "other",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44187,
+                      "src": "661:5:33",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                        "typeString": "Currency"
+                      }
+                    }
+                  ],
+                  "expression": {
+                    "argumentTypes": [
+                      {
+                        "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                        "typeString": "Currency"
+                      }
+                    ],
+                    "expression": {
+                      "id": 44196,
+                      "name": "Currency",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44131,
+                      "src": "645:8:33",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_userDefinedValueType$_Currency_$44131_$",
+                        "typeString": "type(Currency)"
+                      }
+                    },
+                    "id": 44197,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "memberLocation": "654:6:33",
+                    "memberName": "unwrap",
+                    "nodeType": "MemberAccess",
+                    "src": "645:15:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_function_unwrap_pure$_t_userDefinedValueType$_Currency_$44131_$returns$_t_address_$",
+                      "typeString": "function (Currency) pure returns (address)"
+                    }
+                  },
+                  "id": 44199,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "nameLocations": [],
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "645:22:33",
+                  "tryCall": false,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "src": "617:50:33",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              },
+              "functionReturnParameters": 44191,
+              "id": 44201,
+              "nodeType": "Return",
+              "src": "610:57:33"
+            }
+          ]
+        },
+        "implemented": true,
+        "kind": "freeFunction",
+        "modifiers": [],
+        "name": "lessThan",
+        "nameLocation": "540:8:33",
+        "parameters": {
+          "id": 44188,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 44184,
+              "mutability": "mutable",
+              "name": "currency",
+              "nameLocation": "558:8:33",
+              "nodeType": "VariableDeclaration",
+              "scope": 44203,
+              "src": "549:17:33",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                "typeString": "Currency"
+              },
+              "typeName": {
+                "id": 44183,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 44182,
+                  "name": "Currency",
+                  "nameLocations": [
+                    "549:8:33"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 44131,
+                  "src": "549:8:33"
+                },
+                "referencedDeclaration": 44131,
+                "src": "549:8:33",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                  "typeString": "Currency"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 44187,
+              "mutability": "mutable",
+              "name": "other",
+              "nameLocation": "577:5:33",
+              "nodeType": "VariableDeclaration",
+              "scope": 44203,
+              "src": "568:14:33",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                "typeString": "Currency"
+              },
+              "typeName": {
+                "id": 44186,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 44185,
+                  "name": "Currency",
+                  "nameLocations": [
+                    "568:8:33"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 44131,
+                  "src": "568:8:33"
+                },
+                "referencedDeclaration": 44131,
+                "src": "568:8:33",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                  "typeString": "Currency"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "548:35:33"
+        },
+        "returnParameters": {
+          "id": 44191,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 44190,
+              "mutability": "mutable",
+              "name": "",
+              "nameLocation": "-1:-1:-1",
+              "nodeType": "VariableDeclaration",
+              "scope": 44203,
+              "src": "598:4:33",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "typeName": {
+                "id": 44189,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "598:4:33",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "597:6:33"
+        },
+        "scope": 44380,
+        "stateMutability": "pure",
+        "virtual": false,
+        "visibility": "internal"
+      },
+      {
+        "id": 44379,
+        "nodeType": "ContractDefinition",
+        "src": "788:3239:33",
+        "nodes": [
+          {
+            "id": 44208,
+            "nodeType": "UsingForDirective",
+            "src": "818:35:33",
+            "nodes": [],
+            "global": false,
+            "libraryName": {
+              "id": 44205,
+              "name": "CurrencyLibrary",
+              "nameLocations": [
+                "824:15:33"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 44379,
+              "src": "824:15:33"
+            },
+            "typeName": {
+              "id": 44207,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 44206,
+                "name": "Currency",
+                "nameLocations": [
+                  "844:8:33"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 44131,
+                "src": "844:8:33"
+              },
+              "referencedDeclaration": 44131,
+              "src": "844:8:33",
+              "typeDescriptions": {
+                "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                "typeString": "Currency"
+              }
+            }
+          },
+          {
+            "id": 44211,
+            "nodeType": "ErrorDefinition",
+            "src": "911:29:33",
+            "nodes": [],
+            "documentation": {
+              "id": 44209,
+              "nodeType": "StructuredDocumentation",
+              "src": "859:47:33",
+              "text": "@notice Thrown when a native transfer fails"
+            },
+            "errorSelector": "f4b3b1bc",
+            "name": "NativeTransferFailed",
+            "nameLocation": "917:20:33",
+            "parameters": {
+              "id": 44210,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "937:2:33"
+            }
+          },
+          {
+            "id": 44214,
+            "nodeType": "ErrorDefinition",
+            "src": "998:28:33",
+            "nodes": [],
+            "documentation": {
+              "id": 44212,
+              "nodeType": "StructuredDocumentation",
+              "src": "946:47:33",
+              "text": "@notice Thrown when an ERC20 transfer fails"
+            },
+            "errorSelector": "f27f64e4",
+            "name": "ERC20TransferFailed",
+            "nameLocation": "1004:19:33",
+            "parameters": {
+              "id": 44213,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1023:2:33"
+            }
+          },
+          {
+            "id": 44224,
+            "nodeType": "VariableDeclaration",
+            "src": "1032:59:33",
+            "nodes": [],
+            "constant": true,
+            "functionSelector": "a0cf0aea",
+            "mutability": "constant",
+            "name": "NATIVE",
+            "nameLocation": "1057:6:33",
+            "scope": 44379,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+              "typeString": "Currency"
+            },
+            "typeName": {
+              "id": 44216,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 44215,
+                "name": "Currency",
+                "nameLocations": [
+                  "1032:8:33"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 44131,
+                "src": "1032:8:33"
+              },
+              "referencedDeclaration": 44131,
+              "src": "1032:8:33",
+              "typeDescriptions": {
+                "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                "typeString": "Currency"
+              }
+            },
+            "value": {
+              "arguments": [
+                {
+                  "arguments": [
+                    {
+                      "hexValue": "30",
+                      "id": 44221,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1088:1:33",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    }
+                  ],
+                  "expression": {
+                    "argumentTypes": [
+                      {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      }
+                    ],
+                    "id": 44220,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "nodeType": "ElementaryTypeNameExpression",
+                    "src": "1080:7:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_type$_t_address_$",
+                      "typeString": "type(address)"
+                    },
+                    "typeName": {
+                      "id": 44219,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1080:7:33",
+                      "typeDescriptions": {}
+                    }
+                  },
+                  "id": 44222,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "typeConversion",
+                  "lValueRequested": false,
+                  "nameLocations": [],
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "1080:10:33",
+                  "tryCall": false,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                ],
+                "expression": {
+                  "id": 44217,
+                  "name": "Currency",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 44131,
+                  "src": "1066:8:33",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_userDefinedValueType$_Currency_$44131_$",
+                    "typeString": "type(Currency)"
+                  }
+                },
+                "id": 44218,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "lValueRequested": false,
+                "memberLocation": "1075:4:33",
+                "memberName": "wrap",
+                "nodeType": "MemberAccess",
+                "src": "1066:13:33",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_function_wrap_pure$_t_address_$returns$_t_userDefinedValueType$_Currency_$44131_$",
+                  "typeString": "function (address) pure returns (Currency)"
+                }
+              },
+              "id": 44223,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "functionCall",
+              "lValueRequested": false,
+              "nameLocations": [],
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "1066:25:33",
+              "tryCall": false,
+              "typeDescriptions": {
+                "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                "typeString": "Currency"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 44258,
+            "nodeType": "FunctionDefinition",
+            "src": "1098:1975:33",
+            "nodes": [],
+            "body": {
+              "id": 44257,
+              "nodeType": "Block",
+              "src": "1172:1901:33",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    44235
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 44235,
+                      "mutability": "mutable",
+                      "name": "success",
+                      "nameLocation": "1349:7:33",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 44257,
+                      "src": "1344:12:33",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "typeName": {
+                        "id": 44234,
+                        "name": "bool",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1344:4:33",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 44236,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1344:12:33"
+                },
+                {
+                  "condition": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 44237,
+                        "name": "currency",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 44227,
+                        "src": "1370:8:33",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                          "typeString": "Currency"
+                        }
+                      },
+                      "id": 44238,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1379:8:33",
+                      "memberName": "isNative",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 44341,
+                      "src": "1370:17:33",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_userDefinedValueType$_Currency_$44131_$returns$_t_bool_$attached_to$_t_userDefinedValueType$_Currency_$44131_$",
+                        "typeString": "function (Currency) pure returns (bool)"
+                      }
+                    },
+                    "id": 44239,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1370:19:33",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 44255,
+                    "nodeType": "Block",
+                    "src": "1636:1431:33",
+                    "statements": [
+                      {
+                        "AST": {
+                          "nodeType": "YulBlock",
+                          "src": "1659:1341:33",
+                          "statements": [
+                            {
+                              "nodeType": "YulVariableDeclaration",
+                              "src": "1763:29:33",
+                              "value": {
+                                "arguments": [
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "1787:4:33",
+                                    "type": "",
+                                    "value": "0x40"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "mload",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "1781:5:33"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "1781:11:33"
+                              },
+                              "variables": [
+                                {
+                                  "name": "memPointer",
+                                  "nodeType": "YulTypedName",
+                                  "src": "1767:10:33",
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "1918:1:33",
+                                    "type": "",
+                                    "value": "0"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "1921:66:33",
+                                    "type": "",
+                                    "value": "0xa9059cbb00000000000000000000000000000000000000000000000000000000"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "mstore",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "1911:6:33"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "1911:77:33"
+                              },
+                              "nodeType": "YulExpressionStatement",
+                              "src": "1911:77:33"
+                            },
+                            {
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "2012:1:33",
+                                    "type": "",
+                                    "value": "4"
+                                  },
+                                  {
+                                    "name": "to",
+                                    "nodeType": "YulIdentifier",
+                                    "src": "2015:2:33"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "mstore",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "2005:6:33"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "2005:13:33"
+                              },
+                              "nodeType": "YulExpressionStatement",
+                              "src": "2005:13:33"
+                            },
+                            {
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "2071:2:33",
+                                    "type": "",
+                                    "value": "36"
+                                  },
+                                  {
+                                    "name": "amount",
+                                    "nodeType": "YulIdentifier",
+                                    "src": "2075:6:33"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "mstore",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "2064:6:33"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "2064:18:33"
+                              },
+                              "nodeType": "YulExpressionStatement",
+                              "src": "2064:18:33"
+                            },
+                            {
+                              "nodeType": "YulAssignment",
+                              "src": "2133:718:33",
+                              "value": {
+                                "arguments": [
+                                  {
+                                    "arguments": [
+                                      {
+                                        "arguments": [
+                                          {
+                                            "arguments": [
+                                              {
+                                                "arguments": [
+                                                  {
+                                                    "kind": "number",
+                                                    "nodeType": "YulLiteral",
+                                                    "src": "2404:1:33",
+                                                    "type": "",
+                                                    "value": "0"
+                                                  }
+                                                ],
+                                                "functionName": {
+                                                  "name": "mload",
+                                                  "nodeType": "YulIdentifier",
+                                                  "src": "2398:5:33"
+                                                },
+                                                "nodeType": "YulFunctionCall",
+                                                "src": "2398:8:33"
+                                              },
+                                              {
+                                                "kind": "number",
+                                                "nodeType": "YulLiteral",
+                                                "src": "2408:1:33",
+                                                "type": "",
+                                                "value": "1"
+                                              }
+                                            ],
+                                            "functionName": {
+                                              "name": "eq",
+                                              "nodeType": "YulIdentifier",
+                                              "src": "2395:2:33"
+                                            },
+                                            "nodeType": "YulFunctionCall",
+                                            "src": "2395:15:33"
+                                          },
+                                          {
+                                            "arguments": [
+                                              {
+                                                "arguments": [],
+                                                "functionName": {
+                                                  "name": "returndatasize",
+                                                  "nodeType": "YulIdentifier",
+                                                  "src": "2415:14:33"
+                                                },
+                                                "nodeType": "YulFunctionCall",
+                                                "src": "2415:16:33"
+                                              },
+                                              {
+                                                "kind": "number",
+                                                "nodeType": "YulLiteral",
+                                                "src": "2433:2:33",
+                                                "type": "",
+                                                "value": "31"
+                                              }
+                                            ],
+                                            "functionName": {
+                                              "name": "gt",
+                                              "nodeType": "YulIdentifier",
+                                              "src": "2412:2:33"
+                                            },
+                                            "nodeType": "YulFunctionCall",
+                                            "src": "2412:24:33"
+                                          }
+                                        ],
+                                        "functionName": {
+                                          "name": "and",
+                                          "nodeType": "YulIdentifier",
+                                          "src": "2391:3:33"
+                                        },
+                                        "nodeType": "YulFunctionCall",
+                                        "src": "2391:46:33"
+                                      },
+                                      {
+                                        "arguments": [
+                                          {
+                                            "arguments": [],
+                                            "functionName": {
+                                              "name": "returndatasize",
+                                              "nodeType": "YulIdentifier",
+                                              "src": "2446:14:33"
+                                            },
+                                            "nodeType": "YulFunctionCall",
+                                            "src": "2446:16:33"
+                                          }
+                                        ],
+                                        "functionName": {
+                                          "name": "iszero",
+                                          "nodeType": "YulIdentifier",
+                                          "src": "2439:6:33"
+                                        },
+                                        "nodeType": "YulFunctionCall",
+                                        "src": "2439:24:33"
+                                      }
+                                    ],
+                                    "functionName": {
+                                      "name": "or",
+                                      "nodeType": "YulIdentifier",
+                                      "src": "2388:2:33"
+                                    },
+                                    "nodeType": "YulFunctionCall",
+                                    "src": "2388:76:33"
+                                  },
+                                  {
+                                    "arguments": [
+                                      {
+                                        "arguments": [],
+                                        "functionName": {
+                                          "name": "gas",
+                                          "nodeType": "YulIdentifier",
+                                          "src": "2796:3:33"
+                                        },
+                                        "nodeType": "YulFunctionCall",
+                                        "src": "2796:5:33"
+                                      },
+                                      {
+                                        "name": "currency",
+                                        "nodeType": "YulIdentifier",
+                                        "src": "2803:8:33"
+                                      },
+                                      {
+                                        "kind": "number",
+                                        "nodeType": "YulLiteral",
+                                        "src": "2813:1:33",
+                                        "type": "",
+                                        "value": "0"
+                                      },
+                                      {
+                                        "kind": "number",
+                                        "nodeType": "YulLiteral",
+                                        "src": "2816:1:33",
+                                        "type": "",
+                                        "value": "0"
+                                      },
+                                      {
+                                        "kind": "number",
+                                        "nodeType": "YulLiteral",
+                                        "src": "2819:2:33",
+                                        "type": "",
+                                        "value": "68"
+                                      },
+                                      {
+                                        "kind": "number",
+                                        "nodeType": "YulLiteral",
+                                        "src": "2823:1:33",
+                                        "type": "",
+                                        "value": "0"
+                                      },
+                                      {
+                                        "kind": "number",
+                                        "nodeType": "YulLiteral",
+                                        "src": "2826:2:33",
+                                        "type": "",
+                                        "value": "32"
+                                      }
+                                    ],
+                                    "functionName": {
+                                      "name": "call",
+                                      "nodeType": "YulIdentifier",
+                                      "src": "2791:4:33"
+                                    },
+                                    "nodeType": "YulFunctionCall",
+                                    "src": "2791:38:33"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "and",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "2164:3:33"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "2164:687:33"
+                              },
+                              "variableNames": [
+                                {
+                                  "name": "success",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "2133:7:33"
+                                }
+                              ]
+                            },
+                            {
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "2876:4:33",
+                                    "type": "",
+                                    "value": "0x60"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "2882:1:33",
+                                    "type": "",
+                                    "value": "0"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "mstore",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "2869:6:33"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "2869:15:33"
+                              },
+                              "nodeType": "YulExpressionStatement",
+                              "src": "2869:15:33"
+                            },
+                            {
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "2942:4:33",
+                                    "type": "",
+                                    "value": "0x40"
+                                  },
+                                  {
+                                    "name": "memPointer",
+                                    "nodeType": "YulIdentifier",
+                                    "src": "2948:10:33"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "mstore",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "2935:6:33"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "2935:24:33"
+                              },
+                              "nodeType": "YulExpressionStatement",
+                              "src": "2935:24:33"
+                            }
+                          ]
+                        },
+                        "evmVersion": "paris",
+                        "externalReferences": [
+                          {
+                            "declaration": 44231,
+                            "isOffset": false,
+                            "isSlot": false,
+                            "src": "2075:6:33",
+                            "valueSize": 1
+                          },
+                          {
+                            "declaration": 44227,
+                            "isOffset": false,
+                            "isSlot": false,
+                            "src": "2803:8:33",
+                            "valueSize": 1
+                          },
+                          {
+                            "declaration": 44235,
+                            "isOffset": false,
+                            "isSlot": false,
+                            "src": "2133:7:33",
+                            "valueSize": 1
+                          },
+                          {
+                            "declaration": 44229,
+                            "isOffset": false,
+                            "isSlot": false,
+                            "src": "2015:2:33",
+                            "valueSize": 1
+                          }
+                        ],
+                        "id": 44248,
+                        "nodeType": "InlineAssembly",
+                        "src": "1650:1350:33"
+                      },
+                      {
+                        "condition": {
+                          "id": 44250,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "UnaryOperation",
+                          "operator": "!",
+                          "prefix": true,
+                          "src": "3018:8:33",
+                          "subExpression": {
+                            "id": 44249,
+                            "name": "success",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 44235,
+                            "src": "3019:7:33",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          },
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "id": 44254,
+                        "nodeType": "IfStatement",
+                        "src": "3014:42:33",
+                        "trueBody": {
+                          "errorCall": {
+                            "arguments": [],
+                            "expression": {
+                              "argumentTypes": [],
+                              "id": 44251,
+                              "name": "ERC20TransferFailed",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 44214,
+                              "src": "3035:19:33",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_error_pure$__$returns$__$",
+                                "typeString": "function () pure"
+                              }
+                            },
+                            "id": 44252,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "nameLocations": [],
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "3035:21:33",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_tuple$__$",
+                              "typeString": "tuple()"
+                            }
+                          },
+                          "id": 44253,
+                          "nodeType": "RevertStatement",
+                          "src": "3028:28:33"
+                        }
+                      }
+                    ]
+                  },
+                  "id": 44256,
+                  "nodeType": "IfStatement",
+                  "src": "1366:1701:33",
+                  "trueBody": {
+                    "id": 44247,
+                    "nodeType": "Block",
+                    "src": "1391:239:33",
+                    "statements": [
+                      {
+                        "AST": {
+                          "nodeType": "YulBlock",
+                          "src": "1414:148:33",
+                          "statements": [
+                            {
+                              "nodeType": "YulAssignment",
+                              "src": "1502:46:33",
+                              "value": {
+                                "arguments": [
+                                  {
+                                    "arguments": [],
+                                    "functionName": {
+                                      "name": "gas",
+                                      "nodeType": "YulIdentifier",
+                                      "src": "1518:3:33"
+                                    },
+                                    "nodeType": "YulFunctionCall",
+                                    "src": "1518:5:33"
+                                  },
+                                  {
+                                    "name": "to",
+                                    "nodeType": "YulIdentifier",
+                                    "src": "1525:2:33"
+                                  },
+                                  {
+                                    "name": "amount",
+                                    "nodeType": "YulIdentifier",
+                                    "src": "1529:6:33"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "1537:1:33",
+                                    "type": "",
+                                    "value": "0"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "1540:1:33",
+                                    "type": "",
+                                    "value": "0"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "1543:1:33",
+                                    "type": "",
+                                    "value": "0"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "1546:1:33",
+                                    "type": "",
+                                    "value": "0"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "call",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "1513:4:33"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "1513:35:33"
+                              },
+                              "variableNames": [
+                                {
+                                  "name": "success",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "1502:7:33"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "evmVersion": "paris",
+                        "externalReferences": [
+                          {
+                            "declaration": 44231,
+                            "isOffset": false,
+                            "isSlot": false,
+                            "src": "1529:6:33",
+                            "valueSize": 1
+                          },
+                          {
+                            "declaration": 44235,
+                            "isOffset": false,
+                            "isSlot": false,
+                            "src": "1502:7:33",
+                            "valueSize": 1
+                          },
+                          {
+                            "declaration": 44229,
+                            "isOffset": false,
+                            "isSlot": false,
+                            "src": "1525:2:33",
+                            "valueSize": 1
+                          }
+                        ],
+                        "id": 44240,
+                        "nodeType": "InlineAssembly",
+                        "src": "1405:157:33"
+                      },
+                      {
+                        "condition": {
+                          "id": 44242,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "UnaryOperation",
+                          "operator": "!",
+                          "prefix": true,
+                          "src": "1580:8:33",
+                          "subExpression": {
+                            "id": 44241,
+                            "name": "success",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 44235,
+                            "src": "1581:7:33",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          },
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "id": 44246,
+                        "nodeType": "IfStatement",
+                        "src": "1576:43:33",
+                        "trueBody": {
+                          "errorCall": {
+                            "arguments": [],
+                            "expression": {
+                              "argumentTypes": [],
+                              "id": 44243,
+                              "name": "NativeTransferFailed",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 44211,
+                              "src": "1597:20:33",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_error_pure$__$returns$__$",
+                                "typeString": "function () pure"
+                              }
+                            },
+                            "id": 44244,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "nameLocations": [],
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "1597:22:33",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_tuple$__$",
+                              "typeString": "tuple()"
+                            }
+                          },
+                          "id": 44245,
+                          "nodeType": "RevertStatement",
+                          "src": "1590:29:33"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transfer",
+            "nameLocation": "1107:8:33",
+            "parameters": {
+              "id": 44232,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44227,
+                  "mutability": "mutable",
+                  "name": "currency",
+                  "nameLocation": "1125:8:33",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44258,
+                  "src": "1116:17:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                    "typeString": "Currency"
+                  },
+                  "typeName": {
+                    "id": 44226,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 44225,
+                      "name": "Currency",
+                      "nameLocations": [
+                        "1116:8:33"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 44131,
+                      "src": "1116:8:33"
+                    },
+                    "referencedDeclaration": 44131,
+                    "src": "1116:8:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                      "typeString": "Currency"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44229,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nameLocation": "1143:2:33",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44258,
+                  "src": "1135:10:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44228,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1135:7:33",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44231,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "1155:6:33",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44258,
+                  "src": "1147:14:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 44230,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1147:7:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1115:47:33"
+            },
+            "returnParameters": {
+              "id": 44233,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1172:0:33"
+            },
+            "scope": 44379,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 44292,
+            "nodeType": "FunctionDefinition",
+            "src": "3079:271:33",
+            "nodes": [],
+            "body": {
+              "id": 44291,
+              "nodeType": "Block",
+              "src": "3153:197:33",
+              "nodes": [],
+              "statements": [
+                {
+                  "condition": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 44266,
+                        "name": "currency",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 44261,
+                        "src": "3167:8:33",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                          "typeString": "Currency"
+                        }
+                      },
+                      "id": 44267,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "3176:8:33",
+                      "memberName": "isNative",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 44341,
+                      "src": "3167:17:33",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_userDefinedValueType$_Currency_$44131_$returns$_t_bool_$attached_to$_t_userDefinedValueType$_Currency_$44131_$",
+                        "typeString": "function (Currency) pure returns (bool)"
+                      }
+                    },
+                    "id": 44268,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3167:19:33",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 44289,
+                    "nodeType": "Block",
+                    "src": "3247:97:33",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "id": 44285,
+                                  "name": "this",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": -28,
+                                  "src": "3327:4:33",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_contract$_CurrencyLibrary_$44379",
+                                    "typeString": "library CurrencyLibrary"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_contract$_CurrencyLibrary_$44379",
+                                    "typeString": "library CurrencyLibrary"
+                                  }
+                                ],
+                                "id": 44284,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "3319:7:33",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_address_$",
+                                  "typeString": "type(address)"
+                                },
+                                "typeName": {
+                                  "id": 44283,
+                                  "name": "address",
+                                  "nodeType": "ElementaryTypeName",
+                                  "src": "3319:7:33",
+                                  "typeDescriptions": {}
+                                }
+                              },
+                              "id": 44286,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "nameLocations": [],
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "3319:13:33",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            ],
+                            "expression": {
+                              "arguments": [
+                                {
+                                  "arguments": [
+                                    {
+                                      "id": 44279,
+                                      "name": "currency",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 44261,
+                                      "src": "3298:8:33",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                                        "typeString": "Currency"
+                                      }
+                                    }
+                                  ],
+                                  "expression": {
+                                    "argumentTypes": [
+                                      {
+                                        "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                                        "typeString": "Currency"
+                                      }
+                                    ],
+                                    "expression": {
+                                      "id": 44277,
+                                      "name": "Currency",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 44131,
+                                      "src": "3282:8:33",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_type$_t_userDefinedValueType$_Currency_$44131_$",
+                                        "typeString": "type(Currency)"
+                                      }
+                                    },
+                                    "id": 44278,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "lValueRequested": false,
+                                    "memberLocation": "3291:6:33",
+                                    "memberName": "unwrap",
+                                    "nodeType": "MemberAccess",
+                                    "src": "3282:15:33",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_function_unwrap_pure$_t_userDefinedValueType$_Currency_$44131_$returns$_t_address_$",
+                                      "typeString": "function (Currency) pure returns (address)"
+                                    }
+                                  },
+                                  "id": 44280,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "kind": "functionCall",
+                                  "lValueRequested": false,
+                                  "nameLocations": [],
+                                  "names": [],
+                                  "nodeType": "FunctionCall",
+                                  "src": "3282:25:33",
+                                  "tryCall": false,
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                ],
+                                "id": 44276,
+                                "name": "IERC20Minimal",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 39175,
+                                "src": "3268:13:33",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_contract$_IERC20Minimal_$39175_$",
+                                  "typeString": "type(contract IERC20Minimal)"
+                                }
+                              },
+                              "id": 44281,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "nameLocations": [],
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "3268:40:33",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_IERC20Minimal_$39175",
+                                "typeString": "contract IERC20Minimal"
+                              }
+                            },
+                            "id": 44282,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberLocation": "3309:9:33",
+                            "memberName": "balanceOf",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 39114,
+                            "src": "3268:50:33",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
+                              "typeString": "function (address) view external returns (uint256)"
+                            }
+                          },
+                          "id": 44287,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "3268:65:33",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "functionReturnParameters": 44265,
+                        "id": 44288,
+                        "nodeType": "Return",
+                        "src": "3261:72:33"
+                      }
+                    ]
+                  },
+                  "id": 44290,
+                  "nodeType": "IfStatement",
+                  "src": "3163:181:33",
+                  "trueBody": {
+                    "id": 44275,
+                    "nodeType": "Block",
+                    "src": "3188:53:33",
+                    "statements": [
+                      {
+                        "expression": {
+                          "expression": {
+                            "arguments": [
+                              {
+                                "id": 44271,
+                                "name": "this",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": -28,
+                                "src": "3217:4:33",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_contract$_CurrencyLibrary_$44379",
+                                  "typeString": "library CurrencyLibrary"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_contract$_CurrencyLibrary_$44379",
+                                  "typeString": "library CurrencyLibrary"
+                                }
+                              ],
+                              "id": 44270,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "nodeType": "ElementaryTypeNameExpression",
+                              "src": "3209:7:33",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_address_$",
+                                "typeString": "type(address)"
+                              },
+                              "typeName": {
+                                "id": 44269,
+                                "name": "address",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "3209:7:33",
+                                "typeDescriptions": {}
+                              }
+                            },
+                            "id": 44272,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "typeConversion",
+                            "lValueRequested": false,
+                            "nameLocations": [],
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "3209:13:33",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "id": 44273,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "3223:7:33",
+                          "memberName": "balance",
+                          "nodeType": "MemberAccess",
+                          "src": "3209:21:33",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "functionReturnParameters": 44265,
+                        "id": 44274,
+                        "nodeType": "Return",
+                        "src": "3202:28:33"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "balanceOfSelf",
+            "nameLocation": "3088:13:33",
+            "parameters": {
+              "id": 44262,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44261,
+                  "mutability": "mutable",
+                  "name": "currency",
+                  "nameLocation": "3111:8:33",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44292,
+                  "src": "3102:17:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                    "typeString": "Currency"
+                  },
+                  "typeName": {
+                    "id": 44260,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 44259,
+                      "name": "Currency",
+                      "nameLocations": [
+                        "3102:8:33"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 44131,
+                      "src": "3102:8:33"
+                    },
+                    "referencedDeclaration": 44131,
+                    "src": "3102:8:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                      "typeString": "Currency"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3101:19:33"
+            },
+            "returnParameters": {
+              "id": 44265,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44264,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44292,
+                  "src": "3144:7:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 44263,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3144:7:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3143:9:33"
+            },
+            "scope": 44379,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 44322,
+            "nodeType": "FunctionDefinition",
+            "src": "3356:266:33",
+            "nodes": [],
+            "body": {
+              "id": 44321,
+              "nodeType": "Block",
+              "src": "3441:181:33",
+              "nodes": [],
+              "statements": [
+                {
+                  "condition": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 44302,
+                        "name": "currency",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 44295,
+                        "src": "3455:8:33",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                          "typeString": "Currency"
+                        }
+                      },
+                      "id": 44303,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "3464:8:33",
+                      "memberName": "isNative",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 44341,
+                      "src": "3455:17:33",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_userDefinedValueType$_Currency_$44131_$returns$_t_bool_$attached_to$_t_userDefinedValueType$_Currency_$44131_$",
+                        "typeString": "function (Currency) pure returns (bool)"
+                      }
+                    },
+                    "id": 44304,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3455:19:33",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 44319,
+                    "nodeType": "Block",
+                    "src": "3527:89:33",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "id": 44316,
+                              "name": "owner",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 44297,
+                              "src": "3599:5:33",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            ],
+                            "expression": {
+                              "arguments": [
+                                {
+                                  "arguments": [
+                                    {
+                                      "id": 44312,
+                                      "name": "currency",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 44295,
+                                      "src": "3578:8:33",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                                        "typeString": "Currency"
+                                      }
+                                    }
+                                  ],
+                                  "expression": {
+                                    "argumentTypes": [
+                                      {
+                                        "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                                        "typeString": "Currency"
+                                      }
+                                    ],
+                                    "expression": {
+                                      "id": 44310,
+                                      "name": "Currency",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 44131,
+                                      "src": "3562:8:33",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_type$_t_userDefinedValueType$_Currency_$44131_$",
+                                        "typeString": "type(Currency)"
+                                      }
+                                    },
+                                    "id": 44311,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "lValueRequested": false,
+                                    "memberLocation": "3571:6:33",
+                                    "memberName": "unwrap",
+                                    "nodeType": "MemberAccess",
+                                    "src": "3562:15:33",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_function_unwrap_pure$_t_userDefinedValueType$_Currency_$44131_$returns$_t_address_$",
+                                      "typeString": "function (Currency) pure returns (address)"
+                                    }
+                                  },
+                                  "id": 44313,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "kind": "functionCall",
+                                  "lValueRequested": false,
+                                  "nameLocations": [],
+                                  "names": [],
+                                  "nodeType": "FunctionCall",
+                                  "src": "3562:25:33",
+                                  "tryCall": false,
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                ],
+                                "id": 44309,
+                                "name": "IERC20Minimal",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 39175,
+                                "src": "3548:13:33",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_contract$_IERC20Minimal_$39175_$",
+                                  "typeString": "type(contract IERC20Minimal)"
+                                }
+                              },
+                              "id": 44314,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "nameLocations": [],
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "3548:40:33",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_IERC20Minimal_$39175",
+                                "typeString": "contract IERC20Minimal"
+                              }
+                            },
+                            "id": 44315,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberLocation": "3589:9:33",
+                            "memberName": "balanceOf",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 39114,
+                            "src": "3548:50:33",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
+                              "typeString": "function (address) view external returns (uint256)"
+                            }
+                          },
+                          "id": 44317,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "3548:57:33",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "functionReturnParameters": 44301,
+                        "id": 44318,
+                        "nodeType": "Return",
+                        "src": "3541:64:33"
+                      }
+                    ]
+                  },
+                  "id": 44320,
+                  "nodeType": "IfStatement",
+                  "src": "3451:165:33",
+                  "trueBody": {
+                    "id": 44308,
+                    "nodeType": "Block",
+                    "src": "3476:45:33",
+                    "statements": [
+                      {
+                        "expression": {
+                          "expression": {
+                            "id": 44305,
+                            "name": "owner",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 44297,
+                            "src": "3497:5:33",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "id": 44306,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "3503:7:33",
+                          "memberName": "balance",
+                          "nodeType": "MemberAccess",
+                          "src": "3497:13:33",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "functionReturnParameters": 44301,
+                        "id": 44307,
+                        "nodeType": "Return",
+                        "src": "3490:20:33"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "balanceOf",
+            "nameLocation": "3365:9:33",
+            "parameters": {
+              "id": 44298,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44295,
+                  "mutability": "mutable",
+                  "name": "currency",
+                  "nameLocation": "3384:8:33",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44322,
+                  "src": "3375:17:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                    "typeString": "Currency"
+                  },
+                  "typeName": {
+                    "id": 44294,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 44293,
+                      "name": "Currency",
+                      "nameLocations": [
+                        "3375:8:33"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 44131,
+                      "src": "3375:8:33"
+                    },
+                    "referencedDeclaration": 44131,
+                    "src": "3375:8:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                      "typeString": "Currency"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44297,
+                  "mutability": "mutable",
+                  "name": "owner",
+                  "nameLocation": "3402:5:33",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44322,
+                  "src": "3394:13:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44296,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3394:7:33",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3374:34:33"
+            },
+            "returnParameters": {
+              "id": 44301,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44300,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44322,
+                  "src": "3432:7:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 44299,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3432:7:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3431:9:33"
+            },
+            "scope": 44379,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 44341,
+            "nodeType": "FunctionDefinition",
+            "src": "3628:142:33",
+            "nodes": [],
+            "body": {
+              "id": 44340,
+              "nodeType": "Block",
+              "src": "3694:76:33",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "commonType": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    },
+                    "id": 44338,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "arguments": [
+                        {
+                          "id": 44332,
+                          "name": "currency",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 44325,
+                          "src": "3727:8:33",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                            "typeString": "Currency"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                            "typeString": "Currency"
+                          }
+                        ],
+                        "expression": {
+                          "id": 44330,
+                          "name": "Currency",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 44131,
+                          "src": "3711:8:33",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_userDefinedValueType$_Currency_$44131_$",
+                            "typeString": "type(Currency)"
+                          }
+                        },
+                        "id": 44331,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberLocation": "3720:6:33",
+                        "memberName": "unwrap",
+                        "nodeType": "MemberAccess",
+                        "src": "3711:15:33",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_unwrap_pure$_t_userDefinedValueType$_Currency_$44131_$returns$_t_address_$",
+                          "typeString": "function (Currency) pure returns (address)"
+                        }
+                      },
+                      "id": 44333,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "3711:25:33",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "arguments": [
+                        {
+                          "id": 44336,
+                          "name": "NATIVE",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 44224,
+                          "src": "3756:6:33",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                            "typeString": "Currency"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                            "typeString": "Currency"
+                          }
+                        ],
+                        "expression": {
+                          "id": 44334,
+                          "name": "Currency",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 44131,
+                          "src": "3740:8:33",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_userDefinedValueType$_Currency_$44131_$",
+                            "typeString": "type(Currency)"
+                          }
+                        },
+                        "id": 44335,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberLocation": "3749:6:33",
+                        "memberName": "unwrap",
+                        "nodeType": "MemberAccess",
+                        "src": "3740:15:33",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_unwrap_pure$_t_userDefinedValueType$_Currency_$44131_$returns$_t_address_$",
+                          "typeString": "function (Currency) pure returns (address)"
+                        }
+                      },
+                      "id": 44337,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "3740:23:33",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "3711:52:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 44329,
+                  "id": 44339,
+                  "nodeType": "Return",
+                  "src": "3704:59:33"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isNative",
+            "nameLocation": "3637:8:33",
+            "parameters": {
+              "id": 44326,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44325,
+                  "mutability": "mutable",
+                  "name": "currency",
+                  "nameLocation": "3655:8:33",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44341,
+                  "src": "3646:17:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                    "typeString": "Currency"
+                  },
+                  "typeName": {
+                    "id": 44324,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 44323,
+                      "name": "Currency",
+                      "nameLocations": [
+                        "3646:8:33"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 44131,
+                      "src": "3646:8:33"
+                    },
+                    "referencedDeclaration": 44131,
+                    "src": "3646:8:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                      "typeString": "Currency"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3645:19:33"
+            },
+            "returnParameters": {
+              "id": 44329,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44328,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44341,
+                  "src": "3688:4:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 44327,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3688:4:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3687:6:33"
+            },
+            "scope": 44379,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 44358,
+            "nodeType": "FunctionDefinition",
+            "src": "3776:123:33",
+            "nodes": [],
+            "body": {
+              "id": 44357,
+              "nodeType": "Block",
+              "src": "3841:58:33",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "id": 44353,
+                            "name": "currency",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 44344,
+                            "src": "3882:8:33",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                              "typeString": "Currency"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                              "typeString": "Currency"
+                            }
+                          ],
+                          "expression": {
+                            "id": 44351,
+                            "name": "Currency",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 44131,
+                            "src": "3866:8:33",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_userDefinedValueType$_Currency_$44131_$",
+                              "typeString": "type(Currency)"
+                            }
+                          },
+                          "id": 44352,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberLocation": "3875:6:33",
+                          "memberName": "unwrap",
+                          "nodeType": "MemberAccess",
+                          "src": "3866:15:33",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_unwrap_pure$_t_userDefinedValueType$_Currency_$44131_$returns$_t_address_$",
+                            "typeString": "function (Currency) pure returns (address)"
+                          }
+                        },
+                        "id": 44354,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "3866:25:33",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 44350,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "3858:7:33",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_uint160_$",
+                        "typeString": "type(uint160)"
+                      },
+                      "typeName": {
+                        "id": 44349,
+                        "name": "uint160",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "3858:7:33",
+                        "typeDescriptions": {}
+                      }
+                    },
+                    "id": 44355,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3858:34:33",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint160",
+                      "typeString": "uint160"
+                    }
+                  },
+                  "functionReturnParameters": 44348,
+                  "id": 44356,
+                  "nodeType": "Return",
+                  "src": "3851:41:33"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "toId",
+            "nameLocation": "3785:4:33",
+            "parameters": {
+              "id": 44345,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44344,
+                  "mutability": "mutable",
+                  "name": "currency",
+                  "nameLocation": "3799:8:33",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44358,
+                  "src": "3790:17:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                    "typeString": "Currency"
+                  },
+                  "typeName": {
+                    "id": 44343,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 44342,
+                      "name": "Currency",
+                      "nameLocations": [
+                        "3790:8:33"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 44131,
+                      "src": "3790:8:33"
+                    },
+                    "referencedDeclaration": 44131,
+                    "src": "3790:8:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                      "typeString": "Currency"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3789:19:33"
+            },
+            "returnParameters": {
+              "id": 44348,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44347,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44358,
+                  "src": "3832:7:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 44346,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3832:7:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3831:9:33"
+            },
+            "scope": 44379,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 44378,
+            "nodeType": "FunctionDefinition",
+            "src": "3905:120:33",
+            "nodes": [],
+            "body": {
+              "id": 44377,
+              "nodeType": "Block",
+              "src": "3966:59:33",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "arguments": [
+                              {
+                                "id": 44372,
+                                "name": "id",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 44360,
+                                "src": "4013:2:33",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "id": 44371,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "nodeType": "ElementaryTypeNameExpression",
+                              "src": "4005:7:33",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_uint160_$",
+                                "typeString": "type(uint160)"
+                              },
+                              "typeName": {
+                                "id": 44370,
+                                "name": "uint160",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "4005:7:33",
+                                "typeDescriptions": {}
+                              }
+                            },
+                            "id": 44373,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "typeConversion",
+                            "lValueRequested": false,
+                            "nameLocations": [],
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "4005:11:33",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint160",
+                              "typeString": "uint160"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint160",
+                              "typeString": "uint160"
+                            }
+                          ],
+                          "id": 44369,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "3997:7:33",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": {
+                            "id": 44368,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "3997:7:33",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 44374,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "3997:20:33",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "id": 44366,
+                        "name": "Currency",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 44131,
+                        "src": "3983:8:33",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_userDefinedValueType$_Currency_$44131_$",
+                          "typeString": "type(Currency)"
+                        }
+                      },
+                      "id": 44367,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberLocation": "3992:4:33",
+                      "memberName": "wrap",
+                      "nodeType": "MemberAccess",
+                      "src": "3983:13:33",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_wrap_pure$_t_address_$returns$_t_userDefinedValueType$_Currency_$44131_$",
+                        "typeString": "function (address) pure returns (Currency)"
+                      }
+                    },
+                    "id": 44375,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3983:35:33",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                      "typeString": "Currency"
+                    }
+                  },
+                  "functionReturnParameters": 44365,
+                  "id": 44376,
+                  "nodeType": "Return",
+                  "src": "3976:42:33"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "fromId",
+            "nameLocation": "3914:6:33",
+            "parameters": {
+              "id": 44361,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44360,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "3929:2:33",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44378,
+                  "src": "3921:10:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 44359,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3921:7:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3920:12:33"
+            },
+            "returnParameters": {
+              "id": 44365,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44364,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44378,
+                  "src": "3956:8:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                    "typeString": "Currency"
+                  },
+                  "typeName": {
+                    "id": 44363,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 44362,
+                      "name": "Currency",
+                      "nameLocations": [
+                        "3956:8:33"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 44131,
+                      "src": "3956:8:33"
+                    },
+                    "referencedDeclaration": 44131,
+                    "src": "3956:8:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_userDefinedValueType$_Currency_$44131",
+                      "typeString": "Currency"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3955:10:33"
+            },
+            "scope": 44379,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "CurrencyLibrary",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": {
+          "id": 44204,
+          "nodeType": "StructuredDocumentation",
+          "src": "672:116:33",
+          "text": "@title CurrencyLibrary\n @dev This library allows for transferring and holding native tokens and ERC20 tokens"
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          44379
+        ],
+        "name": "CurrencyLibrary",
+        "nameLocation": "796:15:33",
+        "scope": 44380,
+        "usedErrors": [
+          44211,
+          44214
+        ],
+        "usedEvents": []
+      }
+    ],
+    "license": "GPL-2.0-or-later"
+  },
+  "id": 33
+}
