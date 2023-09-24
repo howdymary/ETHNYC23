@@ -1,0 +1,3377 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_axiomV2QueryAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint64",
+          "name": "_callbackSourceChainId",
+          "type": "uint64"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_axiomCallbackQuerySchema",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "AirdropTokenAddressUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "axiomCallbackQuerySchema",
+          "type": "bytes32"
+        }
+      ],
+      "name": "AxiomCallbackQuerySchemaUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint64",
+          "name": "sourceChainId",
+          "type": "uint64"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "callerAddr",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "querySchema",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "queryHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "AxiomV2Call",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "queryHash",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "numTokens",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes32[]",
+          "name": "axiomResults",
+          "type": "bytes32[]"
+        }
+      ],
+      "name": "ClaimAirdrop",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "error",
+          "type": "string"
+        }
+      ],
+      "name": "ClaimAirdropError",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "axiomCallbackQuerySchema",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "sourceChainId",
+          "type": "uint64"
+        },
+        {
+          "internalType": "address",
+          "name": "callerAddr",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "querySchema",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "queryHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32[]",
+          "name": "axiomResults",
+          "type": "bytes32[]"
+        },
+        {
+          "internalType": "bytes",
+          "name": "callbackExtraData",
+          "type": "bytes"
+        }
+      ],
+      "name": "axiomV2Callback",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "axiomV2QueryAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "callbackSourceChainId",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "hasClaimed",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "querySubmitted",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "token",
+      "outputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "updateAirdropToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_axiomCallbackQuerySchema",
+          "type": "bytes32"
+        }
+      ],
+      "name": "updateCallbackQuerySchema",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x60a060405234801561001057600080fd5b50604051610b45380380610b4583398101604081905261002f916100c9565b6001600160a01b03831660805261004533610079565b600080546001600160401b03909316600160a01b02600160a01b600160e01b03199093169290921790915560015550610124565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b6000806000606084860312156100de57600080fd5b83516001600160a01b03811681146100f557600080fd5b60208501519093506001600160401b038116811461011257600080fd5b80925050604084015190509250925092565b6080516109ff6101466000396000818161010c015261026701526109ff6000f3fe608060405234801561001057600080fd5b50600436106100b45760003560e01c80638da5cb5b116100715780638da5cb5b14610194578063a34c1eb4146101a5578063ab72fc09146101b8578063cd1cd725146101db578063f2fde38b146101f2578063fc0c546a1461020557600080fd5b8063034606e0146100b95780630a50ec5c146100ce5780632a75d3be1461010757806351b17b2914610146578063715018a61461015957806373b2e80e14610161575b600080fd5b6100cc6100c73660046107d1565b610218565b005b6000546100e990600160a01b900467ffffffffffffffff1681565b60405167ffffffffffffffff90911681526020015b60405180910390f35b61012e7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b0390911681526020016100fe565b6100cc61015436600461084f565b61025c565b6100cc610364565b61018461016f36600461092e565b60036020526000908152604090205460ff1681565b60405190151581526020016100fe565b6000546001600160a01b031661012e565b6100cc6101b336600461092e565b610378565b6101846101c636600461092e565b60026020526000908152604090205460ff1681565b6101e460015481565b6040519081526020016100fe565b6100cc61020036600461092e565b6103ce565b60045461012e906001600160a01b031681565b610220610447565b60018190556040518181527f215a17e0015e11cebc3087027513f0b70572c3b3341a76ef38fbcbbb8193c6ae906020015b60405180910390a150565b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146102f35760405162461bcd60e51b815260206004820152603160248201527f4178696f6d5632436c69656e743a2063616c6c6572206d757374206265206178604482015270696f6d563251756572794164647265737360781b60648201526084015b60405180910390fd5b6040516001600160a01b03881681528590879067ffffffffffffffff8b16907f8c4d7c8c39bd8567a2e06cd74f2e95db120e4aeeb5092fca49fb9f3ea13f0fc19060200160405180910390a461034a8888886104a1565b61035a888888888888888861056b565b5050505050505050565b61036c610447565b6103766000610781565b565b610380610447565b600480546001600160a01b0319166001600160a01b0383169081179091556040519081527f3d74e308a5601bae6228e9545413c210aad9d550ccd35b1f55805a9bd2cc6dfb90602001610251565b6103d6610447565b6001600160a01b03811661043b5760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b60648201526084016102ea565b61044481610781565b50565b6000546001600160a01b031633146103765760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260448201526064016102ea565b60005467ffffffffffffffff848116600160a01b90920416146105155760405162461bcd60e51b815260206004820152602660248201527f4178696f6d56323a2063616c6c657220736f75726365436861696e4964206d696044820152650e6dac2e8c6d60d31b60648201526084016102ea565b60015481146105665760405162461bcd60e51b815260206004820152601e60248201527f4178696f6d56323a20717565727920736368656d61206d69736d61746368000060448201526064016102ea565b505050565b6001600160a01b03871660009081526003602052604090205460ff16156105fa5760405162461bcd60e51b815260206004820152603960248201527f4175746f6e6f6d6f75732041697264726f703a20557365722068617320616c7260448201527f6561647920636c61696d656420746869732061697264726f700000000000000060648201526084016102ea565b60008484600081811061060f5761060f610950565b90506020020135905080603160f81b146106915760405162461bcd60e51b815260206004820152603860248201527f4175746f6e6f6d6f75732041697264726f703a2056616c69642c20746869732060448201527f706572736f6e20686173206265656e20612076696374696d000000000000000060648201526084016102ea565b6001600160a01b0388811660008181526003602052604090819020805460ff1916600117905560048054915163a9059cbb60e01b81529081019290925268056bc75e2d631000006024830181905292169063a9059cbb906044016020604051808303816000875af115801561070a573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061072e9190610966565b5086896001600160a01b03167fb6cdd515ae6bc7c835f5b9b67a78fe370d2fa71ebb6c7a49595cb3f84988d35e83898960405161076d93929190610988565b60405180910390a350505050505050505050565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b6000602082840312156107e357600080fd5b5035919050565b80356001600160a01b038116811461080157600080fd5b919050565b60008083601f84011261081857600080fd5b50813567ffffffffffffffff81111561083057600080fd5b60208301915083602082850101111561084857600080fd5b9250929050565b60008060008060008060008060c0898b03121561086b57600080fd5b883567ffffffffffffffff808216821461088457600080fd5b81995061089360208c016107ea565b985060408b0135975060608b0135965060808b01359150808211156108b757600080fd5b818b0191508b601f8301126108cb57600080fd5b8135818111156108da57600080fd5b8c60208260051b85010111156108ef57600080fd5b6020830196508095505060a08b013591508082111561090d57600080fd5b5061091a8b828c01610806565b999c989b5096995094979396929594505050565b60006020828403121561094057600080fd5b610949826107ea565b9392505050565b634e487b7160e01b600052603260045260246000fd5b60006020828403121561097857600080fd5b8151801515811461094957600080fd5b838152604060208201819052810182905260006001600160fb1b038311156109af57600080fd5b8260051b808560608501379190910160600194935050505056fea264697066735822122021dd3d8093f7559ee181cc25a73e6db8fe5a00beacde59ac5130c673d96b2b6e64736f6c63430008130033",
+    "sourceMap": "286:2567:25:-:0;;;930:299;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;;259:42:26;;;;936:32:19;719:10:23;936:18:19;:32::i;:::-;1114:21:25::1;:46:::0;;-1:-1:-1;;;;;1114:46:25;;::::1;-1:-1:-1::0;;;1114:46:25::1;-1:-1:-1::0;;;;;;;;1114:46:25;;::::1;::::0;;;::::1;::::0;;;-1:-1:-1;1170:52:25;-1:-1:-1;286:2567:25;;2426:187:19;2499:16;2518:6;;-1:-1:-1;;;;;2534:17:19;;;-1:-1:-1;;;;;;2534:17:19;;;;;;2566:40;;2518:6;;;;;;;2566:40;;2499:16;2566:40;2489:124;2426:187;:::o;14:524:32:-;101:6;109;117;170:2;158:9;149:7;145:23;141:32;138:52;;;186:1;183;176:12;138:52;212:16;;-1:-1:-1;;;;;257:31:32;;247:42;;237:70;;303:1;300;293:12;237:70;376:2;361:18;;355:25;326:5;;-1:-1:-1;;;;;;411:32:32;;399:45;;389:73;;458:1;455;448:12;389:73;481:7;471:17;;;528:2;517:9;513:18;507:25;497:35;;14:524;;;;;:::o;:::-;286:2567:25;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100b45760003560e01c80638da5cb5b116100715780638da5cb5b14610194578063a34c1eb4146101a5578063ab72fc09146101b8578063cd1cd725146101db578063f2fde38b146101f2578063fc0c546a1461020557600080fd5b8063034606e0146100b95780630a50ec5c146100ce5780632a75d3be1461010757806351b17b2914610146578063715018a61461015957806373b2e80e14610161575b600080fd5b6100cc6100c73660046107d1565b610218565b005b6000546100e990600160a01b900467ffffffffffffffff1681565b60405167ffffffffffffffff90911681526020015b60405180910390f35b61012e7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b0390911681526020016100fe565b6100cc61015436600461084f565b61025c565b6100cc610364565b61018461016f36600461092e565b60036020526000908152604090205460ff1681565b60405190151581526020016100fe565b6000546001600160a01b031661012e565b6100cc6101b336600461092e565b610378565b6101846101c636600461092e565b60026020526000908152604090205460ff1681565b6101e460015481565b6040519081526020016100fe565b6100cc61020036600461092e565b6103ce565b60045461012e906001600160a01b031681565b610220610447565b60018190556040518181527f215a17e0015e11cebc3087027513f0b70572c3b3341a76ef38fbcbbb8193c6ae906020015b60405180910390a150565b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146102f35760405162461bcd60e51b815260206004820152603160248201527f4178696f6d5632436c69656e743a2063616c6c6572206d757374206265206178604482015270696f6d563251756572794164647265737360781b60648201526084015b60405180910390fd5b6040516001600160a01b03881681528590879067ffffffffffffffff8b16907f8c4d7c8c39bd8567a2e06cd74f2e95db120e4aeeb5092fca49fb9f3ea13f0fc19060200160405180910390a461034a8888886104a1565b61035a888888888888888861056b565b5050505050505050565b61036c610447565b6103766000610781565b565b610380610447565b600480546001600160a01b0319166001600160a01b0383169081179091556040519081527f3d74e308a5601bae6228e9545413c210aad9d550ccd35b1f55805a9bd2cc6dfb90602001610251565b6103d6610447565b6001600160a01b03811661043b5760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b60648201526084016102ea565b61044481610781565b50565b6000546001600160a01b031633146103765760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260448201526064016102ea565b60005467ffffffffffffffff848116600160a01b90920416146105155760405162461bcd60e51b815260206004820152602660248201527f4178696f6d56323a2063616c6c657220736f75726365436861696e4964206d696044820152650e6dac2e8c6d60d31b60648201526084016102ea565b60015481146105665760405162461bcd60e51b815260206004820152601e60248201527f4178696f6d56323a20717565727920736368656d61206d69736d61746368000060448201526064016102ea565b505050565b6001600160a01b03871660009081526003602052604090205460ff16156105fa5760405162461bcd60e51b815260206004820152603960248201527f4175746f6e6f6d6f75732041697264726f703a20557365722068617320616c7260448201527f6561647920636c61696d656420746869732061697264726f700000000000000060648201526084016102ea565b60008484600081811061060f5761060f610950565b90506020020135905080603160f81b146106915760405162461bcd60e51b815260206004820152603860248201527f4175746f6e6f6d6f75732041697264726f703a2056616c69642c20746869732060448201527f706572736f6e20686173206265656e20612076696374696d000000000000000060648201526084016102ea565b6001600160a01b0388811660008181526003602052604090819020805460ff1916600117905560048054915163a9059cbb60e01b81529081019290925268056bc75e2d631000006024830181905292169063a9059cbb906044016020604051808303816000875af115801561070a573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061072e9190610966565b5086896001600160a01b03167fb6cdd515ae6bc7c835f5b9b67a78fe370d2fa71ebb6c7a49595cb3f84988d35e83898960405161076d93929190610988565b60405180910390a350505050505050505050565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b6000602082840312156107e357600080fd5b5035919050565b80356001600160a01b038116811461080157600080fd5b919050565b60008083601f84011261081857600080fd5b50813567ffffffffffffffff81111561083057600080fd5b60208301915083602082850101111561084857600080fd5b9250929050565b60008060008060008060008060c0898b03121561086b57600080fd5b883567ffffffffffffffff808216821461088457600080fd5b81995061089360208c016107ea565b985060408b0135975060608b0135965060808b01359150808211156108b757600080fd5b818b0191508b601f8301126108cb57600080fd5b8135818111156108da57600080fd5b8c60208260051b85010111156108ef57600080fd5b6020830196508095505060a08b013591508082111561090d57600080fd5b5061091a8b828c01610806565b999c989b5096995094979396929594505050565b60006020828403121561094057600080fd5b610949826107ea565b9392505050565b634e487b7160e01b600052603260045260246000fd5b60006020828403121561097857600080fd5b8151801515811461094957600080fd5b838152604060208201819052810182905260006001600160fb1b038311156109af57600080fd5b8260051b808560608501379190910160600194935050505056fea264697066735822122021dd3d8093f7559ee181cc25a73e6db8fe5a00beacde59ac5130c673d96b2b6e64736f6c63430008130033",
+    "sourceMap": "286:2567:25:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1235:243;;;;;;:::i;:::-;;:::i;:::-;;717:35;;;;;-1:-1:-1;;;717:35:25;;;;;;;;;373:18:32;361:31;;;343:50;;331:2;316:18;717:35:25;;;;;;;;156:44:26;;;;;;;;-1:-1:-1;;;;;568:32:32;;;550:51;;538:2;523:18;156:44:26;404:203:32;314:606:26;;;;;;:::i;:::-;;:::i;1824:101:19:-;;;:::i;855:42:25:-;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;2774:14:32;;2767:22;2749:41;;2737:2;2722:18;855:42:25;2609:187:32;1201:85:19;1247:7;1273:6;-1:-1:-1;;;;;1273:6:19;1201:85;;1484:149:25;;;;;;:::i;:::-;;:::i;803:46::-;;;;;;:::i;:::-;;;;;;;;;;;;;;;;758:39;;;;;;;;;2947:25:32;;;2935:2;2920:18;758:39:25;2801:177:32;2074:198:19;;;;;;:::i;:::-;;:::i;904:19:25:-;;;;;-1:-1:-1;;;;;904:19:25;;;1235:243;1094:13:19;:11;:13::i;:::-;1346:24:25::1;:52:::0;;;1413:58:::1;::::0;2947:25:32;;;1413:58:25::1;::::0;2935:2:32;2920:18;1413:58:25::1;;;;;;;;1235:243:::0;:::o;314:606:26:-;569:10;-1:-1:-1;;;;;583:19:26;569:33;;561:95;;;;-1:-1:-1;;;561:95:26;;3409:2:32;561:95:26;;;3391:21:32;3448:2;3428:18;;;3421:30;3487:34;3467:18;;;3460:62;-1:-1:-1;;;3538:18:32;;;3531:47;3595:19;;561:95:26;;;;;;;;;671:62;;-1:-1:-1;;;;;568:32:32;;550:51;;723:9:26;;710:11;;671:62;;;;;;538:2:32;523:18;671:62:26;;;;;;;744:60;765:13;780:10;792:11;744:20;:60::i;:::-;814:99;831:13;846:10;858:11;870:9;881:12;;895:17;;814:16;:99::i;:::-;314:606;;;;;;;;:::o;1824:101:19:-;1094:13;:11;:13::i;:::-;1888:30:::1;1915:1;1888:18;:30::i;:::-;1824:101::o:0;1484:149:25:-;1094:13:19;:11;:13::i;:::-;1555:5:25::1;:22:::0;;-1:-1:-1;;;;;;1555:22:25::1;-1:-1:-1::0;;;;;1555:22:25;::::1;::::0;;::::1;::::0;;;1592:34:::1;::::0;550:51:32;;;1592:34:25::1;::::0;538:2:32;523:18;1592:34:25::1;404:203:32::0;2074:198:19;1094:13;:11;:13::i;:::-;-1:-1:-1;;;;;2162:22:19;::::1;2154:73;;;::::0;-1:-1:-1;;;2154:73:19;;3827:2:32;2154:73:19::1;::::0;::::1;3809:21:32::0;3866:2;3846:18;;;3839:30;3905:34;3885:18;;;3878:62;-1:-1:-1;;;3956:18:32;;;3949:36;4002:19;;2154:73:19::1;3625:402:32::0;2154:73:19::1;2237:28;2256:8;2237:18;:28::i;:::-;2074:198:::0;:::o;1359:130::-;1247:7;1273:6;-1:-1:-1;;;;;1273:6:19;719:10:23;1422:23:19;1414:68;;;;-1:-1:-1;;;1414:68:19;;4234:2:32;1414:68:19;;;4216:21:32;;;4253:18;;;4246:30;4312:34;4292:18;;;4285:62;4364:18;;1414:68:19;4032:356:32;2504:347:25;2688:21;;;2671:38;;;-1:-1:-1;;;2688:21:25;;;;2671:38;2663:89;;;;-1:-1:-1;;;2663:89:25;;4595:2:32;2663:89:25;;;4577:21:32;4634:2;4614:18;;;4607:30;4673:34;4653:18;;;4646:62;-1:-1:-1;;;4724:18:32;;;4717:36;4770:19;;2663:89:25;4393:402:32;2663:89:25;2785:24;;2770:11;:39;2762:82;;;;-1:-1:-1;;;2762:82:25;;5002:2:32;2762:82:25;;;4984:21:32;5041:2;5021:18;;;5014:30;5080:32;5060:18;;;5053:60;5130:18;;2762:82:25;4800:354:32;2762:82:25;2504:347;;;:::o;1639:859::-;-1:-1:-1;;;;;1913:22:25;;;;;;:10;:22;;;;;;;;1912:23;1904:93;;;;-1:-1:-1;;;1904:93:25;;5361:2:32;1904:93:25;;;5343:21:32;5400:2;5380:18;;;5373:30;5439:34;5419:18;;;5412:62;5510:27;5490:18;;;5483:55;5555:19;;1904:93:25;5159:421:32;1904:93:25;2033:15;2051:12;;2064:1;2051:15;;;;;;;:::i;:::-;;;;;;;2033:33;;2118:7;-1:-1:-1;;;2118:14:25;2110:83;;;;-1:-1:-1;;;2110:83:25;;5919:2:32;2110:83:25;;;5901:21:32;5958:2;5938:18;;;5931:30;5997:34;5977:18;;;5970:62;6068:26;6048:18;;;6041:54;6112:19;;2110:83:25;5717:420:32;2110:83:25;-1:-1:-1;;;;;2239:22:25;;;;;;;:10;:22;;;;;;;:29;;-1:-1:-1;;2239:29:25;2264:4;2239:29;;;2320:5;;;:37;;-1:-1:-1;;;2320:37:25;;;;;6316:51:32;;;;2298:12:25;6383:18:32;;;6376:34;;;2298:12:25;2320:5;;:14;;6289:18:32;;2320:37:25;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;2423:9;2399:10;-1:-1:-1;;;;;2373:118:25;;2446:9;2469:12;;2373:118;;;;;;;;:::i;:::-;;;;;;;;1894:604;;1639:859;;;;;;;;:::o;2426:187:19:-;2499:16;2518:6;;-1:-1:-1;;;;;2534:17:19;;;-1:-1:-1;;;;;;2534:17:19;;;;;;2566:40;;2518:6;;;;;;;2566:40;;2499:16;2566:40;2489:124;2426:187;:::o;14:180:32:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;-1:-1:-1;165:23:32;;14:180;-1:-1:-1;14:180:32:o;612:173::-;680:20;;-1:-1:-1;;;;;729:31:32;;719:42;;709:70;;775:1;772;765:12;709:70;612:173;;;:::o;790:347::-;841:8;851:6;905:3;898:4;890:6;886:17;882:27;872:55;;923:1;920;913:12;872:55;-1:-1:-1;946:20:32;;989:18;978:30;;975:50;;;1021:1;1018;1011:12;975:50;1058:4;1050:6;1046:17;1034:29;;1110:3;1103:4;1094:6;1086;1082:19;1078:30;1075:39;1072:59;;;1127:1;1124;1117:12;1072:59;790:347;;;;;:::o;1142:1271::-;1283:6;1291;1299;1307;1315;1323;1331;1339;1392:3;1380:9;1371:7;1367:23;1363:33;1360:53;;;1409:1;1406;1399:12;1360:53;1448:9;1435:23;1477:18;1535:2;1528:5;1524:14;1517:5;1514:25;1504:53;;1553:1;1550;1543:12;1504:53;1576:5;1566:15;;1600:38;1634:2;1623:9;1619:18;1600:38;:::i;:::-;1590:48;;1685:2;1674:9;1670:18;1657:32;1647:42;;1736:2;1725:9;1721:18;1708:32;1698:42;;1791:3;1780:9;1776:19;1763:33;1749:47;;1819:2;1811:6;1808:14;1805:34;;;1835:1;1832;1825:12;1805:34;1873:6;1862:9;1858:22;1848:32;;1918:7;1911:4;1907:2;1903:13;1899:27;1889:55;;1940:1;1937;1930:12;1889:55;1980:2;1967:16;2006:2;1998:6;1995:14;1992:34;;;2022:1;2019;2012:12;1992:34;2075:7;2070:2;2060:6;2057:1;2053:14;2049:2;2045:23;2041:32;2038:45;2035:65;;;2096:1;2093;2086:12;2035:65;2127:2;2123;2119:11;2109:21;;2149:6;2139:16;;;2208:3;2197:9;2193:19;2180:33;2164:49;;2238:2;2228:8;2225:16;2222:36;;;2254:1;2251;2244:12;2222:36;;2293:60;2345:7;2334:8;2323:9;2319:24;2293:60;:::i;:::-;1142:1271;;;;-1:-1:-1;1142:1271:32;;-1:-1:-1;1142:1271:32;;;;;;2372:8;-1:-1:-1;;;1142:1271:32:o;2418:186::-;2477:6;2530:2;2518:9;2509:7;2505:23;2501:32;2498:52;;;2546:1;2543;2536:12;2498:52;2569:29;2588:9;2569:29;:::i;:::-;2559:39;2418:186;-1:-1:-1;;;2418:186:32:o;5585:127::-;5646:10;5641:3;5637:20;5634:1;5627:31;5677:4;5674:1;5667:15;5701:4;5698:1;5691:15;6421:277;6488:6;6541:2;6529:9;6520:7;6516:23;6512:32;6509:52;;;6557:1;6554;6547:12;6509:52;6589:9;6583:16;6642:5;6635:13;6628:21;6621:5;6618:32;6608:60;;6664:1;6661;6654:12;6703:514;6902:25;;;6963:2;6958;6943:18;;6936:30;;;6982:18;;6975:34;;;-1:-1:-1;;;;;;7021:31:32;;7018:51;;;7065:1;7062;7055:12;7018:51;7099:6;7096:1;7092:14;7156:6;7148;7143:2;7132:9;7128:18;7115:48;7184:22;;;;7208:2;7180:31;;6703:514;-1:-1:-1;;;;6703:514:32:o",
+    "linkReferences": {},
+    "immutableReferences": {
+      "44465": [
+        {
+          "start": 268,
+          "length": 32
+        },
+        {
+          "start": 615,
+          "length": 32
+        }
+      ]
+    }
+  },
+  "methodIdentifiers": {
+    "axiomCallbackQuerySchema()": "cd1cd725",
+    "axiomV2Callback(uint64,address,bytes32,bytes32,bytes32[],bytes)": "51b17b29",
+    "axiomV2QueryAddress()": "2a75d3be",
+    "callbackSourceChainId()": "0a50ec5c",
+    "hasClaimed(address)": "73b2e80e",
+    "owner()": "8da5cb5b",
+    "querySubmitted(address)": "ab72fc09",
+    "renounceOwnership()": "715018a6",
+    "token()": "fc0c546a",
+    "transferOwnership(address)": "f2fde38b",
+    "updateAirdropToken(address)": "a34c1eb4",
+    "updateCallbackQuerySchema(bytes32)": "034606e0"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_axiomV2QueryAddress\",\"type\":\"address\"},{\"internalType\":\"uint64\",\"name\":\"_callbackSourceChainId\",\"type\":\"uint64\"},{\"internalType\":\"bytes32\",\"name\":\"_axiomCallbackQuerySchema\",\"type\":\"bytes32\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"}],\"name\":\"AirdropTokenAddressUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"axiomCallbackQuerySchema\",\"type\":\"bytes32\"}],\"name\":\"AxiomCallbackQuerySchemaUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint64\",\"name\":\"sourceChainId\",\"type\":\"uint64\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"callerAddr\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"querySchema\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"queryHash\",\"type\":\"bytes32\"}],\"name\":\"AxiomV2Call\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"queryHash\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"numTokens\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"bytes32[]\",\"name\":\"axiomResults\",\"type\":\"bytes32[]\"}],\"name\":\"ClaimAirdrop\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"error\",\"type\":\"string\"}],\"name\":\"ClaimAirdropError\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"axiomCallbackQuerySchema\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint64\",\"name\":\"sourceChainId\",\"type\":\"uint64\"},{\"internalType\":\"address\",\"name\":\"callerAddr\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"querySchema\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"queryHash\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32[]\",\"name\":\"axiomResults\",\"type\":\"bytes32[]\"},{\"internalType\":\"bytes\",\"name\":\"callbackExtraData\",\"type\":\"bytes\"}],\"name\":\"axiomV2Callback\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"axiomV2QueryAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"callbackSourceChainId\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"\",\"type\":\"uint64\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"hasClaimed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"querySubmitted\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"token\",\"outputs\":[{\"internalType\":\"contract IERC20\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_token\",\"type\":\"address\"}],\"name\":\"updateAirdropToken\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_axiomCallbackQuerySchema\",\"type\":\"bytes32\"}],\"name\":\"updateCallbackQuerySchema\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/AutonomousAirdrop.sol\":\"AutonomousAirdrop\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":openzeppelin/=lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"lib/forge-std/src/console.sol\":{\"keccak256\":\"0x91d5413c2434ca58fd278b6e1e79fd98d10c83931cc2596a6038eee4daeb34ba\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://91ccea707361e48b9b7a161fe81f496b9932bc471e9c4e4e1e9c283f2453cc70\",\"dweb:/ipfs/QmcB66sZhQ6Kz7MUHcLE78YXRUZxoZnnxZjN6yATsbB2ec\"]},\"lib/openzeppelin-contracts/contracts/access/Ownable.sol\":{\"keccak256\":\"0xba43b97fba0d32eb4254f6a5a297b39a19a247082a02d6e69349e071e2946218\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fc980984badf3984b6303b377711220e067722bbd6a135b24669ff5069ef9f32\",\"dweb:/ipfs/QmPHXMSXj99XjSVM21YsY6aNtLLjLVXDbyN76J5HQYvvrz\"]},\"lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bd39944e8fc06be6dbe2dd1d8449b5336e23c6a7ba3e8e9ae5ae0f37f35283f5\",\"dweb:/ipfs/QmPV3FGYjVwvKSgAXKUN3r9T9GwniZz83CxBpM7vyj2G53\"]},\"lib/openzeppelin-contracts/contracts/utils/Context.sol\":{\"keccak256\":\"0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92\",\"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3\"]},\"src/AutonomousAirdrop.sol\":{\"keccak256\":\"0x5b7c2228f317edb398f986b51ef5931e86b4a1c51fd85b55380c40ed48f88971\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a0ab27cace583550e06d1c591265ab662c335b2c9b07c856f767272e16e64705\",\"dweb:/ipfs/QmWrtQv2ZpAtgg1DfTmzJMEJznLGctPaz7S1agoDG7zwCG\"]},\"src/AxiomV2Client.sol\":{\"keccak256\":\"0xbf34498af6b6780f7409cf1ab7df8d0088eae48e4642988f1a208fa349b2335e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7a60c54d6ac8b638dac64bf81245740ef86fe810585bcec9020ecb6fc62f792c\",\"dweb:/ipfs/Qmf1Zcgq5qAEKB9oKVbvQwpx2mzQtVQd6R4Etxbw1fqQ8w\"]},\"src/interfaces/IAxiomV2Client.sol\":{\"keccak256\":\"0x9e54f73cb62fa653699d119170707aba0af3728eca2f05b6d3407159cec35458\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://eb0ae60742f2fdae14a5424fbb093ad85145d2eba7247ffb5d6d74af4a37ae09\",\"dweb:/ipfs/QmNxcKTvTCBhmKDSbfjn5uNyffkZtaZ7e3B99RKd28NkJP\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_axiomV2QueryAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "uint64",
+              "name": "_callbackSourceChainId",
+              "type": "uint64"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_axiomCallbackQuerySchema",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "AirdropTokenAddressUpdated",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "axiomCallbackQuerySchema",
+              "type": "bytes32",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "AxiomCallbackQuerySchemaUpdated",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint64",
+              "name": "sourceChainId",
+              "type": "uint64",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "callerAddr",
+              "type": "address",
+              "indexed": false
+            },
+            {
+              "internalType": "bytes32",
+              "name": "querySchema",
+              "type": "bytes32",
+              "indexed": true
+            },
+            {
+              "internalType": "bytes32",
+              "name": "queryHash",
+              "type": "bytes32",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "AxiomV2Call",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "user",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "bytes32",
+              "name": "queryHash",
+              "type": "bytes32",
+              "indexed": true
+            },
+            {
+              "internalType": "uint256",
+              "name": "numTokens",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "bytes32[]",
+              "name": "axiomResults",
+              "type": "bytes32[]",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "ClaimAirdrop",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "user",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "string",
+              "name": "error",
+              "type": "string",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "ClaimAirdropError",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "OwnershipTransferred",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "axiomCallbackQuerySchema",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint64",
+              "name": "sourceChainId",
+              "type": "uint64"
+            },
+            {
+              "internalType": "address",
+              "name": "callerAddr",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "querySchema",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "queryHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32[]",
+              "name": "axiomResults",
+              "type": "bytes32[]"
+            },
+            {
+              "internalType": "bytes",
+              "name": "callbackExtraData",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "axiomV2Callback"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "axiomV2QueryAddress",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "callbackSourceChainId",
+          "outputs": [
+            {
+              "internalType": "uint64",
+              "name": "",
+              "type": "uint64"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "hasClaimed",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "owner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "querySubmitted",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "renounceOwnership"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "token",
+          "outputs": [
+            {
+              "internalType": "contract IERC20",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "transferOwnership"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_token",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "updateAirdropToken"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_axiomCallbackQuerySchema",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "updateCallbackQuerySchema"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "owner()": {
+            "details": "Returns the address of the current owner."
+          },
+          "renounceOwnership()": {
+            "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner."
+          },
+          "transferOwnership(address)": {
+            "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/AutonomousAirdrop.sol": "AutonomousAirdrop"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/forge-std/src/console.sol": {
+        "keccak256": "0x91d5413c2434ca58fd278b6e1e79fd98d10c83931cc2596a6038eee4daeb34ba",
+        "urls": [
+          "bzz-raw://91ccea707361e48b9b7a161fe81f496b9932bc471e9c4e4e1e9c283f2453cc70",
+          "dweb:/ipfs/QmcB66sZhQ6Kz7MUHcLE78YXRUZxoZnnxZjN6yATsbB2ec"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/access/Ownable.sol": {
+        "keccak256": "0xba43b97fba0d32eb4254f6a5a297b39a19a247082a02d6e69349e071e2946218",
+        "urls": [
+          "bzz-raw://fc980984badf3984b6303b377711220e067722bbd6a135b24669ff5069ef9f32",
+          "dweb:/ipfs/QmPHXMSXj99XjSVM21YsY6aNtLLjLVXDbyN76J5HQYvvrz"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol": {
+        "keccak256": "0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305",
+        "urls": [
+          "bzz-raw://bd39944e8fc06be6dbe2dd1d8449b5336e23c6a7ba3e8e9ae5ae0f37f35283f5",
+          "dweb:/ipfs/QmPV3FGYjVwvKSgAXKUN3r9T9GwniZz83CxBpM7vyj2G53"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/utils/Context.sol": {
+        "keccak256": "0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7",
+        "urls": [
+          "bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92",
+          "dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
+        ],
+        "license": "MIT"
+      },
+      "src/AutonomousAirdrop.sol": {
+        "keccak256": "0x5b7c2228f317edb398f986b51ef5931e86b4a1c51fd85b55380c40ed48f88971",
+        "urls": [
+          "bzz-raw://a0ab27cace583550e06d1c591265ab662c335b2c9b07c856f767272e16e64705",
+          "dweb:/ipfs/QmWrtQv2ZpAtgg1DfTmzJMEJznLGctPaz7S1agoDG7zwCG"
+        ],
+        "license": "MIT"
+      },
+      "src/AxiomV2Client.sol": {
+        "keccak256": "0xbf34498af6b6780f7409cf1ab7df8d0088eae48e4642988f1a208fa349b2335e",
+        "urls": [
+          "bzz-raw://7a60c54d6ac8b638dac64bf81245740ef86fe810585bcec9020ecb6fc62f792c",
+          "dweb:/ipfs/Qmf1Zcgq5qAEKB9oKVbvQwpx2mzQtVQd6R4Etxbw1fqQ8w"
+        ],
+        "license": "MIT"
+      },
+      "src/interfaces/IAxiomV2Client.sol": {
+        "keccak256": "0x9e54f73cb62fa653699d119170707aba0af3728eca2f05b6d3407159cec35458",
+        "urls": [
+          "bzz-raw://eb0ae60742f2fdae14a5424fbb093ad85145d2eba7247ffb5d6d74af4a37ae09",
+          "dweb:/ipfs/QmNxcKTvTCBhmKDSbfjn5uNyffkZtaZ7e3B99RKd28NkJP"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/AutonomousAirdrop.sol",
+    "id": 44459,
+    "exportedSymbols": {
+      "AutonomousAirdrop": [
+        44458
+      ],
+      "AxiomV2Client": [
+        44548
+      ],
+      "IERC20": [
+        44136
+      ],
+      "Ownable": [
+        43471
+      ],
+      "console": [
+        21995
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:2822:25",
+    "nodes": [
+      {
+        "id": 44259,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:25",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 44261,
+        "nodeType": "ImportDirective",
+        "src": "57:52:25",
+        "nodes": [],
+        "absolutePath": "src/AxiomV2Client.sol",
+        "file": "./AxiomV2Client.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 44459,
+        "sourceUnit": 44549,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 44260,
+              "name": "AxiomV2Client",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 44548,
+              "src": "66:13:25",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 44263,
+        "nodeType": "ImportDirective",
+        "src": "110:72:25",
+        "nodes": [],
+        "absolutePath": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "file": "@openzeppelin-contracts/token/ERC20/IERC20.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 44459,
+        "sourceUnit": 44137,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 44262,
+              "name": "IERC20",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 44136,
+              "src": "119:6:25",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 44265,
+        "nodeType": "ImportDirective",
+        "src": "183:69:25",
+        "nodes": [],
+        "absolutePath": "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+        "file": "@openzeppelin-contracts/access/Ownable.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 44459,
+        "sourceUnit": 43472,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 44264,
+              "name": "Ownable",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 43471,
+              "src": "192:7:25",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 44266,
+        "nodeType": "ImportDirective",
+        "src": "253:31:25",
+        "nodes": [],
+        "absolutePath": "lib/forge-std/src/console.sol",
+        "file": "forge-std/console.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 44459,
+        "sourceUnit": 21996,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 44458,
+        "nodeType": "ContractDefinition",
+        "src": "286:2567:25",
+        "nodes": [
+          {
+            "id": 44281,
+            "nodeType": "EventDefinition",
+            "src": "345:149:25",
+            "nodes": [],
+            "anonymous": false,
+            "eventSelector": "b6cdd515ae6bc7c835f5b9b67a78fe370d2fa71ebb6c7a49595cb3f84988d35e",
+            "name": "ClaimAirdrop",
+            "nameLocation": "351:12:25",
+            "parameters": {
+              "id": 44280,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44272,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nameLocation": "389:4:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44281,
+                  "src": "373:20:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44271,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "373:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44274,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "queryHash",
+                  "nameLocation": "419:9:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44281,
+                  "src": "403:25:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 44273,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "403:7:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44276,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "numTokens",
+                  "nameLocation": "446:9:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44281,
+                  "src": "438:17:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 44275,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "438:7:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44279,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "axiomResults",
+                  "nameLocation": "475:12:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44281,
+                  "src": "465:22:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 44277,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "465:7:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 44278,
+                    "nodeType": "ArrayTypeName",
+                    "src": "465:9:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "363:130:25"
+            }
+          },
+          {
+            "id": 44287,
+            "nodeType": "EventDefinition",
+            "src": "499:82:25",
+            "nodes": [],
+            "anonymous": false,
+            "eventSelector": "8031153b90b84d8fb7737520cd5205a4168384868eee482f856fc78e8973a8f7",
+            "name": "ClaimAirdropError",
+            "nameLocation": "505:17:25",
+            "parameters": {
+              "id": 44286,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44283,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nameLocation": "548:4:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44287,
+                  "src": "532:20:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44282,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "532:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44285,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "error",
+                  "nameLocation": "569:5:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44287,
+                  "src": "562:12:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 44284,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "562:6:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "522:58:25"
+            }
+          },
+          {
+            "id": 44291,
+            "nodeType": "EventDefinition",
+            "src": "586:72:25",
+            "nodes": [],
+            "anonymous": false,
+            "eventSelector": "215a17e0015e11cebc3087027513f0b70572c3b3341a76ef38fbcbbb8193c6ae",
+            "name": "AxiomCallbackQuerySchemaUpdated",
+            "nameLocation": "592:31:25",
+            "parameters": {
+              "id": 44290,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44289,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "axiomCallbackQuerySchema",
+                  "nameLocation": "632:24:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44291,
+                  "src": "624:32:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 44288,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "624:7:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "623:34:25"
+            }
+          },
+          {
+            "id": 44295,
+            "nodeType": "EventDefinition",
+            "src": "663:48:25",
+            "nodes": [],
+            "anonymous": false,
+            "eventSelector": "3d74e308a5601bae6228e9545413c210aad9d550ccd35b1f55805a9bd2cc6dfb",
+            "name": "AirdropTokenAddressUpdated",
+            "nameLocation": "669:26:25",
+            "parameters": {
+              "id": 44294,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44293,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nameLocation": "704:5:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44295,
+                  "src": "696:13:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44292,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "696:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "695:15:25"
+            }
+          },
+          {
+            "id": 44297,
+            "nodeType": "VariableDeclaration",
+            "src": "717:35:25",
+            "nodes": [],
+            "constant": false,
+            "functionSelector": "0a50ec5c",
+            "mutability": "mutable",
+            "name": "callbackSourceChainId",
+            "nameLocation": "731:21:25",
+            "scope": 44458,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint64",
+              "typeString": "uint64"
+            },
+            "typeName": {
+              "id": 44296,
+              "name": "uint64",
+              "nodeType": "ElementaryTypeName",
+              "src": "717:6:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint64",
+                "typeString": "uint64"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 44299,
+            "nodeType": "VariableDeclaration",
+            "src": "758:39:25",
+            "nodes": [],
+            "constant": false,
+            "functionSelector": "cd1cd725",
+            "mutability": "mutable",
+            "name": "axiomCallbackQuerySchema",
+            "nameLocation": "773:24:25",
+            "scope": 44458,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 44298,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "758:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 44303,
+            "nodeType": "VariableDeclaration",
+            "src": "803:46:25",
+            "nodes": [],
+            "constant": false,
+            "functionSelector": "ab72fc09",
+            "mutability": "mutable",
+            "name": "querySubmitted",
+            "nameLocation": "835:14:25",
+            "scope": 44458,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+              "typeString": "mapping(address => bool)"
+            },
+            "typeName": {
+              "id": 44302,
+              "keyName": "",
+              "keyNameLocation": "-1:-1:-1",
+              "keyType": {
+                "id": 44300,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "811:7:25",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "803:24:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                "typeString": "mapping(address => bool)"
+              },
+              "valueName": "",
+              "valueNameLocation": "-1:-1:-1",
+              "valueType": {
+                "id": 44301,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "822:4:25",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 44307,
+            "nodeType": "VariableDeclaration",
+            "src": "855:42:25",
+            "nodes": [],
+            "constant": false,
+            "functionSelector": "73b2e80e",
+            "mutability": "mutable",
+            "name": "hasClaimed",
+            "nameLocation": "887:10:25",
+            "scope": 44458,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+              "typeString": "mapping(address => bool)"
+            },
+            "typeName": {
+              "id": 44306,
+              "keyName": "",
+              "keyNameLocation": "-1:-1:-1",
+              "keyType": {
+                "id": 44304,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "863:7:25",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "855:24:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                "typeString": "mapping(address => bool)"
+              },
+              "valueName": "",
+              "valueNameLocation": "-1:-1:-1",
+              "valueType": {
+                "id": 44305,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "874:4:25",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 44310,
+            "nodeType": "VariableDeclaration",
+            "src": "904:19:25",
+            "nodes": [],
+            "constant": false,
+            "functionSelector": "fc0c546a",
+            "mutability": "mutable",
+            "name": "token",
+            "nameLocation": "918:5:25",
+            "scope": 44458,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IERC20_$44136",
+              "typeString": "contract IERC20"
+            },
+            "typeName": {
+              "id": 44309,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 44308,
+                "name": "IERC20",
+                "nameLocations": [
+                  "904:6:25"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 44136,
+                "src": "904:6:25"
+              },
+              "referencedDeclaration": 44136,
+              "src": "904:6:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IERC20_$44136",
+                "typeString": "contract IERC20"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 44331,
+            "nodeType": "FunctionDefinition",
+            "src": "930:299:25",
+            "nodes": [],
+            "body": {
+              "id": 44330,
+              "nodeType": "Block",
+              "src": "1104:125:25",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 44324,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 44322,
+                      "name": "callbackSourceChainId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44297,
+                      "src": "1114:21:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint64",
+                        "typeString": "uint64"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 44323,
+                      "name": "_callbackSourceChainId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44314,
+                      "src": "1138:22:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint64",
+                        "typeString": "uint64"
+                      }
+                    },
+                    "src": "1114:46:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "id": 44325,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1114:46:25"
+                },
+                {
+                  "expression": {
+                    "id": 44328,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 44326,
+                      "name": "axiomCallbackQuerySchema",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44299,
+                      "src": "1170:24:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 44327,
+                      "name": "_axiomCallbackQuerySchema",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44316,
+                      "src": "1197:25:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "1170:52:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 44329,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1170:52:25"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "id": 44319,
+                    "name": "_axiomV2QueryAddress",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 44312,
+                    "src": "1082:20:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 44320,
+                "kind": "baseConstructorSpecifier",
+                "modifierName": {
+                  "id": 44318,
+                  "name": "AxiomV2Client",
+                  "nameLocations": [
+                    "1068:13:25"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 44548,
+                  "src": "1068:13:25"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1068:35:25"
+              }
+            ],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 44317,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44312,
+                  "mutability": "mutable",
+                  "name": "_axiomV2QueryAddress",
+                  "nameLocation": "959:20:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44331,
+                  "src": "951:28:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44311,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "951:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44314,
+                  "mutability": "mutable",
+                  "name": "_callbackSourceChainId",
+                  "nameLocation": "996:22:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44331,
+                  "src": "989:29:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 44313,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "989:6:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44316,
+                  "mutability": "mutable",
+                  "name": "_axiomCallbackQuerySchema",
+                  "nameLocation": "1036:25:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44331,
+                  "src": "1028:33:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 44315,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1028:7:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "941:126:25"
+            },
+            "returnParameters": {
+              "id": 44321,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1104:0:25"
+            },
+            "scope": 44458,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 44347,
+            "nodeType": "FunctionDefinition",
+            "src": "1235:243:25",
+            "nodes": [],
+            "body": {
+              "id": 44346,
+              "nodeType": "Block",
+              "src": "1336:142:25",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 44340,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 44338,
+                      "name": "axiomCallbackQuerySchema",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44299,
+                      "src": "1346:24:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 44339,
+                      "name": "_axiomCallbackQuerySchema",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44333,
+                      "src": "1373:25:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "1346:52:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 44341,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1346:52:25"
+                },
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "id": 44343,
+                        "name": "_axiomCallbackQuerySchema",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 44333,
+                        "src": "1445:25:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "id": 44342,
+                      "name": "AxiomCallbackQuerySchemaUpdated",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44291,
+                      "src": "1413:31:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_bytes32_$returns$__$",
+                        "typeString": "function (bytes32)"
+                      }
+                    },
+                    "id": 44344,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1413:58:25",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 44345,
+                  "nodeType": "EmitStatement",
+                  "src": "1408:63:25"
+                }
+              ]
+            },
+            "functionSelector": "034606e0",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 44336,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 44335,
+                  "name": "onlyOwner",
+                  "nameLocations": [
+                    "1326:9:25"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 43390,
+                  "src": "1326:9:25"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1326:9:25"
+              }
+            ],
+            "name": "updateCallbackQuerySchema",
+            "nameLocation": "1244:25:25",
+            "parameters": {
+              "id": 44334,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44333,
+                  "mutability": "mutable",
+                  "name": "_axiomCallbackQuerySchema",
+                  "nameLocation": "1287:25:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44347,
+                  "src": "1279:33:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 44332,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1279:7:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1269:49:25"
+            },
+            "returnParameters": {
+              "id": 44337,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1336:0:25"
+            },
+            "scope": 44458,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 44365,
+            "nodeType": "FunctionDefinition",
+            "src": "1484:149:25",
+            "nodes": [],
+            "body": {
+              "id": 44364,
+              "nodeType": "Block",
+              "src": "1545:88:25",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 44358,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 44354,
+                      "name": "token",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44310,
+                      "src": "1555:5:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IERC20_$44136",
+                        "typeString": "contract IERC20"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 44356,
+                          "name": "_token",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 44349,
+                          "src": "1570:6:25",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 44355,
+                        "name": "IERC20",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 44136,
+                        "src": "1563:6:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_IERC20_$44136_$",
+                          "typeString": "type(contract IERC20)"
+                        }
+                      },
+                      "id": 44357,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1563:14:25",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IERC20_$44136",
+                        "typeString": "contract IERC20"
+                      }
+                    },
+                    "src": "1555:22:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IERC20_$44136",
+                      "typeString": "contract IERC20"
+                    }
+                  },
+                  "id": 44359,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1555:22:25"
+                },
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "id": 44361,
+                        "name": "_token",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 44349,
+                        "src": "1619:6:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 44360,
+                      "name": "AirdropTokenAddressUpdated",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44295,
+                      "src": "1592:26:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 44362,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1592:34:25",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 44363,
+                  "nodeType": "EmitStatement",
+                  "src": "1587:39:25"
+                }
+              ]
+            },
+            "functionSelector": "a34c1eb4",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 44352,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 44351,
+                  "name": "onlyOwner",
+                  "nameLocations": [
+                    "1535:9:25"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 43390,
+                  "src": "1535:9:25"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1535:9:25"
+              }
+            ],
+            "name": "updateAirdropToken",
+            "nameLocation": "1493:18:25",
+            "parameters": {
+              "id": 44350,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44349,
+                  "mutability": "mutable",
+                  "name": "_token",
+                  "nameLocation": "1520:6:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44365,
+                  "src": "1512:14:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44348,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1512:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1511:16:25"
+            },
+            "returnParameters": {
+              "id": 44353,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1545:0:25"
+            },
+            "scope": 44458,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 44432,
+            "nodeType": "FunctionDefinition",
+            "src": "1639:859:25",
+            "nodes": [],
+            "body": {
+              "id": 44431,
+              "nodeType": "Block",
+              "src": "1894:604:25",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 44386,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "UnaryOperation",
+                        "operator": "!",
+                        "prefix": true,
+                        "src": "1912:23:25",
+                        "subExpression": {
+                          "baseExpression": {
+                            "id": 44383,
+                            "name": "hasClaimed",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 44307,
+                            "src": "1913:10:25",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                              "typeString": "mapping(address => bool)"
+                            }
+                          },
+                          "id": 44385,
+                          "indexExpression": {
+                            "id": 44384,
+                            "name": "callerAddr",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 44369,
+                            "src": "1924:10:25",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "1913:22:25",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "4175746f6e6f6d6f75732041697264726f703a20557365722068617320616c726561647920636c61696d656420746869732061697264726f70",
+                        "id": 44387,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1937:59:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_4648a9d32868d9eb7d243b52b8afac1cac848fe6eb8d65e810b489b2814d92e4",
+                          "typeString": "literal_string \"Autonomous Airdrop: User has already claimed this airdrop\""
+                        },
+                        "value": "Autonomous Airdrop: User has already claimed this airdrop"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_4648a9d32868d9eb7d243b52b8afac1cac848fe6eb8d65e810b489b2814d92e4",
+                          "typeString": "literal_string \"Autonomous Airdrop: User has already claimed this airdrop\""
+                        }
+                      ],
+                      "id": 44382,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "1904:7:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 44388,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1904:93:25",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 44389,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1904:93:25"
+                },
+                {
+                  "assignments": [
+                    44391
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 44391,
+                      "mutability": "mutable",
+                      "name": "results",
+                      "nameLocation": "2041:7:25",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 44431,
+                      "src": "2033:15:25",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      },
+                      "typeName": {
+                        "id": 44390,
+                        "name": "bytes32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2033:7:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 44395,
+                  "initialValue": {
+                    "baseExpression": {
+                      "id": 44392,
+                      "name": "axiomResults",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44376,
+                      "src": "2051:12:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_bytes32_$dyn_calldata_ptr",
+                        "typeString": "bytes32[] calldata"
+                      }
+                    },
+                    "id": 44394,
+                    "indexExpression": {
+                      "hexValue": "30",
+                      "id": 44393,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "2064:1:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "2051:15:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2033:33:25"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        "id": 44399,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 44397,
+                          "name": "results",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 44391,
+                          "src": "2118:7:25",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "hexValue": "31",
+                          "id": 44398,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "2129:3:25",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_c89efdaa54c0f20c7adf612882df0950f5a951637e0307cdcb4c672f298b8bc6",
+                            "typeString": "literal_string \"1\""
+                          },
+                          "value": "1"
+                        },
+                        "src": "2118:14:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "4175746f6e6f6d6f75732041697264726f703a2056616c69642c207468697320706572736f6e20686173206265656e20612076696374696d",
+                        "id": 44400,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2134:58:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbc8d1ad020b7be6e52fffa18124fd179b2ce7d9d4518eeeb5a942429622cf3f",
+                          "typeString": "literal_string \"Autonomous Airdrop: Valid, this person has been a victim\""
+                        },
+                        "value": "Autonomous Airdrop: Valid, this person has been a victim"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_cbc8d1ad020b7be6e52fffa18124fd179b2ce7d9d4518eeeb5a942429622cf3f",
+                          "typeString": "literal_string \"Autonomous Airdrop: Valid, this person has been a victim\""
+                        }
+                      ],
+                      "id": 44396,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "2110:7:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 44401,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2110:83:25",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 44402,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2110:83:25"
+                },
+                {
+                  "expression": {
+                    "id": 44407,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "baseExpression": {
+                        "id": 44403,
+                        "name": "hasClaimed",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 44307,
+                        "src": "2239:10:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                          "typeString": "mapping(address => bool)"
+                        }
+                      },
+                      "id": 44405,
+                      "indexExpression": {
+                        "id": 44404,
+                        "name": "callerAddr",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 44369,
+                        "src": "2250:10:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "2239:22:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "74727565",
+                      "id": 44406,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "2264:4:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "2239:29:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 44408,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2239:29:25"
+                },
+                {
+                  "assignments": [
+                    44410
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 44410,
+                      "mutability": "mutable",
+                      "name": "numTokens",
+                      "nameLocation": "2286:9:25",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 44431,
+                      "src": "2278:17:25",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 44409,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2278:7:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 44416,
+                  "initialValue": {
+                    "commonType": {
+                      "typeIdentifier": "t_rational_100000000000000000000_by_1",
+                      "typeString": "int_const 100000000000000000000"
+                    },
+                    "id": 44415,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "hexValue": "313030",
+                      "id": 44411,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "2298:3:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_100_by_1",
+                        "typeString": "int_const 100"
+                      },
+                      "value": "100"
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "*",
+                    "rightExpression": {
+                      "commonType": {
+                        "typeIdentifier": "t_rational_1000000000000000000_by_1",
+                        "typeString": "int_const 1000000000000000000"
+                      },
+                      "id": 44414,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "hexValue": "3130",
+                        "id": 44412,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2304:2:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_10_by_1",
+                          "typeString": "int_const 10"
+                        },
+                        "value": "10"
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "**",
+                      "rightExpression": {
+                        "hexValue": "3138",
+                        "id": 44413,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2308:2:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_18_by_1",
+                          "typeString": "int_const 18"
+                        },
+                        "value": "18"
+                      },
+                      "src": "2304:6:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1000000000000000000_by_1",
+                        "typeString": "int_const 1000000000000000000"
+                      }
+                    },
+                    "src": "2298:12:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_100000000000000000000_by_1",
+                      "typeString": "int_const 100000000000000000000"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2278:32:25"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 44420,
+                        "name": "callerAddr",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 44369,
+                        "src": "2335:10:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 44421,
+                        "name": "numTokens",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 44410,
+                        "src": "2347:9:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 44417,
+                        "name": "token",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 44310,
+                        "src": "2320:5:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IERC20_$44136",
+                          "typeString": "contract IERC20"
+                        }
+                      },
+                      "id": 44419,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "2326:8:25",
+                      "memberName": "transfer",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 44103,
+                      "src": "2320:14:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
+                        "typeString": "function (address,uint256) external returns (bool)"
+                      }
+                    },
+                    "id": 44422,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2320:37:25",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 44423,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2320:37:25"
+                },
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "id": 44425,
+                        "name": "callerAddr",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 44369,
+                        "src": "2399:10:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 44426,
+                        "name": "queryHash",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 44373,
+                        "src": "2423:9:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "id": 44427,
+                        "name": "numTokens",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 44410,
+                        "src": "2446:9:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "id": 44428,
+                        "name": "axiomResults",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 44376,
+                        "src": "2469:12:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_bytes32_$dyn_calldata_ptr",
+                          "typeString": "bytes32[] calldata"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_array$_t_bytes32_$dyn_calldata_ptr",
+                          "typeString": "bytes32[] calldata"
+                        }
+                      ],
+                      "id": 44424,
+                      "name": "ClaimAirdrop",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44281,
+                      "src": "2373:12:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_bytes32_$_t_uint256_$_t_array$_t_bytes32_$dyn_memory_ptr_$returns$__$",
+                        "typeString": "function (address,bytes32,uint256,bytes32[] memory)"
+                      }
+                    },
+                    "id": 44429,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2373:118:25",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 44430,
+                  "nodeType": "EmitStatement",
+                  "src": "2368:123:25"
+                }
+              ]
+            },
+            "baseFunctions": [
+              44547
+            ],
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_axiomV2Callback",
+            "nameLocation": "1648:16:25",
+            "overrides": {
+              "id": 44380,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "1885:8:25"
+            },
+            "parameters": {
+              "id": 44379,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44367,
+                  "mutability": "mutable",
+                  "name": "sourceChainId",
+                  "nameLocation": "1681:13:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44432,
+                  "src": "1674:20:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 44366,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1674:6:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44369,
+                  "mutability": "mutable",
+                  "name": "callerAddr",
+                  "nameLocation": "1712:10:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44432,
+                  "src": "1704:18:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44368,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1704:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44371,
+                  "mutability": "mutable",
+                  "name": "querySchema",
+                  "nameLocation": "1740:11:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44432,
+                  "src": "1732:19:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 44370,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1732:7:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44373,
+                  "mutability": "mutable",
+                  "name": "queryHash",
+                  "nameLocation": "1769:9:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44432,
+                  "src": "1761:17:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 44372,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1761:7:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44376,
+                  "mutability": "mutable",
+                  "name": "axiomResults",
+                  "nameLocation": "1807:12:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44432,
+                  "src": "1788:31:25",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_calldata_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 44374,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1788:7:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 44375,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1788:9:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44378,
+                  "mutability": "mutable",
+                  "name": "callbackExtraData",
+                  "nameLocation": "1844:17:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44432,
+                  "src": "1829:32:25",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 44377,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1829:5:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1664:203:25"
+            },
+            "returnParameters": {
+              "id": 44381,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1894:0:25"
+            },
+            "scope": 44458,
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "internal"
+          },
+          {
+            "id": 44457,
+            "nodeType": "FunctionDefinition",
+            "src": "2504:347:25",
+            "nodes": [],
+            "body": {
+              "id": 44456,
+              "nodeType": "Block",
+              "src": "2653:198:25",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_uint64",
+                          "typeString": "uint64"
+                        },
+                        "id": 44445,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 44443,
+                          "name": "sourceChainId",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 44434,
+                          "src": "2671:13:25",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint64",
+                            "typeString": "uint64"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "id": 44444,
+                          "name": "callbackSourceChainId",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 44297,
+                          "src": "2688:21:25",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint64",
+                            "typeString": "uint64"
+                          }
+                        },
+                        "src": "2671:38:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "4178696f6d56323a2063616c6c657220736f75726365436861696e4964206d69736d61746368",
+                        "id": 44446,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2711:40:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_7fc8a8239e77a19e4f90d5d08f138670f1fe709c71ea59f98617f3cd43793dd3",
+                          "typeString": "literal_string \"AxiomV2: caller sourceChainId mismatch\""
+                        },
+                        "value": "AxiomV2: caller sourceChainId mismatch"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_7fc8a8239e77a19e4f90d5d08f138670f1fe709c71ea59f98617f3cd43793dd3",
+                          "typeString": "literal_string \"AxiomV2: caller sourceChainId mismatch\""
+                        }
+                      ],
+                      "id": 44442,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "2663:7:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 44447,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2663:89:25",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 44448,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2663:89:25"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        "id": 44452,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 44450,
+                          "name": "querySchema",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 44438,
+                          "src": "2770:11:25",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "id": 44451,
+                          "name": "axiomCallbackQuerySchema",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 44299,
+                          "src": "2785:24:25",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "src": "2770:39:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "4178696f6d56323a20717565727920736368656d61206d69736d61746368",
+                        "id": 44453,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2811:32:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_a3c567c2d4d2458d206e1a2d1371f4538ff8ec9cae2e5306f5f8a65490363002",
+                          "typeString": "literal_string \"AxiomV2: query schema mismatch\""
+                        },
+                        "value": "AxiomV2: query schema mismatch"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_a3c567c2d4d2458d206e1a2d1371f4538ff8ec9cae2e5306f5f8a65490363002",
+                          "typeString": "literal_string \"AxiomV2: query schema mismatch\""
+                        }
+                      ],
+                      "id": 44449,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "2762:7:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 44454,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2762:82:25",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 44455,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2762:82:25"
+                }
+              ]
+            },
+            "baseFunctions": [
+              44531
+            ],
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_validateAxiomV2Call",
+            "nameLocation": "2513:20:25",
+            "overrides": {
+              "id": 44440,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "2644:8:25"
+            },
+            "parameters": {
+              "id": 44439,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44434,
+                  "mutability": "mutable",
+                  "name": "sourceChainId",
+                  "nameLocation": "2550:13:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44457,
+                  "src": "2543:20:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 44433,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2543:6:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44436,
+                  "mutability": "mutable",
+                  "name": "callerAddr",
+                  "nameLocation": "2581:10:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44457,
+                  "src": "2573:18:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44435,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2573:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44438,
+                  "mutability": "mutable",
+                  "name": "querySchema",
+                  "nameLocation": "2609:11:25",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44457,
+                  "src": "2601:19:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 44437,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2601:7:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2533:93:25"
+            },
+            "returnParameters": {
+              "id": 44441,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2653:0:25"
+            },
+            "scope": 44458,
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 44267,
+              "name": "AxiomV2Client",
+              "nameLocations": [
+                "316:13:25"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 44548,
+              "src": "316:13:25"
+            },
+            "id": 44268,
+            "nodeType": "InheritanceSpecifier",
+            "src": "316:13:25"
+          },
+          {
+            "baseName": {
+              "id": 44269,
+              "name": "Ownable",
+              "nameLocations": [
+                "331:7:25"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 43471,
+              "src": "331:7:25"
+            },
+            "id": 44270,
+            "nodeType": "InheritanceSpecifier",
+            "src": "331:7:25"
+          }
+        ],
+        "canonicalName": "AutonomousAirdrop",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          44458,
+          43471,
+          44183,
+          44548,
+          44610
+        ],
+        "name": "AutonomousAirdrop",
+        "nameLocation": "295:17:25",
+        "scope": 44459,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 25
+}

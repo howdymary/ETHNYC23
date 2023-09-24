@@ -1,0 +1,690 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getSourceChainId",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "historicalMMRKeccak",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "recentMMRKeccak",
+          "type": "bytes32"
+        },
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "prevHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "root",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "numFinal",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "startBlockNumber",
+              "type": "uint32"
+            },
+            {
+              "internalType": "bytes32[10]",
+              "name": "recentMMRPeaks",
+              "type": "bytes32[10]"
+            },
+            {
+              "internalType": "bytes32[10]",
+              "name": "mmrComplementOrPeaks",
+              "type": "bytes32[10]"
+            },
+            {
+              "internalType": "uint32",
+              "name": "mmrIdx",
+              "type": "uint32"
+            }
+          ],
+          "internalType": "struct IAxiomV2HeaderVerifier.RecentMMRWitness",
+          "name": "mmrWitness",
+          "type": "tuple"
+        }
+      ],
+      "name": "verifyQueryHeaders",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getSourceChainId()": "fe428ed3",
+    "verifyQueryHeaders(bytes32,bytes32,(bytes32,bytes32,uint32,uint32,bytes32[10],bytes32[10],uint32))": "f1340da3"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getSourceChainId\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"\",\"type\":\"uint64\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"historicalMMRKeccak\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"recentMMRKeccak\",\"type\":\"bytes32\"},{\"components\":[{\"internalType\":\"bytes32\",\"name\":\"prevHash\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"root\",\"type\":\"bytes32\"},{\"internalType\":\"uint32\",\"name\":\"numFinal\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"startBlockNumber\",\"type\":\"uint32\"},{\"internalType\":\"bytes32[10]\",\"name\":\"recentMMRPeaks\",\"type\":\"bytes32[10]\"},{\"internalType\":\"bytes32[10]\",\"name\":\"mmrComplementOrPeaks\",\"type\":\"bytes32[10]\"},{\"internalType\":\"uint32\",\"name\":\"mmrIdx\",\"type\":\"uint32\"}],\"internalType\":\"struct IAxiomV2HeaderVerifier.RecentMMRWitness\",\"name\":\"mmrWitness\",\"type\":\"tuple\"}],\"name\":\"verifyQueryHeaders\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/interfaces/IAxiomV2HeaderVerifier.sol\":\"IAxiomV2HeaderVerifier\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":openzeppelin/=lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"src/interfaces/IAxiomV2HeaderVerifier.sol\":{\"keccak256\":\"0x6165cf6af6b182e8828133328c91efe7025a672676c1d000a129be7e42fc78bc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f6044902fe4da95085e4cb497d05ea05b7e8f061c0d22dad6e3a04980552d20a\",\"dweb:/ipfs/QmXPnnq1MaDfwFj3uSr3NgQt5dLVBQr8qRxWG9pJ27gXxi\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getSourceChainId",
+          "outputs": [
+            {
+              "internalType": "uint64",
+              "name": "",
+              "type": "uint64"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "historicalMMRKeccak",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "recentMMRKeccak",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "struct IAxiomV2HeaderVerifier.RecentMMRWitness",
+              "name": "mmrWitness",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "bytes32",
+                  "name": "prevHash",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "root",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "numFinal",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "startBlockNumber",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "bytes32[10]",
+                  "name": "recentMMRPeaks",
+                  "type": "bytes32[10]"
+                },
+                {
+                  "internalType": "bytes32[10]",
+                  "name": "mmrComplementOrPeaks",
+                  "type": "bytes32[10]"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "mmrIdx",
+                  "type": "uint32"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "verifyQueryHeaders"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/interfaces/IAxiomV2HeaderVerifier.sol": "IAxiomV2HeaderVerifier"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/interfaces/IAxiomV2HeaderVerifier.sol": {
+        "keccak256": "0x6165cf6af6b182e8828133328c91efe7025a672676c1d000a129be7e42fc78bc",
+        "urls": [
+          "bzz-raw://f6044902fe4da95085e4cb497d05ea05b7e8f061c0d22dad6e3a04980552d20a",
+          "dweb:/ipfs/QmXPnnq1MaDfwFj3uSr3NgQt5dLVBQr8qRxWG9pJ27gXxi"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/interfaces/IAxiomV2HeaderVerifier.sol",
+    "id": 44647,
+    "exportedSymbols": {
+      "IAxiomV2HeaderVerifier": [
+        44646
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:1353:29",
+    "nodes": [
+      {
+        "id": 44611,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:29",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 44646,
+        "nodeType": "ContractDefinition",
+        "src": "57:1328:29",
+        "nodes": [
+          {
+            "id": 44630,
+            "nodeType": "StructDefinition",
+            "src": "902:247:29",
+            "nodes": [],
+            "canonicalName": "IAxiomV2HeaderVerifier.RecentMMRWitness",
+            "members": [
+              {
+                "constant": false,
+                "id": 44613,
+                "mutability": "mutable",
+                "name": "prevHash",
+                "nameLocation": "944:8:29",
+                "nodeType": "VariableDeclaration",
+                "scope": 44630,
+                "src": "936:16:29",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 44612,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "936:7:29",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 44615,
+                "mutability": "mutable",
+                "name": "root",
+                "nameLocation": "970:4:29",
+                "nodeType": "VariableDeclaration",
+                "scope": 44630,
+                "src": "962:12:29",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 44614,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "962:7:29",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 44617,
+                "mutability": "mutable",
+                "name": "numFinal",
+                "nameLocation": "991:8:29",
+                "nodeType": "VariableDeclaration",
+                "scope": 44630,
+                "src": "984:15:29",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 44616,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "984:6:29",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 44619,
+                "mutability": "mutable",
+                "name": "startBlockNumber",
+                "nameLocation": "1016:16:29",
+                "nodeType": "VariableDeclaration",
+                "scope": 44630,
+                "src": "1009:23:29",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 44618,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1009:6:29",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 44623,
+                "mutability": "mutable",
+                "name": "recentMMRPeaks",
+                "nameLocation": "1062:14:29",
+                "nodeType": "VariableDeclaration",
+                "scope": 44630,
+                "src": "1050:26:29",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_bytes32_$10_storage_ptr",
+                  "typeString": "bytes32[10]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 44620,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1050:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 44622,
+                  "length": {
+                    "hexValue": "3130",
+                    "id": 44621,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "1058:2:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_10_by_1",
+                      "typeString": "int_const 10"
+                    },
+                    "value": "10"
+                  },
+                  "nodeType": "ArrayTypeName",
+                  "src": "1050:11:29",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$10_storage_ptr",
+                    "typeString": "bytes32[10]"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 44627,
+                "mutability": "mutable",
+                "name": "mmrComplementOrPeaks",
+                "nameLocation": "1098:20:29",
+                "nodeType": "VariableDeclaration",
+                "scope": 44630,
+                "src": "1086:32:29",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_bytes32_$10_storage_ptr",
+                  "typeString": "bytes32[10]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 44624,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1086:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 44626,
+                  "length": {
+                    "hexValue": "3130",
+                    "id": 44625,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "1094:2:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_10_by_1",
+                      "typeString": "int_const 10"
+                    },
+                    "value": "10"
+                  },
+                  "nodeType": "ArrayTypeName",
+                  "src": "1086:11:29",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$10_storage_ptr",
+                    "typeString": "bytes32[10]"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 44629,
+                "mutability": "mutable",
+                "name": "mmrIdx",
+                "nameLocation": "1136:6:29",
+                "nodeType": "VariableDeclaration",
+                "scope": 44630,
+                "src": "1129:13:29",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 44628,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1129:6:29",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "RecentMMRWitness",
+            "nameLocation": "909:16:29",
+            "scope": 44646,
+            "visibility": "public"
+          },
+          {
+            "id": 44640,
+            "nodeType": "FunctionDefinition",
+            "src": "1159:159:29",
+            "nodes": [],
+            "functionSelector": "f1340da3",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "verifyQueryHeaders",
+            "nameLocation": "1168:18:29",
+            "parameters": {
+              "id": 44638,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44632,
+                  "mutability": "mutable",
+                  "name": "historicalMMRKeccak",
+                  "nameLocation": "1204:19:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44640,
+                  "src": "1196:27:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 44631,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1196:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44634,
+                  "mutability": "mutable",
+                  "name": "recentMMRKeccak",
+                  "nameLocation": "1241:15:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44640,
+                  "src": "1233:23:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 44633,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1233:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44637,
+                  "mutability": "mutable",
+                  "name": "mmrWitness",
+                  "nameLocation": "1292:10:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44640,
+                  "src": "1266:36:29",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_RecentMMRWitness_$44630_calldata_ptr",
+                    "typeString": "struct IAxiomV2HeaderVerifier.RecentMMRWitness"
+                  },
+                  "typeName": {
+                    "id": 44636,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 44635,
+                      "name": "RecentMMRWitness",
+                      "nameLocations": [
+                        "1266:16:29"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 44630,
+                      "src": "1266:16:29"
+                    },
+                    "referencedDeclaration": 44630,
+                    "src": "1266:16:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_RecentMMRWitness_$44630_storage_ptr",
+                      "typeString": "struct IAxiomV2HeaderVerifier.RecentMMRWitness"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1186:122:29"
+            },
+            "returnParameters": {
+              "id": 44639,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1317:0:29"
+            },
+            "scope": 44646,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 44645,
+            "nodeType": "FunctionDefinition",
+            "src": "1324:59:29",
+            "nodes": [],
+            "functionSelector": "fe428ed3",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getSourceChainId",
+            "nameLocation": "1333:16:29",
+            "parameters": {
+              "id": 44641,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1349:2:29"
+            },
+            "returnParameters": {
+              "id": 44644,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44643,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44645,
+                  "src": "1375:6:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 44642,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1375:6:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1374:8:29"
+            },
+            "scope": 44646,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IAxiomV2HeaderVerifier",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          44646
+        ],
+        "name": "IAxiomV2HeaderVerifier",
+        "nameLocation": "67:22:29",
+        "scope": 44647,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 29
+}

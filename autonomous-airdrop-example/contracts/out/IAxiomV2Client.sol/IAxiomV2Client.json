@@ -1,0 +1,668 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint64",
+          "name": "sourceChainId",
+          "type": "uint64"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "callerAddr",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "querySchema",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "queryHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "AxiomV2Call",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "sourceChainId",
+          "type": "uint64"
+        },
+        {
+          "internalType": "address",
+          "name": "callerAddr",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "querySchema",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "queryHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32[]",
+          "name": "axiomResults",
+          "type": "bytes32[]"
+        },
+        {
+          "internalType": "bytes",
+          "name": "callbackExtraData",
+          "type": "bytes"
+        }
+      ],
+      "name": "axiomV2Callback",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "axiomV2QueryAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "axiomV2Callback(uint64,address,bytes32,bytes32,bytes32[],bytes)": "51b17b29",
+    "axiomV2QueryAddress()": "2a75d3be"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint64\",\"name\":\"sourceChainId\",\"type\":\"uint64\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"callerAddr\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"querySchema\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"queryHash\",\"type\":\"bytes32\"}],\"name\":\"AxiomV2Call\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint64\",\"name\":\"sourceChainId\",\"type\":\"uint64\"},{\"internalType\":\"address\",\"name\":\"callerAddr\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"querySchema\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"queryHash\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32[]\",\"name\":\"axiomResults\",\"type\":\"bytes32[]\"},{\"internalType\":\"bytes\",\"name\":\"callbackExtraData\",\"type\":\"bytes\"}],\"name\":\"axiomV2Callback\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"axiomV2QueryAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/interfaces/IAxiomV2Client.sol\":\"IAxiomV2Client\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":openzeppelin/=lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"src/interfaces/IAxiomV2Client.sol\":{\"keccak256\":\"0x9e54f73cb62fa653699d119170707aba0af3728eca2f05b6d3407159cec35458\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://eb0ae60742f2fdae14a5424fbb093ad85145d2eba7247ffb5d6d74af4a37ae09\",\"dweb:/ipfs/QmNxcKTvTCBhmKDSbfjn5uNyffkZtaZ7e3B99RKd28NkJP\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint64",
+              "name": "sourceChainId",
+              "type": "uint64",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "callerAddr",
+              "type": "address",
+              "indexed": false
+            },
+            {
+              "internalType": "bytes32",
+              "name": "querySchema",
+              "type": "bytes32",
+              "indexed": true
+            },
+            {
+              "internalType": "bytes32",
+              "name": "queryHash",
+              "type": "bytes32",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "AxiomV2Call",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint64",
+              "name": "sourceChainId",
+              "type": "uint64"
+            },
+            {
+              "internalType": "address",
+              "name": "callerAddr",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "querySchema",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "queryHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32[]",
+              "name": "axiomResults",
+              "type": "bytes32[]"
+            },
+            {
+              "internalType": "bytes",
+              "name": "callbackExtraData",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "axiomV2Callback"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "axiomV2QueryAddress",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/interfaces/IAxiomV2Client.sol": "IAxiomV2Client"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/interfaces/IAxiomV2Client.sol": {
+        "keccak256": "0x9e54f73cb62fa653699d119170707aba0af3728eca2f05b6d3407159cec35458",
+        "urls": [
+          "bzz-raw://eb0ae60742f2fdae14a5424fbb093ad85145d2eba7247ffb5d6d74af4a37ae09",
+          "dweb:/ipfs/QmNxcKTvTCBhmKDSbfjn5uNyffkZtaZ7e3B99RKd28NkJP"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/interfaces/IAxiomV2Client.sol",
+    "id": 44610,
+    "exportedSymbols": {
+      "IAxiomV2Client": [
+        44609
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:494:28",
+    "nodes": [
+      {
+        "id": 44577,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:28",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 44609,
+        "nodeType": "ContractDefinition",
+        "src": "57:469:28",
+        "nodes": [
+          {
+            "id": 44587,
+            "nodeType": "EventDefinition",
+            "src": "88:124:28",
+            "nodes": [],
+            "anonymous": false,
+            "eventSelector": "8c4d7c8c39bd8567a2e06cd74f2e95db120e4aeeb5092fca49fb9f3ea13f0fc1",
+            "name": "AxiomV2Call",
+            "nameLocation": "94:11:28",
+            "parameters": {
+              "id": 44586,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44579,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "sourceChainId",
+                  "nameLocation": "121:13:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44587,
+                  "src": "106:28:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 44578,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "106:6:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44581,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "callerAddr",
+                  "nameLocation": "144:10:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44587,
+                  "src": "136:18:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44580,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "136:7:28",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44583,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "querySchema",
+                  "nameLocation": "172:11:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44587,
+                  "src": "156:27:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 44582,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "156:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44585,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "queryHash",
+                  "nameLocation": "201:9:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44587,
+                  "src": "185:25:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 44584,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "185:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "105:106:28"
+            }
+          },
+          {
+            "id": 44592,
+            "nodeType": "FunctionDefinition",
+            "src": "218:63:28",
+            "nodes": [],
+            "functionSelector": "2a75d3be",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "axiomV2QueryAddress",
+            "nameLocation": "227:19:28",
+            "parameters": {
+              "id": 44588,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "246:2:28"
+            },
+            "returnParameters": {
+              "id": 44591,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44590,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44592,
+                  "src": "272:7:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44589,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "272:7:28",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "271:9:28"
+            },
+            "scope": 44609,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 44608,
+            "nodeType": "FunctionDefinition",
+            "src": "287:237:28",
+            "nodes": [],
+            "functionSelector": "51b17b29",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "axiomV2Callback",
+            "nameLocation": "296:15:28",
+            "parameters": {
+              "id": 44606,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44594,
+                  "mutability": "mutable",
+                  "name": "sourceChainId",
+                  "nameLocation": "328:13:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44608,
+                  "src": "321:20:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 44593,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "321:6:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44596,
+                  "mutability": "mutable",
+                  "name": "callerAddr",
+                  "nameLocation": "359:10:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44608,
+                  "src": "351:18:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44595,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "351:7:28",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44598,
+                  "mutability": "mutable",
+                  "name": "querySchema",
+                  "nameLocation": "387:11:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44608,
+                  "src": "379:19:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 44597,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "379:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44600,
+                  "mutability": "mutable",
+                  "name": "queryHash",
+                  "nameLocation": "416:9:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44608,
+                  "src": "408:17:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 44599,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "408:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44603,
+                  "mutability": "mutable",
+                  "name": "axiomResults",
+                  "nameLocation": "454:12:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44608,
+                  "src": "435:31:28",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_calldata_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 44601,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "435:7:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 44602,
+                    "nodeType": "ArrayTypeName",
+                    "src": "435:9:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44605,
+                  "mutability": "mutable",
+                  "name": "callbackExtraData",
+                  "nameLocation": "491:17:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44608,
+                  "src": "476:32:28",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 44604,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "476:5:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "311:203:28"
+            },
+            "returnParameters": {
+              "id": 44607,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "523:0:28"
+            },
+            "scope": 44609,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IAxiomV2Client",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          44609
+        ],
+        "name": "IAxiomV2Client",
+        "nameLocation": "67:14:28",
+        "scope": 44610,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 28
+}
