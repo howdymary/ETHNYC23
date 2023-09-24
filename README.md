@@ -3,6 +3,8 @@
 ## About
 This project identifies victims of MEV attacks on ETH Goerli and grants these victims an ERC-721 token that qualifies the holder to access a token gated Uniswap v4 pool on Scroll. Ultimately, this project incentivizes better behavior on Scroll based on a user's historical on chain data on ETH Goerli.
 
+This project's future roadmap includes adding complexity to the Uniswap hook--for example, ERC-721 holders might be able to qualify for 10% rebates on swap fees or extended trading hours (if trading hours are imposed via the Uniswap hook). This is a powerful new primitive--proving statements about historical on chain behaviors and using this proof to qualify certain users for privileges on complex, next generation DeFi.
+
 Design: https://app.pitch.com/app/player/c8d9c39c-6e49-4a21-be66-50decda3e35e/f4bd41d9-fbff-420e-954b-50e8e66e0595
 
 ### Using a Subgraph for an Axiom Query
