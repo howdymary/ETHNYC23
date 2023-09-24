@@ -28,7 +28,7 @@ Code Walkthrough: https://youtu.be/sPZaCm08IHY
 If given more time, this project allows users to autonomously claim an airdrop of an ERC-721 token. Users utilize a data-fetching layer on top of Axiom to autonomously prove that their transaction matches the parameters outlined above before submitting a query.
 
 ### Hyperlane Deployment on Scroll
-This project deployed a Hyperlane Warp Route on Scroll, allowing permissionless bridging of the ERC20 asset to Scroll Sepolia. 
+This project deployed a Hyperlane Warp Route on Scroll, allowing permissionless bridging of the ERC721 asset to Scroll Sepolia. 
 
 To establish a warp route, this project deployed HypERC20 contracts to Scroll Sepolia.
 
@@ -42,6 +42,6 @@ This uses Scroll's Quiknode RPC.
 If given more time, this project would design custom swap fee rebates for holders of the ERC-721 (MEVictim). 
 
 ### Good Actor Nouns NFT 
-This project created a lock on Unlock Protocol to create a Nouns NFT for qualifying addresses as proven by Axiom. This NFT is to signal that holders are good actors.
+This project created a lock on Unlock Protocol to create a Nouns NFT (ERC721) for qualifying addresses as proven by Axiom. This NFT is to signal that holders are good actors.
 
 NFT Contract Address: https://goerli.etherscan.io/address/0x2f8fc6507ace624dfb4649b8db61c4e48e2f1713
