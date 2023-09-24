@@ -1,0 +1,1 @@
+9999999999{"name": "parsimonious", "version": "0.9.0", "summary": "(Soon to be) the fastest pure-Python PEG parser I could muster", "requires_dist": ["regex>=2022.3.15"], "requires_python": null, "files": [{"file": "parsimonious-0.9.0.tar.gz", "hash": "sha256:b2ad1ae63a2f65bd78f5e0a8ac510a98f3607a43f1db2a8d46636a5d9e4a30c1"}], "yanked": false, "_cache_version": "2.0.0"}
