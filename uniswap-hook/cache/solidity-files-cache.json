@@ -1,0 +1,2073 @@
+{
+  "_format": "ethers-rs-sol-cache-3",
+  "paths": {
+    "artifacts": "out",
+    "build_infos": "out/build-info",
+    "sources": "src",
+    "tests": "test",
+    "scripts": "script",
+    "libraries": [
+      "lib"
+    ]
+  },
+  "files": {
+    "lib/forge-std/src/Base.sol": {
+      "lastModificationDate": 1695533148632,
+      "contentHash": "ee13c050b1914464f1d3f90cde90204b",
+      "sourceName": "lib/forge-std/src/Base.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "CommonBase": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Base.sol/CommonBase.json"
+        },
+        "ScriptBase": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Base.sol/ScriptBase.json"
+        },
+        "TestBase": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Base.sol/TestBase.json"
+        }
+      }
+    },
+    "lib/forge-std/src/Script.sol": {
+      "lastModificationDate": 1695533148633,
+      "contentHash": "a8896f13ebff9ed23cce0fcb7f8f1984",
+      "sourceName": "lib/forge-std/src/Script.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Base.sol",
+        "lib/forge-std/src/StdChains.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdStyle.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol",
+        "lib/forge-std/src/safeconsole.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "Script": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Script.sol/Script.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdChains.sol": {
+      "lastModificationDate": 1695533148633,
+      "contentHash": "aff0685683a41d8e314d64aef646fe6f",
+      "sourceName": "lib/forge-std/src/StdChains.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "StdChains": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "StdChains.sol/StdChains.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdCheats.sol": {
+      "lastModificationDate": 1695533148633,
+      "contentHash": "ac54b55c00322be31d8adfe9a2971847",
+      "sourceName": "lib/forge-std/src/StdCheats.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "StdCheats": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "StdCheats.sol/StdCheats.json"
+        },
+        "StdCheatsSafe": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "StdCheats.sol/StdCheatsSafe.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdJson.sol": {
+      "lastModificationDate": 1695533148633,
+      "contentHash": "2e1d13674e152408867795362d833c24",
+      "sourceName": "lib/forge-std/src/StdJson.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.6.0, <0.9.0",
+      "artifacts": {
+        "stdJson": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "StdJson.sol/stdJson.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdMath.sol": {
+      "lastModificationDate": 1695533148633,
+      "contentHash": "9da8f453eba6bb98f3d75bc6822bfb29",
+      "sourceName": "lib/forge-std/src/StdMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "stdMath": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "StdMath.sol/stdMath.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdStorage.sol": {
+      "lastModificationDate": 1695533148634,
+      "contentHash": "3cb9868082df39a53927db09dbc21f23",
+      "sourceName": "lib/forge-std/src/StdStorage.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "stdStorage": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "StdStorage.sol/stdStorage.json"
+        },
+        "stdStorageSafe": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "StdStorage.sol/stdStorageSafe.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdStyle.sol": {
+      "lastModificationDate": 1695533148634,
+      "contentHash": "6281165a12aa639705c691fccefd855e",
+      "sourceName": "lib/forge-std/src/StdStyle.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.4.22, <0.9.0",
+      "artifacts": {
+        "StdStyle": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "StdStyle.sol/StdStyle.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdUtils.sol": {
+      "lastModificationDate": 1695533148634,
+      "contentHash": "3ce83748fd76644688f916c9cced545b",
+      "sourceName": "lib/forge-std/src/StdUtils.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "StdUtils": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "StdUtils.sol/StdUtils.json"
+        }
+      }
+    },
+    "lib/forge-std/src/Vm.sol": {
+      "lastModificationDate": 1695533148634,
+      "contentHash": "b098c2721502365797aae8d0ee1babb8",
+      "sourceName": "lib/forge-std/src/Vm.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "Vm": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Vm.sol/Vm.json"
+        },
+        "VmSafe": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Vm.sol/VmSafe.json"
+        }
+      }
+    },
+    "lib/forge-std/src/console.sol": {
+      "lastModificationDate": 1695533148634,
+      "contentHash": "100b8a33b917da1147740d7ab8b0ded3",
+      "sourceName": "lib/forge-std/src/console.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.22, <0.9.0",
+      "artifacts": {
+        "console": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "console.sol/console.json"
+        }
+      }
+    },
+    "lib/forge-std/src/console2.sol": {
+      "lastModificationDate": 1695533148635,
+      "contentHash": "491ca717c1915995e78cc361485a3067",
+      "sourceName": "lib/forge-std/src/console2.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.22, <0.9.0",
+      "artifacts": {
+        "console2": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "console2.sol/console2.json"
+        }
+      }
+    },
+    "lib/forge-std/src/interfaces/IMulticall3.sol": {
+      "lastModificationDate": 1695533148635,
+      "contentHash": "7b131ca1ca32ef6378b7b9ad5488b901",
+      "sourceName": "lib/forge-std/src/interfaces/IMulticall3.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "IMulticall3": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IMulticall3.sol/IMulticall3.json"
+        }
+      }
+    },
+    "lib/forge-std/src/safeconsole.sol": {
+      "lastModificationDate": 1695533148635,
+      "contentHash": "ac3b1bf5a444db5db3656021830258a8",
+      "sourceName": "lib/forge-std/src/safeconsole.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "safeconsole": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "safeconsole.sol/safeconsole.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/interfaces/IFees.sol": {
+      "lastModificationDate": 1695535273578,
+      "contentHash": "2d353713cd976abfe804f51d7af2b4f6",
+      "sourceName": "lib/v4-core/contracts/interfaces/IFees.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol",
+        "lib/v4-core/contracts/types/Currency.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "IFees": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IFees.sol/IFees.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/interfaces/IHooks.sol": {
+      "lastModificationDate": 1695535273578,
+      "contentHash": "d8db0e186889bad622c3546b0ac8d656",
+      "sourceName": "lib/v4-core/contracts/interfaces/IHooks.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/v4-core/contracts/interfaces/IFees.sol",
+        "lib/v4-core/contracts/interfaces/IHooks.sol",
+        "lib/v4-core/contracts/interfaces/IPoolManager.sol",
+        "lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol",
+        "lib/v4-core/contracts/libraries/BitMath.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint128.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint96.sol",
+        "lib/v4-core/contracts/libraries/FullMath.sol",
+        "lib/v4-core/contracts/libraries/Pool.sol",
+        "lib/v4-core/contracts/libraries/Position.sol",
+        "lib/v4-core/contracts/libraries/SafeCast.sol",
+        "lib/v4-core/contracts/libraries/SqrtPriceMath.sol",
+        "lib/v4-core/contracts/libraries/SwapMath.sol",
+        "lib/v4-core/contracts/libraries/TickBitmap.sol",
+        "lib/v4-core/contracts/libraries/TickMath.sol",
+        "lib/v4-core/contracts/libraries/UnsafeMath.sol",
+        "lib/v4-core/contracts/types/BalanceDelta.sol",
+        "lib/v4-core/contracts/types/Currency.sol",
+        "lib/v4-core/contracts/types/PoolId.sol",
+        "lib/v4-core/contracts/types/PoolKey.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "IHooks": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IHooks.sol/IHooks.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/interfaces/IPoolManager.sol": {
+      "lastModificationDate": 1695537809885,
+      "contentHash": "d24114ef09a4b5dedc0acc619aede9b0",
+      "sourceName": "lib/v4-core/contracts/interfaces/IPoolManager.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/v4-core/contracts/interfaces/IFees.sol",
+        "lib/v4-core/contracts/interfaces/IHooks.sol",
+        "lib/v4-core/contracts/interfaces/IPoolManager.sol",
+        "lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol",
+        "lib/v4-core/contracts/libraries/BitMath.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint128.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint96.sol",
+        "lib/v4-core/contracts/libraries/FullMath.sol",
+        "lib/v4-core/contracts/libraries/Pool.sol",
+        "lib/v4-core/contracts/libraries/Position.sol",
+        "lib/v4-core/contracts/libraries/SafeCast.sol",
+        "lib/v4-core/contracts/libraries/SqrtPriceMath.sol",
+        "lib/v4-core/contracts/libraries/SwapMath.sol",
+        "lib/v4-core/contracts/libraries/TickBitmap.sol",
+        "lib/v4-core/contracts/libraries/TickMath.sol",
+        "lib/v4-core/contracts/libraries/UnsafeMath.sol",
+        "lib/v4-core/contracts/types/BalanceDelta.sol",
+        "lib/v4-core/contracts/types/Currency.sol",
+        "lib/v4-core/contracts/types/PoolId.sol",
+        "lib/v4-core/contracts/types/PoolKey.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "IPoolManager": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IPoolManager.sol/IPoolManager.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol": {
+      "lastModificationDate": 1695535273579,
+      "contentHash": "b1e20b81f1588bdc1857a7fc2bf2bedb",
+      "sourceName": "lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "IERC20Minimal": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IERC20Minimal.sol/IERC20Minimal.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/libraries/BitMath.sol": {
+      "lastModificationDate": 1695535273579,
+      "contentHash": "e09992e68cbfee6676578b28a8eb6985",
+      "sourceName": "lib/v4-core/contracts/libraries/BitMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "BitMath": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "BitMath.sol/BitMath.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/libraries/FeeLibrary.sol": {
+      "lastModificationDate": 1695535273579,
+      "contentHash": "047d67700705a49578fd0d3fe21cb8ca",
+      "sourceName": "lib/v4-core/contracts/libraries/FeeLibrary.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "FeeLibrary": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "FeeLibrary.sol/FeeLibrary.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/libraries/FixedPoint128.sol": {
+      "lastModificationDate": 1695535273579,
+      "contentHash": "81cee77f7d7c816ced348989df7371e9",
+      "sourceName": "lib/v4-core/contracts/libraries/FixedPoint128.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "FixedPoint128": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "FixedPoint128.sol/FixedPoint128.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/libraries/FixedPoint96.sol": {
+      "lastModificationDate": 1695535273579,
+      "contentHash": "1776e4be5f4f059e34830b5573a4f615",
+      "sourceName": "lib/v4-core/contracts/libraries/FixedPoint96.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "FixedPoint96": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "FixedPoint96.sol/FixedPoint96.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/libraries/FullMath.sol": {
+      "lastModificationDate": 1695535273579,
+      "contentHash": "0d30542759085b67c00d7597cd7ca307",
+      "sourceName": "lib/v4-core/contracts/libraries/FullMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "FullMath": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "FullMath.sol/FullMath.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/libraries/Hooks.sol": {
+      "lastModificationDate": 1695535273579,
+      "contentHash": "dc3b2210909a0ab3abb6b38ea3a671b5",
+      "sourceName": "lib/v4-core/contracts/libraries/Hooks.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/v4-core/contracts/interfaces/IFees.sol",
+        "lib/v4-core/contracts/interfaces/IHooks.sol",
+        "lib/v4-core/contracts/interfaces/IPoolManager.sol",
+        "lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol",
+        "lib/v4-core/contracts/libraries/BitMath.sol",
+        "lib/v4-core/contracts/libraries/FeeLibrary.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint128.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint96.sol",
+        "lib/v4-core/contracts/libraries/FullMath.sol",
+        "lib/v4-core/contracts/libraries/Pool.sol",
+        "lib/v4-core/contracts/libraries/Position.sol",
+        "lib/v4-core/contracts/libraries/SafeCast.sol",
+        "lib/v4-core/contracts/libraries/SqrtPriceMath.sol",
+        "lib/v4-core/contracts/libraries/SwapMath.sol",
+        "lib/v4-core/contracts/libraries/TickBitmap.sol",
+        "lib/v4-core/contracts/libraries/TickMath.sol",
+        "lib/v4-core/contracts/libraries/UnsafeMath.sol",
+        "lib/v4-core/contracts/types/BalanceDelta.sol",
+        "lib/v4-core/contracts/types/Currency.sol",
+        "lib/v4-core/contracts/types/PoolId.sol",
+        "lib/v4-core/contracts/types/PoolKey.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "Hooks": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Hooks.sol/Hooks.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/libraries/Pool.sol": {
+      "lastModificationDate": 1695535273580,
+      "contentHash": "e92d369e395ba6bceb998e65f5af099b",
+      "sourceName": "lib/v4-core/contracts/libraries/Pool.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/v4-core/contracts/libraries/BitMath.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint128.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint96.sol",
+        "lib/v4-core/contracts/libraries/FullMath.sol",
+        "lib/v4-core/contracts/libraries/Position.sol",
+        "lib/v4-core/contracts/libraries/SafeCast.sol",
+        "lib/v4-core/contracts/libraries/SqrtPriceMath.sol",
+        "lib/v4-core/contracts/libraries/SwapMath.sol",
+        "lib/v4-core/contracts/libraries/TickBitmap.sol",
+        "lib/v4-core/contracts/libraries/TickMath.sol",
+        "lib/v4-core/contracts/libraries/UnsafeMath.sol",
+        "lib/v4-core/contracts/types/BalanceDelta.sol"
+      ],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "Pool": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Pool.sol/Pool.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/libraries/Position.sol": {
+      "lastModificationDate": 1695535273580,
+      "contentHash": "7ae41724bd36722a8e33625c969578d9",
+      "sourceName": "lib/v4-core/contracts/libraries/Position.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/v4-core/contracts/libraries/FixedPoint128.sol",
+        "lib/v4-core/contracts/libraries/FullMath.sol"
+      ],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "Position": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Position.sol/Position.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/libraries/SafeCast.sol": {
+      "lastModificationDate": 1695535273580,
+      "contentHash": "2c56bd3bb46889b72036eb7cf2f7c9d1",
+      "sourceName": "lib/v4-core/contracts/libraries/SafeCast.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "SafeCast": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "SafeCast.sol/SafeCast.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/libraries/SqrtPriceMath.sol": {
+      "lastModificationDate": 1695535273581,
+      "contentHash": "ea5ac26ec4942f280cfa1de2fc368c14",
+      "sourceName": "lib/v4-core/contracts/libraries/SqrtPriceMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/v4-core/contracts/libraries/FixedPoint96.sol",
+        "lib/v4-core/contracts/libraries/FullMath.sol",
+        "lib/v4-core/contracts/libraries/SafeCast.sol",
+        "lib/v4-core/contracts/libraries/UnsafeMath.sol"
+      ],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "SqrtPriceMath": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "SqrtPriceMath.sol/SqrtPriceMath.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/libraries/SwapMath.sol": {
+      "lastModificationDate": 1695535273581,
+      "contentHash": "0c1cae3adbdc65101517bad68a9d923f",
+      "sourceName": "lib/v4-core/contracts/libraries/SwapMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/v4-core/contracts/libraries/FixedPoint96.sol",
+        "lib/v4-core/contracts/libraries/FullMath.sol",
+        "lib/v4-core/contracts/libraries/SafeCast.sol",
+        "lib/v4-core/contracts/libraries/SqrtPriceMath.sol",
+        "lib/v4-core/contracts/libraries/UnsafeMath.sol"
+      ],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "SwapMath": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "SwapMath.sol/SwapMath.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/libraries/TickBitmap.sol": {
+      "lastModificationDate": 1695535273581,
+      "contentHash": "6cd2e3876c5c43f9fd933bfaf5c7c233",
+      "sourceName": "lib/v4-core/contracts/libraries/TickBitmap.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/v4-core/contracts/libraries/BitMath.sol"
+      ],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "TickBitmap": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "TickBitmap.sol/TickBitmap.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/libraries/TickMath.sol": {
+      "lastModificationDate": 1695535273581,
+      "contentHash": "a5764c6a1787b73b1bde7b9884e45822",
+      "sourceName": "lib/v4-core/contracts/libraries/TickMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "TickMath": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "TickMath.sol/TickMath.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/libraries/UnsafeMath.sol": {
+      "lastModificationDate": 1695535273581,
+      "contentHash": "2fd744d4d8034e828e43d4e7cd79485d",
+      "sourceName": "lib/v4-core/contracts/libraries/UnsafeMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "UnsafeMath": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "UnsafeMath.sol/UnsafeMath.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/types/BalanceDelta.sol": {
+      "lastModificationDate": 1695535273586,
+      "contentHash": "a9a7b131b187c96ba149b6c874288a6c",
+      "sourceName": "lib/v4-core/contracts/types/BalanceDelta.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "BalanceDeltaLibrary": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "BalanceDelta.sol/BalanceDeltaLibrary.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/types/Currency.sol": {
+      "lastModificationDate": 1695535273586,
+      "contentHash": "f113b3502d3329534a72adedf7d6755e",
+      "sourceName": "lib/v4-core/contracts/types/Currency.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol"
+      ],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "CurrencyLibrary": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Currency.sol/CurrencyLibrary.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/types/PoolId.sol": {
+      "lastModificationDate": 1695535273586,
+      "contentHash": "3f5290aa4638a3e7a85e5bf6ff049590",
+      "sourceName": "lib/v4-core/contracts/types/PoolId.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/v4-core/contracts/interfaces/IFees.sol",
+        "lib/v4-core/contracts/interfaces/IHooks.sol",
+        "lib/v4-core/contracts/interfaces/IPoolManager.sol",
+        "lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol",
+        "lib/v4-core/contracts/libraries/BitMath.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint128.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint96.sol",
+        "lib/v4-core/contracts/libraries/FullMath.sol",
+        "lib/v4-core/contracts/libraries/Pool.sol",
+        "lib/v4-core/contracts/libraries/Position.sol",
+        "lib/v4-core/contracts/libraries/SafeCast.sol",
+        "lib/v4-core/contracts/libraries/SqrtPriceMath.sol",
+        "lib/v4-core/contracts/libraries/SwapMath.sol",
+        "lib/v4-core/contracts/libraries/TickBitmap.sol",
+        "lib/v4-core/contracts/libraries/TickMath.sol",
+        "lib/v4-core/contracts/libraries/UnsafeMath.sol",
+        "lib/v4-core/contracts/types/BalanceDelta.sol",
+        "lib/v4-core/contracts/types/Currency.sol",
+        "lib/v4-core/contracts/types/PoolId.sol",
+        "lib/v4-core/contracts/types/PoolKey.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "PoolIdLibrary": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "PoolId.sol/PoolIdLibrary.json"
+        }
+      }
+    },
+    "lib/v4-core/contracts/types/PoolKey.sol": {
+      "lastModificationDate": 1695535273586,
+      "contentHash": "afb69a9ea979a53f0c2b85a3d86adf81",
+      "sourceName": "lib/v4-core/contracts/types/PoolKey.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/v4-core/contracts/interfaces/IFees.sol",
+        "lib/v4-core/contracts/interfaces/IHooks.sol",
+        "lib/v4-core/contracts/interfaces/IPoolManager.sol",
+        "lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol",
+        "lib/v4-core/contracts/libraries/BitMath.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint128.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint96.sol",
+        "lib/v4-core/contracts/libraries/FullMath.sol",
+        "lib/v4-core/contracts/libraries/Pool.sol",
+        "lib/v4-core/contracts/libraries/Position.sol",
+        "lib/v4-core/contracts/libraries/SafeCast.sol",
+        "lib/v4-core/contracts/libraries/SqrtPriceMath.sol",
+        "lib/v4-core/contracts/libraries/SwapMath.sol",
+        "lib/v4-core/contracts/libraries/TickBitmap.sol",
+        "lib/v4-core/contracts/libraries/TickMath.sol",
+        "lib/v4-core/contracts/libraries/UnsafeMath.sol",
+        "lib/v4-core/contracts/types/BalanceDelta.sol",
+        "lib/v4-core/contracts/types/Currency.sol",
+        "lib/v4-core/contracts/types/PoolId.sol",
+        "lib/v4-core/contracts/types/PoolKey.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "PoolKey": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "PoolKey.sol/PoolKey.json"
+        }
+      }
+    },
+    "lib/v4-periphery/contracts/BaseHook.sol": {
+      "lastModificationDate": 1695535199850,
+      "contentHash": "6ab0b0a93c6351509ce355691e3d2d5a",
+      "sourceName": "lib/v4-periphery/contracts/BaseHook.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/v4-core/contracts/interfaces/IFees.sol",
+        "lib/v4-core/contracts/interfaces/IHooks.sol",
+        "lib/v4-core/contracts/interfaces/IPoolManager.sol",
+        "lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol",
+        "lib/v4-core/contracts/libraries/BitMath.sol",
+        "lib/v4-core/contracts/libraries/FeeLibrary.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint128.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint96.sol",
+        "lib/v4-core/contracts/libraries/FullMath.sol",
+        "lib/v4-core/contracts/libraries/Hooks.sol",
+        "lib/v4-core/contracts/libraries/Pool.sol",
+        "lib/v4-core/contracts/libraries/Position.sol",
+        "lib/v4-core/contracts/libraries/SafeCast.sol",
+        "lib/v4-core/contracts/libraries/SqrtPriceMath.sol",
+        "lib/v4-core/contracts/libraries/SwapMath.sol",
+        "lib/v4-core/contracts/libraries/TickBitmap.sol",
+        "lib/v4-core/contracts/libraries/TickMath.sol",
+        "lib/v4-core/contracts/libraries/UnsafeMath.sol",
+        "lib/v4-core/contracts/types/BalanceDelta.sol",
+        "lib/v4-core/contracts/types/Currency.sol",
+        "lib/v4-core/contracts/types/PoolId.sol",
+        "lib/v4-core/contracts/types/PoolKey.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "BaseHook": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "BaseHook.sol/BaseHook.json"
+        }
+      }
+    },
+    "lib/v4-periphery/lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol": {
+      "lastModificationDate": 1695535560951,
+      "contentHash": "6ab9f00c6c5253d1501e8c50e8fdd57a",
+      "sourceName": "lib/v4-periphery/lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "IERC1155": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IERC1155.sol/IERC1155.json"
+        }
+      }
+    },
+    "lib/v4-periphery/lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1695535560954,
+      "contentHash": "2490cb5bb2f2e4ce3bc22fce382430f6",
+      "sourceName": "lib/v4-periphery/lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "IERC721": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IERC721.sol/IERC721.json"
+        }
+      }
+    },
+    "lib/v4-periphery/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1695535560958,
+      "contentHash": "5a21a24ec719b683e7faf6eae0db9181",
+      "sourceName": "lib/v4-periphery/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "IERC165": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IERC165.sol/IERC165.json"
+        }
+      }
+    },
+    "script/Counter.s.sol": {
+      "lastModificationDate": 1695503604203,
+      "contentHash": "d79da76b92c5b28fcfe4189404325647",
+      "sourceName": "script/Counter.s.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Base.sol",
+        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src/StdChains.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdStyle.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol",
+        "lib/forge-std/src/safeconsole.sol"
+      ],
+      "versionRequirement": "^0.8.15",
+      "artifacts": {
+        "CounterScript": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Counter.s.sol/CounterScript.json"
+        }
+      }
+    },
+    "src/ERC721OwnershipHook.sol": {
+      "lastModificationDate": 1695537510520,
+      "contentHash": "8cd9c3db4b36e39d42a8aa89ea8e3a5b",
+      "sourceName": "src/ERC721OwnershipHook.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/v4-core/contracts/interfaces/IFees.sol",
+        "lib/v4-core/contracts/interfaces/IHooks.sol",
+        "lib/v4-core/contracts/interfaces/IPoolManager.sol",
+        "lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol",
+        "lib/v4-core/contracts/libraries/BitMath.sol",
+        "lib/v4-core/contracts/libraries/FeeLibrary.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint128.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint96.sol",
+        "lib/v4-core/contracts/libraries/FullMath.sol",
+        "lib/v4-core/contracts/libraries/Hooks.sol",
+        "lib/v4-core/contracts/libraries/Pool.sol",
+        "lib/v4-core/contracts/libraries/Position.sol",
+        "lib/v4-core/contracts/libraries/SafeCast.sol",
+        "lib/v4-core/contracts/libraries/SqrtPriceMath.sol",
+        "lib/v4-core/contracts/libraries/SwapMath.sol",
+        "lib/v4-core/contracts/libraries/TickBitmap.sol",
+        "lib/v4-core/contracts/libraries/TickMath.sol",
+        "lib/v4-core/contracts/libraries/UnsafeMath.sol",
+        "lib/v4-core/contracts/types/BalanceDelta.sol",
+        "lib/v4-core/contracts/types/Currency.sol",
+        "lib/v4-core/contracts/types/PoolId.sol",
+        "lib/v4-core/contracts/types/PoolKey.sol",
+        "lib/v4-periphery/contracts/BaseHook.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "ERC721OwnershipHook": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "ERC721OwnershipHook.sol/ERC721OwnershipHook.json"
+        }
+      }
+    },
+    "src/implementation/ERC721OwnershipHookImpl.sol": {
+      "lastModificationDate": 1695536839710,
+      "contentHash": "7d9c78b5744712d02edb32a9a4b65147",
+      "sourceName": "src/implementation/ERC721OwnershipHookImpl.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/v4-core/contracts/interfaces/IFees.sol",
+        "lib/v4-core/contracts/interfaces/IHooks.sol",
+        "lib/v4-core/contracts/interfaces/IPoolManager.sol",
+        "lib/v4-core/contracts/interfaces/external/IERC20Minimal.sol",
+        "lib/v4-core/contracts/libraries/BitMath.sol",
+        "lib/v4-core/contracts/libraries/FeeLibrary.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint128.sol",
+        "lib/v4-core/contracts/libraries/FixedPoint96.sol",
+        "lib/v4-core/contracts/libraries/FullMath.sol",
+        "lib/v4-core/contracts/libraries/Hooks.sol",
+        "lib/v4-core/contracts/libraries/Pool.sol",
+        "lib/v4-core/contracts/libraries/Position.sol",
+        "lib/v4-core/contracts/libraries/SafeCast.sol",
+        "lib/v4-core/contracts/libraries/SqrtPriceMath.sol",
+        "lib/v4-core/contracts/libraries/SwapMath.sol",
+        "lib/v4-core/contracts/libraries/TickBitmap.sol",
+        "lib/v4-core/contracts/libraries/TickMath.sol",
+        "lib/v4-core/contracts/libraries/UnsafeMath.sol",
+        "lib/v4-core/contracts/types/BalanceDelta.sol",
+        "lib/v4-core/contracts/types/Currency.sol",
+        "lib/v4-core/contracts/types/PoolId.sol",
+        "lib/v4-core/contracts/types/PoolKey.sol",
+        "lib/v4-periphery/contracts/BaseHook.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol",
+        "lib/v4-periphery/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "src/ERC721OwnershipHook.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "ERC721OwnershipHookImpl": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "ERC721OwnershipHookImpl.sol/ERC721OwnershipHookImpl.json"
+        }
+      }
+    }
+  }
+}
